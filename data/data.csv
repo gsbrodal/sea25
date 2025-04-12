@@ -1,0 +1,2980 @@
+"successor, no compression", "query_one", 2, 4.1514635086e-09
+"successor, recursive", "query_one", 2, 4.5657157898e-09
+"successor, 2-pass", "query_one", 2, 4.3749809265e-09
+"successor, 2-pass, checked", "query_one", 2, 4.8354268074e-09
+"successor, halving", "query_one", 2, 3.5792589188e-09
+"quick find", "query_one", 2, 4.6521425247e-09
+"union find", "query_one", 2, 5.8278441429e-09
+"quick find, microset", "query_one", 2, 5.0008296967e-09
+"union find, microset", "query_one", 2, 5.0693750381e-09
+"successor, 2-pass, microset", "query_one", 2, 4.9367547035e-09
+"successor, no compression", "query_one", 4, 1.0514259338e-08
+"successor, recursive", "query_one", 4, 9.0777873993e-09
+"successor, 2-pass", "query_one", 4, 8.5055828094e-09
+"successor, 2-pass, checked", "query_one", 4, 9.1671943665e-09
+"successor, halving", "query_one", 4, 7.1018934250e-09
+"quick find", "query_one", 4, 8.4042549133e-09
+"union find", "query_one", 4, 1.0731816292e-08
+"quick find, microset", "query_one", 4, 8.3208084106e-09
+"union find, microset", "query_one", 4, 8.3267688751e-09
+"successor, 2-pass, microset", "query_one", 4, 8.1181526184e-09
+"successor, no compression", "query_one", 8, 2.2023916245e-08
+"successor, recursive", "query_one", 8, 1.6570091248e-08
+"successor, 2-pass", "query_one", 8, 1.7750263214e-08
+"successor, 2-pass, checked", "query_one", 8, 1.7762184143e-08
+"successor, halving", "query_one", 8, 1.4042854309e-08
+"quick find", "query_one", 8, 1.5258789063e-08
+"union find", "query_one", 8, 1.8966197968e-08
+"quick find, microset", "query_one", 8, 1.7309188843e-08
+"union find, microset", "query_one", 8, 1.7100572586e-08
+"successor, 2-pass, microset", "query_one", 8, 1.6629695892e-08
+"successor, no compression", "query_one", 16, 5.0592422485e-08
+"successor, recursive", "query_one", 16, 3.1018257141e-08
+"successor, 2-pass", "query_one", 16, 3.1542778015e-08
+"successor, 2-pass, checked", "query_one", 16, 3.3318996429e-08
+"successor, halving", "query_one", 16, 2.4628639221e-08
+"quick find", "query_one", 16, 2.8967857361e-08
+"union find", "query_one", 16, 3.4260749817e-08
+"quick find, microset", "query_one", 16, 3.5715103149e-08
+"union find, microset", "query_one", 16, 3.4189224243e-08
+"successor, 2-pass, microset", "query_one", 16, 3.3569335937e-08
+"successor, no compression", "query_one", 32, 1.8615722656e-07
+"successor, recursive", "query_one", 32, 7.6532363892e-08
+"successor, 2-pass", "query_one", 32, 7.6985359192e-08
+"successor, 2-pass, checked", "query_one", 32, 7.4148178101e-08
+"successor, halving", "query_one", 32, 6.5374374390e-08
+"quick find", "query_one", 32, 5.8841705322e-08
+"union find", "query_one", 32, 6.9260597229e-08
+"quick find, microset", "query_one", 32, 6.5708160400e-08
+"union find, microset", "query_one", 32, 6.7806243896e-08
+"successor, 2-pass, microset", "query_one", 32, 6.9856643677e-08
+"successor, no compression", "query_one", 64, 1.6944885254e-06
+"successor, recursive", "query_one", 64, 1.6536712646e-07
+"successor, 2-pass", "query_one", 64, 1.7871856689e-07
+"successor, 2-pass, checked", "query_one", 64, 1.8520355225e-07
+"successor, halving", "query_one", 64, 1.4166831970e-07
+"quick find", "query_one", 64, 1.2273788452e-07
+"union find", "query_one", 64, 1.5125274658e-07
+"quick find, microset", "query_one", 64, 1.2712478638e-07
+"union find, microset", "query_one", 64, 1.3618469238e-07
+"successor, 2-pass, microset", "query_one", 64, 1.3613700867e-07
+"successor, no compression", "query_one", 128, 8.7585449219e-06
+"successor, recursive", "query_one", 128, 3.9710998535e-07
+"successor, 2-pass", "query_one", 128, 3.5161972046e-07
+"successor, 2-pass, checked", "query_one", 128, 3.6506652832e-07
+"successor, halving", "query_one", 128, 3.1471252441e-07
+"quick find", "query_one", 128, 2.4213790894e-07
+"union find", "query_one", 128, 2.7713775635e-07
+"quick find, microset", "query_one", 128, 2.3269653320e-07
+"union find, microset", "query_one", 128, 2.8495788574e-07
+"successor, 2-pass, microset", "query_one", 128, 2.8066635132e-07
+"successor, no compression", "query_one", 256, 3.3789062500e-05
+"successor, recursive", "query_one", 256, 7.2422027588e-07
+"successor, 2-pass", "query_one", 256, 6.8283081055e-07
+"successor, 2-pass, checked", "query_one", 256, 7.2498321533e-07
+"successor, halving", "query_one", 256, 6.8454742432e-07
+"quick find", "query_one", 256, 4.8065185547e-07
+"union find", "query_one", 256, 5.5561065674e-07
+"quick find, microset", "query_one", 256, 4.9285888672e-07
+"union find, microset", "query_one", 256, 5.7582855225e-07
+"successor, 2-pass, microset", "query_one", 256, 5.7487487793e-07
+"successor, no compression", "query_one", 512, 1.3320312500e-04
+"successor, recursive", "query_one", 512, 1.4694213867e-06
+"successor, 2-pass", "query_one", 512, 1.3675689697e-06
+"successor, 2-pass, checked", "query_one", 512, 1.3862609863e-06
+"successor, halving", "query_one", 512, 1.3778686523e-06
+"quick find", "query_one", 512, 9.3536376953e-07
+"union find", "query_one", 512, 1.0589599609e-06
+"quick find, microset", "query_one", 512, 9.2163085937e-07
+"union find, microset", "query_one", 512, 1.1070251465e-06
+"successor, 2-pass, microset", "query_one", 512, 1.1093139648e-06
+"successor, no compression", "query_one", 1024, 5.2871093750e-04
+"successor, recursive", "query_one", 1024, 2.8175354004e-06
+"successor, 2-pass", "query_one", 1024, 2.6412963867e-06
+"successor, 2-pass, checked", "query_one", 1024, 2.7984619141e-06
+"successor, halving", "query_one", 1024, 2.8305053711e-06
+"quick find", "query_one", 1024, 1.9821166992e-06
+"union find", "query_one", 1024, 2.1896362305e-06
+"quick find, microset", "query_one", 1024, 1.7730712891e-06
+"union find, microset", "query_one", 1024, 2.1820068359e-06
+"successor, 2-pass, microset", "query_one", 1024, 2.2628784180e-06
+"successor, no compression", "query_one", 2048, 2.0867187500e-03
+"successor, recursive", "query_one", 2048, 5.8425903320e-06
+"successor, 2-pass", "query_one", 2048, 5.2307128906e-06
+"successor, 2-pass, checked", "query_one", 2048, 5.7281494141e-06
+"successor, halving", "query_one", 2048, 5.5496215820e-06
+"quick find", "query_one", 2048, 4.3670654297e-06
+"union find", "query_one", 2048, 4.5989990234e-06
+"quick find, microset", "query_one", 2048, 3.8101196289e-06
+"union find, microset", "query_one", 2048, 4.5806884766e-06
+"successor, 2-pass, microset", "query_one", 2048, 4.4372558594e-06
+"successor, no compression", "query_one", 4096, 8.3093750000e-03
+"successor, recursive", "query_one", 4096, 1.3128662109e-05
+"successor, 2-pass", "query_one", 4096, 1.0797119141e-05
+"successor, 2-pass, checked", "query_one", 4096, 1.1450195312e-05
+"successor, halving", "query_one", 4096, 1.0781860352e-05
+"quick find", "query_one", 4096, 8.7829589844e-06
+"union find", "query_one", 4096, 9.1827392578e-06
+"quick find, microset", "query_one", 4096, 7.5378417969e-06
+"union find, microset", "query_one", 4096, 9.2895507813e-06
+"successor, 2-pass, microset", "query_one", 4096, 8.6486816406e-06
+"successor, no compression", "query_one", 8192, 3.9675000000e-02
+"successor, recursive", "query_one", 8192, 2.5268554687e-05
+"successor, 2-pass", "query_one", 8192, 2.2796630859e-05
+"successor, 2-pass, checked", "query_one", 8192, 2.2814941406e-05
+"successor, halving", "query_one", 8192, 2.3187255859e-05
+"quick find", "query_one", 8192, 1.8035888672e-05
+"union find", "query_one", 8192, 1.8713378906e-05
+"quick find, microset", "query_one", 8192, 1.5087890625e-05
+"union find, microset", "query_one", 8192, 1.8676757812e-05
+"successor, 2-pass, microset", "query_one", 8192, 1.7492675781e-05
+"successor, no compression", "query_one", 16384, 1.5710000000e-01
+"successor, recursive", "query_one", 16384, 5.0585937500e-05
+"successor, 2-pass", "query_one", 16384, 4.5251464844e-05
+"successor, 2-pass, checked", "query_one", 16384, 4.7314453125e-05
+"successor, halving", "query_one", 16384, 4.5654296875e-05
+"quick find", "query_one", 16384, 3.5461425781e-05
+"union find", "query_one", 16384, 3.8134765625e-05
+"quick find, microset", "query_one", 16384, 2.9467773438e-05
+"union find, microset", "query_one", 16384, 3.5791015625e-05
+"successor, 2-pass, microset", "query_one", 16384, 3.5400390625e-05
+"successor, no compression", "query_one", 32768, 5.8000000000e-01
+"successor, recursive", "query_one", 32768, 9.7412109375e-05
+"successor, 2-pass", "query_one", 32768, 9.3408203125e-05
+"successor, 2-pass, checked", "query_one", 32768, 9.9218750000e-05
+"successor, halving", "query_one", 32768, 9.5776367187e-05
+"quick find", "query_one", 32768, 6.9140625000e-05
+"union find", "query_one", 32768, 7.0654296875e-05
+"quick find, microset", "query_one", 32768, 5.8300781250e-05
+"union find, microset", "query_one", 32768, 7.2412109375e-05
+"successor, 2-pass, microset", "query_one", 32768, 7.2705078125e-05
+"successor, no compression", "query_one", 65536, 2.4302000000e+00
+"successor, recursive", "query_one", 65536, 2.1269531250e-04
+"successor, 2-pass", "query_one", 65536, 1.9570312500e-04
+"successor, 2-pass, checked", "query_one", 65536, 2.0273437500e-04
+"successor, halving", "query_one", 65536, 1.9824218750e-04
+"quick find", "query_one", 65536, 1.4916992187e-04
+"union find", "query_one", 65536, 1.5532226562e-04
+"quick find, microset", "query_one", 65536, 1.2431640625e-04
+"union find, microset", "query_one", 65536, 1.4609375000e-04
+"successor, 2-pass, microset", "query_one", 65536, 1.4658203125e-04
+"successor, 2-pass", "query_one", 131072, 4.0898437500e-04
+"successor, 2-pass, checked", "query_one", 131072, 4.3105468750e-04
+"successor, halving", "query_one", 131072, 4.3085937500e-04
+"quick find", "query_one", 131072, 2.9921875000e-04
+"union find", "query_one", 131072, 3.2080078125e-04
+"quick find, microset", "query_one", 131072, 2.4804687500e-04
+"union find, microset", "query_one", 131072, 2.9804687500e-04
+"successor, 2-pass, microset", "query_one", 131072, 2.9121093750e-04
+"successor, 2-pass", "query_one", 262144, 7.9609375000e-04
+"successor, 2-pass, checked", "query_one", 262144, 8.6093750000e-04
+"successor, halving", "query_one", 262144, 8.8750000000e-04
+"quick find", "query_one", 262144, 6.1894531250e-04
+"union find", "query_one", 262144, 6.8320312500e-04
+"quick find, microset", "query_one", 262144, 4.9257812500e-04
+"union find, microset", "query_one", 262144, 5.9296875000e-04
+"successor, 2-pass, microset", "query_one", 262144, 5.7988281250e-04
+"successor, 2-pass", "query_one", 524288, 1.6046875000e-03
+"successor, 2-pass, checked", "query_one", 524288, 1.6890625000e-03
+"successor, halving", "query_one", 524288, 1.6546875000e-03
+"quick find", "query_one", 524288, 1.3730468750e-03
+"union find", "query_one", 524288, 1.4242187500e-03
+"quick find, microset", "query_one", 524288, 9.8906250000e-04
+"union find, microset", "query_one", 524288, 1.1960937500e-03
+"successor, 2-pass, microset", "query_one", 524288, 1.1921875000e-03
+"successor, 2-pass", "query_one", 1048576, 3.5031250000e-03
+"successor, 2-pass, checked", "query_one", 1048576, 3.8046875000e-03
+"successor, halving", "query_one", 1048576, 3.4859375000e-03
+"quick find", "query_one", 1048576, 2.9859375000e-03
+"union find", "query_one", 1048576, 3.1593750000e-03
+"quick find, microset", "query_one", 1048576, 2.2445312500e-03
+"union find, microset", "query_one", 1048576, 2.3359375000e-03
+"successor, 2-pass, microset", "query_one", 1048576, 2.5312500000e-03
+"successor, 2-pass", "query_one", 2097152, 7.6937500000e-03
+"successor, 2-pass, checked", "query_one", 2097152, 8.0281250000e-03
+"successor, halving", "query_one", 2097152, 9.2875000000e-03
+"quick find", "query_one", 2097152, 6.5562500000e-03
+"union find", "query_one", 2097152, 6.6562500000e-03
+"quick find, microset", "query_one", 2097152, 4.2781250000e-03
+"union find, microset", "query_one", 2097152, 5.0203125000e-03
+"successor, 2-pass, microset", "query_one", 2097152, 5.0656250000e-03
+"successor, 2-pass", "query_one", 4194304, 1.4137500000e-02
+"successor, 2-pass, checked", "query_one", 4194304, 1.5150000000e-02
+"successor, halving", "query_one", 4194304, 2.1506250000e-02
+"quick find", "query_one", 4194304, 1.3075000000e-02
+"union find", "query_one", 4194304, 1.4200000000e-02
+"quick find, microset", "query_one", 4194304, 8.9937500000e-03
+"union find, microset", "query_one", 4194304, 1.0293750000e-02
+"successor, 2-pass, microset", "query_one", 4194304, 1.0037500000e-02
+"successor, recursive", "worst_case 0.125", 2, 3.1679868698e-09
+"successor, 2-pass", "worst_case 0.125", 2, 3.3110380173e-09
+"successor, 2-pass, checked", "worst_case 0.125", 2, 3.6299228668e-09
+"successor, halving", "worst_case 0.125", 2, 3.0964612961e-09
+"quick find", "worst_case 0.125", 2, 4.1946768761e-09
+"union find", "worst_case 0.125", 2, 4.7579407692e-09
+"quick find, microset", "worst_case 0.125", 2, 4.2453408241e-09
+"union find, microset", "worst_case 0.125", 2, 4.1902065277e-09
+"successor, 2-pass, microset", "worst_case 0.125", 2, 4.1306018829e-09
+"successor, recursive", "worst_case 0.250", 2, 3.3453106880e-09
+"successor, 2-pass", "worst_case 0.250", 2, 3.5330653191e-09
+"successor, 2-pass, checked", "worst_case 0.250", 2, 3.6790966988e-09
+"successor, halving", "worst_case 0.250", 2, 3.1217932701e-09
+"quick find", "worst_case 0.250", 2, 3.9786100388e-09
+"union find", "worst_case 0.250", 2, 4.9829483032e-09
+"quick find, microset", "worst_case 0.250", 2, 4.3809413910e-09
+"union find, microset", "worst_case 0.250", 2, 4.3153762817e-09
+"successor, 2-pass, microset", "worst_case 0.250", 2, 4.2259693146e-09
+"successor, recursive", "worst_case 0.500", 2, 3.3900141716e-09
+"successor, 2-pass", "worst_case 0.500", 2, 3.5330653191e-09
+"successor, 2-pass, checked", "worst_case 0.500", 2, 3.6925077438e-09
+"successor, halving", "worst_case 0.500", 2, 3.2871961594e-09
+"quick find", "worst_case 0.500", 2, 4.1380524635e-09
+"union find", "worst_case 0.500", 2, 4.9129128456e-09
+"quick find, microset", "worst_case 0.500", 2, 4.3988227844e-09
+"union find, microset", "worst_case 0.500", 2, 4.3809413910e-09
+"successor, 2-pass, microset", "worst_case 0.500", 2, 4.2349100113e-09
+"successor, recursive", "worst_case 1.000", 2, 4.7922134399e-09
+"successor, 2-pass", "worst_case 1.000", 2, 4.8458576202e-09
+"successor, 2-pass, checked", "worst_case 1.000", 2, 5.1453709602e-09
+"successor, halving", "worst_case 1.000", 2, 3.8027763367e-09
+"quick find", "worst_case 1.000", 2, 4.7236680984e-09
+"union find", "worst_case 1.000", 2, 5.8934092522e-09
+"quick find, microset", "worst_case 1.000", 2, 5.0038099289e-09
+"union find, microset", "worst_case 1.000", 2, 4.9412250519e-09
+"successor, 2-pass, microset", "worst_case 1.000", 2, 4.9322843552e-09
+"successor, recursive", "worst_case 2.000", 2, 6.3717365265e-09
+"successor, 2-pass", "worst_case 2.000", 2, 6.0319900513e-09
+"successor, 2-pass, checked", "worst_case 2.000", 2, 6.3866376877e-09
+"successor, halving", "worst_case 2.000", 2, 4.9799680710e-09
+"quick find", "worst_case 2.000", 2, 5.7116150856e-09
+"union find", "worst_case 2.000", 2, 7.2419643402e-09
+"quick find, microset", "worst_case 2.000", 2, 6.1869621277e-09
+"union find, microset", "worst_case 2.000", 2, 6.2704086304e-09
+"successor, 2-pass, microset", "worst_case 2.000", 2, 6.0498714447e-09
+"successor, recursive", "worst_case 4.000", 2, 9.6410512924e-09
+"successor, 2-pass", "worst_case 4.000", 2, 9.0450048447e-09
+"successor, 2-pass, checked", "worst_case 4.000", 2, 9.6499919891e-09
+"successor, halving", "worst_case 4.000", 2, 7.2956085205e-09
+"quick find", "worst_case 4.000", 2, 7.4505805969e-09
+"union find", "worst_case 4.000", 2, 1.0651350021e-08
+"quick find, microset", "worst_case 4.000", 2, 9.1195106506e-09
+"union find, microset", "worst_case 4.000", 2, 8.9168548584e-09
+"successor, 2-pass, microset", "worst_case 4.000", 2, 8.8214874268e-09
+"successor, recursive", "worst_case 8.000", 2, 1.6361474991e-08
+"successor, 2-pass", "worst_case 8.000", 2, 1.4901161194e-08
+"successor, 2-pass, checked", "worst_case 8.000", 2, 1.6045570374e-08
+"successor, halving", "worst_case 8.000", 2, 1.2570619583e-08
+"quick find", "worst_case 8.000", 2, 1.1086463928e-08
+"union find", "worst_case 8.000", 2, 1.7058849335e-08
+"quick find, microset", "worst_case 8.000", 2, 1.4722347260e-08
+"union find, microset", "worst_case 8.000", 2, 1.5223026276e-08
+"successor, 2-pass, microset", "worst_case 8.000", 2, 1.4364719391e-08
+"successor, recursive", "worst_case 0.125", 4, 4.9710273743e-09
+"successor, 2-pass", "worst_case 0.125", 4, 5.0842761993e-09
+"successor, 2-pass, checked", "worst_case 0.125", 4, 5.7250261307e-09
+"successor, halving", "worst_case 0.125", 4, 4.7981739044e-09
+"quick find", "worst_case 0.125", 4, 6.6220760345e-09
+"union find", "worst_case 0.125", 4, 8.7738037109e-09
+"quick find, microset", "worst_case 0.125", 4, 6.0945749283e-09
+"union find, microset", "worst_case 0.125", 4, 6.0468912125e-09
+"successor, 2-pass, microset", "worst_case 0.125", 4, 6.0260295868e-09
+"successor, recursive", "worst_case 0.250", 4, 5.0425529480e-09
+"successor, 2-pass", "worst_case 0.250", 4, 5.0812959671e-09
+"successor, 2-pass, checked", "worst_case 0.250", 4, 5.6833028793e-09
+"successor, halving", "worst_case 0.250", 4, 4.8130750656e-09
+"quick find", "worst_case 0.250", 4, 6.8187713623e-09
+"union find", "worst_case 0.250", 4, 8.7857246399e-09
+"quick find, microset", "worst_case 0.250", 4, 6.0066580772e-09
+"union find, microset", "worst_case 0.250", 4, 6.0260295868e-09
+"successor, 2-pass, microset", "worst_case 0.250", 4, 6.0379505157e-09
+"successor, recursive", "worst_case 0.500", 4, 7.2419643402e-09
+"successor, 2-pass", "worst_case 0.500", 4, 6.8932771683e-09
+"successor, 2-pass, checked", "worst_case 0.500", 4, 7.4058771133e-09
+"successor, halving", "worst_case 0.500", 4, 5.9053301811e-09
+"quick find", "worst_case 0.500", 4, 8.0406665802e-09
+"union find", "worst_case 0.500", 4, 9.7960233688e-09
+"quick find, microset", "worst_case 0.500", 4, 6.8098306656e-09
+"union find, microset", "worst_case 0.500", 4, 6.7114830017e-09
+"successor, 2-pass, microset", "worst_case 0.500", 4, 6.5892934799e-09
+"successor, recursive", "worst_case 1.000", 4, 9.7274780273e-09
+"successor, 2-pass", "worst_case 1.000", 4, 9.0062618256e-09
+"successor, 2-pass, checked", "worst_case 1.000", 4, 9.5546245575e-09
+"successor, halving", "worst_case 1.000", 4, 6.7710876465e-09
+"quick find", "worst_case 1.000", 4, 8.7261199951e-09
+"union find", "worst_case 1.000", 4, 1.0848045349e-08
+"quick find, microset", "worst_case 1.000", 4, 8.3118677139e-09
+"union find, microset", "worst_case 1.000", 4, 8.2433223724e-09
+"successor, 2-pass, microset", "worst_case 1.000", 4, 8.2194805145e-09
+"successor, recursive", "worst_case 2.000", 4, 1.3148784637e-08
+"successor, 2-pass", "worst_case 2.000", 4, 1.2636184692e-08
+"successor, 2-pass, checked", "worst_case 2.000", 4, 1.2993812561e-08
+"successor, halving", "worst_case 2.000", 4, 9.4354152679e-09
+"quick find", "worst_case 2.000", 4, 1.0740756989e-08
+"union find", "worst_case 2.000", 4, 1.4543533325e-08
+"quick find, microset", "worst_case 2.000", 4, 1.0403990746e-08
+"union find, microset", "worst_case 2.000", 4, 1.0028481483e-08
+"successor, 2-pass, microset", "worst_case 2.000", 4, 1.0150671005e-08
+"successor, recursive", "worst_case 4.000", 4, 1.9854307175e-08
+"successor, 2-pass", "worst_case 4.000", 4, 1.9156932831e-08
+"successor, 2-pass, checked", "worst_case 4.000", 4, 1.9848346710e-08
+"successor, halving", "worst_case 4.000", 4, 1.4120340347e-08
+"quick find", "worst_case 4.000", 4, 1.4698505402e-08
+"union find", "worst_case 4.000", 4, 2.1189451218e-08
+"quick find, microset", "worst_case 4.000", 4, 1.8936395645e-08
+"union find, microset", "worst_case 4.000", 4, 1.9204616547e-08
+"successor, 2-pass, microset", "worst_case 4.000", 4, 1.9156932831e-08
+"successor, recursive", "worst_case 8.000", 4, 3.6704540253e-08
+"successor, 2-pass", "worst_case 8.000", 4, 3.1948089600e-08
+"successor, 2-pass, checked", "worst_case 8.000", 4, 3.1876564026e-08
+"successor, halving", "worst_case 8.000", 4, 2.3686885834e-08
+"quick find", "worst_case 8.000", 4, 2.1445751190e-08
+"union find", "worst_case 8.000", 4, 3.2711029053e-08
+"quick find, microset", "worst_case 8.000", 4, 3.0303001404e-08
+"union find, microset", "worst_case 8.000", 4, 2.9313564301e-08
+"successor, 2-pass, microset", "worst_case 8.000", 4, 2.9754638672e-08
+"successor, recursive", "worst_case 0.125", 8, 8.0108642578e-09
+"successor, 2-pass", "worst_case 0.125", 8, 8.2254409790e-09
+"successor, 2-pass, checked", "worst_case 0.125", 8, 9.1761350632e-09
+"successor, halving", "worst_case 0.125", 8, 7.8320503235e-09
+"quick find", "worst_case 0.125", 8, 1.2195110321e-08
+"union find", "worst_case 0.125", 8, 1.4328956604e-08
+"quick find, microset", "worst_case 0.125", 8, 1.0675191879e-08
+"union find, microset", "worst_case 0.125", 8, 1.0564923286e-08
+"successor, 2-pass, microset", "worst_case 0.125", 8, 1.0591745377e-08
+"successor, recursive", "worst_case 0.250", 8, 1.1616945267e-08
+"successor, 2-pass", "worst_case 0.250", 8, 1.0943412781e-08
+"successor, 2-pass, checked", "worst_case 0.250", 8, 1.1736154556e-08
+"successor, halving", "worst_case 0.250", 8, 9.8049640656e-09
+"quick find", "worst_case 0.250", 8, 1.2898445129e-08
+"union find", "worst_case 0.250", 8, 1.5747547150e-08
+"quick find, microset", "worst_case 0.250", 8, 1.0377168655e-08
+"union find, microset", "worst_case 0.250", 8, 1.0320544243e-08
+"successor, 2-pass, microset", "worst_case 0.250", 8, 1.0073184967e-08
+"successor, recursive", "worst_case 0.500", 8, 1.6105175018e-08
+"successor, 2-pass", "worst_case 0.500", 8, 1.3804435730e-08
+"successor, 2-pass, checked", "worst_case 0.500", 8, 1.4895200729e-08
+"successor, halving", "worst_case 0.500", 8, 1.1080503464e-08
+"quick find", "worst_case 0.500", 8, 1.4221668243e-08
+"union find", "worst_case 0.500", 8, 1.7690658569e-08
+"quick find, microset", "worst_case 0.500", 8, 1.2031197548e-08
+"union find, microset", "worst_case 0.500", 8, 1.2236833572e-08
+"successor, 2-pass, microset", "worst_case 0.500", 8, 1.1941790581e-08
+"successor, recursive", "worst_case 1.000", 8, 2.2208690643e-08
+"successor, 2-pass", "worst_case 1.000", 8, 1.8948316574e-08
+"successor, 2-pass, checked", "worst_case 1.000", 8, 2.0217895508e-08
+"successor, halving", "worst_case 1.000", 8, 1.3870000839e-08
+"quick find", "worst_case 1.000", 8, 1.6129016876e-08
+"union find", "worst_case 1.000", 8, 1.9216537476e-08
+"quick find, microset", "worst_case 1.000", 8, 1.3840198517e-08
+"union find, microset", "worst_case 1.000", 8, 1.4603137970e-08
+"successor, 2-pass, microset", "worst_case 1.000", 8, 1.4245510101e-08
+"successor, recursive", "worst_case 2.000", 8, 3.2019615173e-08
+"successor, 2-pass", "worst_case 2.000", 8, 2.6249885559e-08
+"successor, 2-pass, checked", "worst_case 2.000", 8, 2.5773048401e-08
+"successor, halving", "worst_case 2.000", 8, 2.0742416382e-08
+"quick find", "worst_case 2.000", 8, 2.0831823349e-08
+"union find", "worst_case 2.000", 8, 2.6845932007e-08
+"quick find, microset", "worst_case 2.000", 8, 1.9502639771e-08
+"union find, microset", "worst_case 2.000", 8, 1.9049644470e-08
+"successor, 2-pass, microset", "worst_case 2.000", 8, 1.9657611847e-08
+"successor, recursive", "worst_case 4.000", 8, 4.4238567352e-08
+"successor, 2-pass", "worst_case 4.000", 8, 3.9756298065e-08
+"successor, 2-pass, checked", "worst_case 4.000", 8, 4.0602684021e-08
+"successor, halving", "worst_case 4.000", 8, 2.8920173645e-08
+"quick find", "worst_case 4.000", 8, 2.8312206268e-08
+"union find", "worst_case 4.000", 8, 3.8969516754e-08
+"quick find, microset", "worst_case 4.000", 8, 3.6752223969e-08
+"union find, microset", "worst_case 4.000", 8, 3.6144256592e-08
+"successor, 2-pass, microset", "worst_case 4.000", 8, 3.6668777466e-08
+"successor, recursive", "worst_case 8.000", 8, 8.2635879517e-08
+"successor, 2-pass", "worst_case 8.000", 8, 6.5708160400e-08
+"successor, 2-pass, checked", "worst_case 8.000", 8, 6.6995620728e-08
+"successor, halving", "worst_case 8.000", 8, 4.8685073853e-08
+"quick find", "worst_case 8.000", 8, 4.6038627625e-08
+"union find", "worst_case 8.000", 8, 6.2894821167e-08
+"quick find, microset", "worst_case 8.000", 8, 5.9556961060e-08
+"union find, microset", "worst_case 8.000", 8, 6.0176849365e-08
+"successor, 2-pass, microset", "worst_case 8.000", 8, 5.8984756470e-08
+"successor, recursive", "worst_case 0.125", 16, 1.8465518951e-08
+"successor, 2-pass", "worst_case 0.125", 16, 1.7172098160e-08
+"successor, 2-pass, checked", "worst_case 0.125", 16, 1.8668174744e-08
+"successor, halving", "worst_case 0.125", 16, 1.5163421631e-08
+"quick find", "worst_case 0.125", 16, 2.1958351135e-08
+"union find", "worst_case 0.125", 16, 2.6249885559e-08
+"quick find, microset", "worst_case 0.125", 16, 2.2017955780e-08
+"union find, microset", "worst_case 0.125", 16, 2.1982192993e-08
+"successor, 2-pass, microset", "worst_case 0.125", 16, 2.1851062775e-08
+"successor, recursive", "worst_case 0.250", 16, 2.4247169495e-08
+"successor, 2-pass", "worst_case 0.250", 16, 2.0772218704e-08
+"successor, 2-pass, checked", "worst_case 0.250", 16, 2.2602081299e-08
+"successor, halving", "worst_case 0.250", 16, 1.8012523651e-08
+"quick find", "worst_case 0.250", 16, 2.3663043976e-08
+"union find", "worst_case 0.250", 16, 2.7883052826e-08
+"quick find, microset", "worst_case 0.250", 16, 2.0503997803e-08
+"union find, microset", "worst_case 0.250", 16, 2.0503997803e-08
+"successor, 2-pass, microset", "worst_case 0.250", 16, 1.9836425781e-08
+"successor, recursive", "worst_case 0.500", 16, 3.2210350037e-08
+"successor, 2-pass", "worst_case 0.500", 16, 2.5939941406e-08
+"successor, 2-pass, checked", "worst_case 0.500", 16, 2.9337406158e-08
+"successor, halving", "worst_case 0.500", 16, 2.1851062775e-08
+"quick find", "worst_case 0.500", 16, 2.6619434357e-08
+"union find", "worst_case 0.500", 16, 3.2162666321e-08
+"quick find, microset", "worst_case 0.500", 16, 2.1803379059e-08
+"union find, microset", "worst_case 0.500", 16, 2.1600723267e-08
+"successor, 2-pass, microset", "worst_case 0.500", 16, 2.1559000015e-08
+"successor, recursive", "worst_case 1.000", 16, 4.6086311340e-08
+"successor, 2-pass", "worst_case 1.000", 16, 4.0185451508e-08
+"successor, 2-pass, checked", "worst_case 1.000", 16, 4.3058395386e-08
+"successor, halving", "worst_case 1.000", 16, 2.4938583374e-08
+"quick find", "worst_case 1.000", 16, 2.9802322388e-08
+"union find", "worst_case 1.000", 16, 3.5333633423e-08
+"quick find, microset", "worst_case 1.000", 16, 2.6977062225e-08
+"union find, microset", "worst_case 1.000", 16, 2.7370452881e-08
+"successor, 2-pass, microset", "worst_case 1.000", 16, 2.6869773865e-08
+"successor, recursive", "worst_case 2.000", 16, 7.6913833618e-08
+"successor, 2-pass", "worst_case 2.000", 16, 5.3548812866e-08
+"successor, 2-pass, checked", "worst_case 2.000", 16, 5.6600570679e-08
+"successor, halving", "worst_case 2.000", 16, 4.0650367737e-08
+"quick find", "worst_case 2.000", 16, 4.0197372437e-08
+"union find", "worst_case 2.000", 16, 4.7779083252e-08
+"quick find, microset", "worst_case 2.000", 16, 3.5476684570e-08
+"union find, microset", "worst_case 2.000", 16, 3.5858154297e-08
+"successor, 2-pass, microset", "worst_case 2.000", 16, 3.7217140198e-08
+"successor, recursive", "worst_case 4.000", 16, 1.1281967163e-07
+"successor, 2-pass", "worst_case 4.000", 16, 8.2325935364e-08
+"successor, 2-pass, checked", "worst_case 4.000", 16, 8.5878372192e-08
+"successor, halving", "worst_case 4.000", 16, 6.1416625977e-08
+"quick find", "worst_case 4.000", 16, 5.7935714722e-08
+"union find", "worst_case 4.000", 16, 7.3862075806e-08
+"quick find, microset", "worst_case 4.000", 16, 6.5374374390e-08
+"union find, microset", "worst_case 4.000", 16, 6.4730644226e-08
+"successor, 2-pass, microset", "worst_case 4.000", 16, 6.4086914063e-08
+"successor, recursive", "worst_case 8.000", 16, 1.8858909607e-07
+"successor, 2-pass", "worst_case 8.000", 16, 1.3971328735e-07
+"successor, 2-pass, checked", "worst_case 8.000", 16, 1.3494491577e-07
+"successor, halving", "worst_case 8.000", 16, 9.7846984863e-08
+"quick find", "worst_case 8.000", 16, 8.7022781372e-08
+"union find", "worst_case 8.000", 16, 1.2178421021e-07
+"quick find, microset", "worst_case 8.000", 16, 1.1506080627e-07
+"union find, microset", "worst_case 8.000", 16, 1.0890960693e-07
+"successor, 2-pass, microset", "worst_case 8.000", 16, 1.0585784912e-07
+"successor, recursive", "worst_case 0.125", 32, 3.7872791290e-08
+"successor, 2-pass", "worst_case 0.125", 32, 3.4499168396e-08
+"successor, 2-pass, checked", "worst_case 0.125", 32, 3.7789344788e-08
+"successor, halving", "worst_case 0.125", 32, 2.9551982880e-08
+"quick find", "worst_case 0.125", 32, 4.4107437134e-08
+"union find", "worst_case 0.125", 32, 5.0497055054e-08
+"quick find, microset", "worst_case 0.125", 32, 4.5859813690e-08
+"union find, microset", "worst_case 0.125", 32, 4.6634674072e-08
+"successor, 2-pass, microset", "worst_case 0.125", 32, 4.5871734619e-08
+"successor, recursive", "worst_case 0.250", 32, 4.9686431885e-08
+"successor, 2-pass", "worst_case 0.250", 32, 4.2533874512e-08
+"successor, 2-pass, checked", "worst_case 0.250", 32, 4.5156478882e-08
+"successor, halving", "worst_case 0.250", 32, 3.4546852112e-08
+"quick find", "worst_case 0.250", 32, 4.4560432434e-08
+"union find", "worst_case 0.250", 32, 5.5503845215e-08
+"quick find, microset", "worst_case 0.250", 32, 4.4977664948e-08
+"union find, microset", "worst_case 0.250", 32, 4.4298171997e-08
+"successor, 2-pass, microset", "worst_case 0.250", 32, 4.3725967407e-08
+"successor, recursive", "worst_case 0.500", 32, 7.2717666626e-08
+"successor, 2-pass", "worst_case 0.500", 32, 5.7697296143e-08
+"successor, 2-pass, checked", "worst_case 0.500", 32, 6.0462951660e-08
+"successor, halving", "worst_case 0.500", 32, 4.4345855713e-08
+"quick find", "worst_case 0.500", 32, 5.2690505981e-08
+"union find", "worst_case 0.500", 32, 6.3610076904e-08
+"quick find, microset", "worst_case 0.500", 32, 4.6885013580e-08
+"union find, microset", "worst_case 0.500", 32, 4.6980381012e-08
+"successor, 2-pass, microset", "worst_case 0.500", 32, 4.6730041504e-08
+"successor, recursive", "worst_case 1.000", 32, 1.0433197021e-07
+"successor, 2-pass", "worst_case 1.000", 32, 8.9645385742e-08
+"successor, 2-pass, checked", "worst_case 1.000", 32, 9.5129013062e-08
+"successor, halving", "worst_case 1.000", 32, 6.5326690674e-08
+"quick find", "worst_case 1.000", 32, 6.0367584229e-08
+"union find", "worst_case 1.000", 32, 6.6113471985e-08
+"quick find, microset", "worst_case 1.000", 32, 5.5551528931e-08
+"union find, microset", "worst_case 1.000", 32, 5.3977966309e-08
+"successor, 2-pass, microset", "worst_case 1.000", 32, 5.3262710571e-08
+"successor, recursive", "worst_case 2.000", 32, 1.5630722046e-07
+"successor, 2-pass", "worst_case 2.000", 32, 1.2345314026e-07
+"successor, 2-pass, checked", "worst_case 2.000", 32, 1.2092590332e-07
+"successor, halving", "worst_case 2.000", 32, 8.3017349243e-08
+"quick find", "worst_case 2.000", 32, 7.9894065857e-08
+"union find", "worst_case 2.000", 32, 9.8228454590e-08
+"quick find, microset", "worst_case 2.000", 32, 8.2635879517e-08
+"union find, microset", "worst_case 2.000", 32, 8.3708763123e-08
+"successor, 2-pass, microset", "worst_case 2.000", 32, 8.5783004761e-08
+"successor, recursive", "worst_case 4.000", 32, 2.7093887329e-07
+"successor, 2-pass", "worst_case 4.000", 32, 1.8320083618e-07
+"successor, 2-pass, checked", "worst_case 4.000", 32, 1.8792152405e-07
+"successor, halving", "worst_case 4.000", 32, 1.3160705566e-07
+"quick find", "worst_case 4.000", 32, 1.0819435120e-07
+"union find", "worst_case 4.000", 32, 1.4686584473e-07
+"quick find, microset", "worst_case 4.000", 32, 1.2297630310e-07
+"union find, microset", "worst_case 4.000", 32, 1.1873245239e-07
+"successor, 2-pass, microset", "worst_case 4.000", 32, 1.2350082397e-07
+"successor, recursive", "worst_case 8.000", 32, 4.2552947998e-07
+"successor, 2-pass", "worst_case 8.000", 32, 3.0269622803e-07
+"successor, 2-pass, checked", "worst_case 8.000", 32, 3.0889511108e-07
+"successor, halving", "worst_case 8.000", 32, 2.1305084229e-07
+"quick find", "worst_case 8.000", 32, 1.7271041870e-07
+"union find", "worst_case 8.000", 32, 2.4623870850e-07
+"quick find, microset", "worst_case 8.000", 32, 2.1638870239e-07
+"union find, microset", "worst_case 8.000", 32, 2.1972656250e-07
+"successor, 2-pass, microset", "worst_case 8.000", 32, 2.2058486938e-07
+"successor, recursive", "worst_case 0.125", 64, 7.7819824219e-08
+"successor, 2-pass", "worst_case 0.125", 64, 6.9379806519e-08
+"successor, 2-pass, checked", "worst_case 0.125", 64, 7.8415870667e-08
+"successor, halving", "worst_case 0.125", 64, 5.8603286743e-08
+"quick find", "worst_case 0.125", 64, 8.8644027710e-08
+"union find", "worst_case 0.125", 64, 9.3984603882e-08
+"quick find, microset", "worst_case 0.125", 64, 7.7176094055e-08
+"union find, microset", "worst_case 0.125", 64, 7.6341629028e-08
+"successor, 2-pass, microset", "worst_case 0.125", 64, 7.6866149902e-08
+"successor, recursive", "worst_case 0.250", 64, 1.0643005371e-07
+"successor, 2-pass", "worst_case 0.250", 64, 9.2387199402e-08
+"successor, 2-pass, checked", "worst_case 0.250", 64, 1.0123252869e-07
+"successor, halving", "worst_case 0.250", 64, 6.9141387939e-08
+"quick find", "worst_case 0.250", 64, 9.3650817871e-08
+"union find", "worst_case 0.250", 64, 1.0342597961e-07
+"quick find, microset", "worst_case 0.250", 64, 7.6341629028e-08
+"union find, microset", "worst_case 0.250", 64, 7.8511238098e-08
+"successor, 2-pass, microset", "worst_case 0.250", 64, 7.8940391541e-08
+"successor, recursive", "worst_case 0.500", 64, 1.6031265259e-07
+"successor, 2-pass", "worst_case 0.500", 64, 1.2493133545e-07
+"successor, 2-pass, checked", "worst_case 0.500", 64, 1.3561248779e-07
+"successor, halving", "worst_case 0.500", 64, 9.3817710876e-08
+"quick find", "worst_case 0.500", 64, 1.0356903076e-07
+"union find", "worst_case 0.500", 64, 1.2340545654e-07
+"quick find, microset", "worst_case 0.500", 64, 9.1433525085e-08
+"union find, microset", "worst_case 0.500", 64, 9.2220306396e-08
+"successor, 2-pass, microset", "worst_case 0.500", 64, 9.3817710876e-08
+"successor, recursive", "worst_case 1.000", 64, 2.3250579834e-07
+"successor, 2-pass", "worst_case 1.000", 64, 1.8558502197e-07
+"successor, 2-pass, checked", "worst_case 1.000", 64, 2.0008087158e-07
+"successor, halving", "worst_case 1.000", 64, 1.6508102417e-07
+"quick find", "worst_case 1.000", 64, 1.1529922485e-07
+"union find", "worst_case 1.000", 64, 1.4343261719e-07
+"quick find, microset", "worst_case 1.000", 64, 1.0976791382e-07
+"union find, microset", "worst_case 1.000", 64, 1.0881423950e-07
+"successor, 2-pass, microset", "worst_case 1.000", 64, 1.0318756104e-07
+"successor, recursive", "worst_case 2.000", 64, 3.3168792725e-07
+"successor, 2-pass", "worst_case 2.000", 64, 2.5920867920e-07
+"successor, 2-pass, checked", "worst_case 2.000", 64, 2.8324127197e-07
+"successor, halving", "worst_case 2.000", 64, 2.1247863770e-07
+"quick find", "worst_case 2.000", 64, 1.5764236450e-07
+"union find", "worst_case 2.000", 64, 2.1257400513e-07
+"quick find, microset", "worst_case 2.000", 64, 1.5974044800e-07
+"union find, microset", "worst_case 2.000", 64, 1.6527175903e-07
+"successor, 2-pass, microset", "worst_case 2.000", 64, 1.5935897827e-07
+"successor, recursive", "worst_case 4.000", 64, 5.5999755859e-07
+"successor, 2-pass", "worst_case 4.000", 64, 4.2686462402e-07
+"successor, 2-pass, checked", "worst_case 4.000", 64, 4.2457580566e-07
+"successor, halving", "worst_case 4.000", 64, 3.1290054321e-07
+"quick find", "worst_case 4.000", 64, 2.1362304688e-07
+"union find", "worst_case 4.000", 64, 3.2043457031e-07
+"quick find, microset", "worst_case 4.000", 64, 2.5215148926e-07
+"union find, microset", "worst_case 4.000", 64, 2.4881362915e-07
+"successor, 2-pass, microset", "worst_case 4.000", 64, 2.4471282959e-07
+"successor, recursive", "worst_case 8.000", 64, 9.2163085937e-07
+"successor, 2-pass", "worst_case 8.000", 64, 6.5212249756e-07
+"successor, 2-pass, checked", "worst_case 8.000", 64, 6.7310333252e-07
+"successor, halving", "worst_case 8.000", 64, 4.5738220215e-07
+"quick find", "worst_case 8.000", 64, 3.5324096680e-07
+"union find", "worst_case 8.000", 64, 5.1612854004e-07
+"quick find, microset", "worst_case 8.000", 64, 4.3983459473e-07
+"union find, microset", "worst_case 8.000", 64, 4.4822692871e-07
+"successor, 2-pass, microset", "worst_case 8.000", 64, 4.4860839844e-07
+"successor, recursive", "worst_case 0.125", 128, 1.7342567444e-07
+"successor, 2-pass", "worst_case 0.125", 128, 1.5316009521e-07
+"successor, 2-pass, checked", "worst_case 0.125", 128, 1.7061233521e-07
+"successor, halving", "worst_case 0.125", 128, 1.2702941895e-07
+"quick find", "worst_case 0.125", 128, 1.8143653870e-07
+"union find", "worst_case 0.125", 128, 1.8663406372e-07
+"quick find, microset", "worst_case 0.125", 128, 1.3842582703e-07
+"union find, microset", "worst_case 0.125", 128, 1.4996528625e-07
+"successor, 2-pass, microset", "worst_case 0.125", 128, 1.4348030090e-07
+"successor, recursive", "worst_case 0.250", 128, 2.1486282349e-07
+"successor, 2-pass", "worst_case 0.250", 128, 1.7976760864e-07
+"successor, 2-pass, checked", "worst_case 0.250", 128, 1.9874572754e-07
+"successor, halving", "worst_case 0.250", 128, 1.4238357544e-07
+"quick find", "worst_case 0.250", 128, 1.8987655640e-07
+"union find", "worst_case 0.250", 128, 1.9416809082e-07
+"quick find, microset", "worst_case 0.250", 128, 1.5373229980e-07
+"union find, microset", "worst_case 0.250", 128, 1.5888214111e-07
+"successor, 2-pass, microset", "worst_case 0.250", 128, 1.5516281128e-07
+"successor, recursive", "worst_case 0.500", 128, 3.2367706299e-07
+"successor, 2-pass", "worst_case 0.500", 128, 2.5520324707e-07
+"successor, 2-pass, checked", "worst_case 0.500", 128, 2.7294158936e-07
+"successor, halving", "worst_case 0.500", 128, 2.5634765625e-07
+"quick find", "worst_case 0.500", 128, 2.0761489868e-07
+"union find", "worst_case 0.500", 128, 2.3794174194e-07
+"quick find, microset", "worst_case 0.500", 128, 1.8777847290e-07
+"union find, microset", "worst_case 0.500", 128, 1.9464492798e-07
+"successor, 2-pass, microset", "worst_case 0.500", 128, 1.9321441650e-07
+"successor, recursive", "worst_case 1.000", 128, 5.1937103271e-07
+"successor, 2-pass", "worst_case 1.000", 128, 3.8890838623e-07
+"successor, 2-pass, checked", "worst_case 1.000", 128, 4.4326782227e-07
+"successor, halving", "worst_case 1.000", 128, 3.7269592285e-07
+"quick find", "worst_case 1.000", 128, 2.3288726807e-07
+"union find", "worst_case 1.000", 128, 2.7618408203e-07
+"quick find, microset", "worst_case 1.000", 128, 2.3040771484e-07
+"union find, microset", "worst_case 1.000", 128, 2.4013519287e-07
+"successor, 2-pass, microset", "worst_case 1.000", 128, 2.3212432861e-07
+"successor, recursive", "worst_case 2.000", 128, 7.8125000000e-07
+"successor, 2-pass", "worst_case 2.000", 128, 5.9585571289e-07
+"successor, 2-pass, checked", "worst_case 2.000", 128, 6.3591003418e-07
+"successor, halving", "worst_case 2.000", 128, 4.6501159668e-07
+"quick find", "worst_case 2.000", 128, 3.1967163086e-07
+"union find", "worst_case 2.000", 128, 4.1294097900e-07
+"quick find, microset", "worst_case 2.000", 128, 3.6602020264e-07
+"union find, microset", "worst_case 2.000", 128, 3.8795471191e-07
+"successor, 2-pass, microset", "worst_case 2.000", 128, 3.9110183716e-07
+"successor, recursive", "worst_case 4.000", 128, 1.2283325195e-06
+"successor, 2-pass", "worst_case 4.000", 128, 1.0028839111e-06
+"successor, 2-pass, checked", "worst_case 4.000", 128, 1.0089874268e-06
+"successor, halving", "worst_case 4.000", 128, 6.5498352051e-07
+"quick find", "worst_case 4.000", 128, 4.2095184326e-07
+"union find", "worst_case 4.000", 128, 5.9471130371e-07
+"quick find, microset", "worst_case 4.000", 128, 5.8269500732e-07
+"union find, microset", "worst_case 4.000", 128, 6.4201354980e-07
+"successor, 2-pass, microset", "worst_case 4.000", 128, 5.9890747070e-07
+"successor, recursive", "worst_case 8.000", 128, 1.9470214844e-06
+"successor, 2-pass", "worst_case 8.000", 128, 1.4389038086e-06
+"successor, 2-pass, checked", "worst_case 8.000", 128, 1.4640808105e-06
+"successor, halving", "worst_case 8.000", 128, 1.0017395020e-06
+"quick find", "worst_case 8.000", 128, 7.1907043457e-07
+"union find", "worst_case 8.000", 128, 1.0414123535e-06
+"quick find, microset", "worst_case 8.000", 128, 1.0448455811e-06
+"union find, microset", "worst_case 8.000", 128, 1.1295318604e-06
+"successor, 2-pass, microset", "worst_case 8.000", 128, 1.1054992676e-06
+"successor, recursive", "worst_case 0.125", 256, 3.6067962646e-07
+"successor, 2-pass", "worst_case 0.125", 256, 3.1261444092e-07
+"successor, 2-pass, checked", "worst_case 0.125", 256, 3.5667419434e-07
+"successor, halving", "worst_case 0.125", 256, 3.5295486450e-07
+"quick find", "worst_case 0.125", 256, 3.4389495850e-07
+"union find", "worst_case 0.125", 256, 3.6640167236e-07
+"quick find, microset", "worst_case 0.125", 256, 2.7427673340e-07
+"union find, microset", "worst_case 0.125", 256, 2.8514862061e-07
+"successor, 2-pass, microset", "worst_case 0.125", 256, 2.6149749756e-07
+"successor, recursive", "worst_case 0.250", 256, 4.3640136719e-07
+"successor, 2-pass", "worst_case 0.250", 256, 3.8280487061e-07
+"successor, 2-pass, checked", "worst_case 0.250", 256, 4.3010711670e-07
+"successor, halving", "worst_case 0.250", 256, 3.8871765137e-07
+"quick find", "worst_case 0.250", 256, 3.6945343018e-07
+"union find", "worst_case 0.250", 256, 3.8871765137e-07
+"quick find, microset", "worst_case 0.250", 256, 3.0374526978e-07
+"union find, microset", "worst_case 0.250", 256, 3.2539367676e-07
+"successor, 2-pass, microset", "worst_case 0.250", 256, 3.2491683960e-07
+"successor, recursive", "worst_case 0.500", 256, 6.8836212158e-07
+"successor, 2-pass", "worst_case 0.500", 256, 5.3672790527e-07
+"successor, 2-pass, checked", "worst_case 0.500", 256, 5.9528350830e-07
+"successor, halving", "worst_case 0.500", 256, 5.4473876953e-07
+"quick find", "worst_case 0.500", 256, 4.2076110840e-07
+"union find", "worst_case 0.500", 256, 4.3563842773e-07
+"quick find, microset", "worst_case 0.500", 256, 3.7288665771e-07
+"union find, microset", "worst_case 0.500", 256, 3.9720535278e-07
+"successor, 2-pass, microset", "worst_case 0.500", 256, 3.8833618164e-07
+"successor, recursive", "worst_case 1.000", 256, 1.1024475098e-06
+"successor, 2-pass", "worst_case 1.000", 256, 8.1176757813e-07
+"successor, 2-pass, checked", "worst_case 1.000", 256, 8.8577270508e-07
+"successor, halving", "worst_case 1.000", 256, 7.7972412109e-07
+"quick find", "worst_case 1.000", 256, 4.6730041504e-07
+"union find", "worst_case 1.000", 256, 5.3138732910e-07
+"quick find, microset", "worst_case 1.000", 256, 4.8103332520e-07
+"union find, microset", "worst_case 1.000", 256, 5.3081512451e-07
+"successor, 2-pass, microset", "worst_case 1.000", 256, 5.3749084473e-07
+"successor, recursive", "worst_case 2.000", 256, 1.8981933594e-06
+"successor, 2-pass", "worst_case 2.000", 256, 1.3774871826e-06
+"successor, 2-pass, checked", "worst_case 2.000", 256, 1.4274597168e-06
+"successor, halving", "worst_case 2.000", 256, 1.0494232178e-06
+"quick find", "worst_case 2.000", 256, 6.4239501953e-07
+"union find", "worst_case 2.000", 256, 8.4457397461e-07
+"quick find, microset", "worst_case 2.000", 256, 7.6999664307e-07
+"union find, microset", "worst_case 2.000", 256, 9.9868774414e-07
+"successor, 2-pass, microset", "worst_case 2.000", 256, 8.5830688477e-07
+"successor, recursive", "worst_case 4.000", 256, 2.6916503906e-06
+"successor, 2-pass", "worst_case 4.000", 256, 2.1751403809e-06
+"successor, 2-pass, checked", "worst_case 4.000", 256, 2.1835327148e-06
+"successor, halving", "worst_case 4.000", 256, 1.5747070313e-06
+"quick find", "worst_case 4.000", 256, 8.4838867188e-07
+"union find", "worst_case 4.000", 256, 1.2676239014e-06
+"quick find, microset", "worst_case 4.000", 256, 1.2840270996e-06
+"union find, microset", "worst_case 4.000", 256, 1.4747619629e-06
+"successor, 2-pass, microset", "worst_case 4.000", 256, 1.5148162842e-06
+"successor, recursive", "worst_case 8.000", 256, 4.6157836914e-06
+"successor, 2-pass", "worst_case 8.000", 256, 3.4713745117e-06
+"successor, 2-pass, checked", "worst_case 8.000", 256, 3.5034179687e-06
+"successor, halving", "worst_case 8.000", 256, 2.1865844727e-06
+"quick find", "worst_case 8.000", 256, 1.4034271240e-06
+"union find", "worst_case 8.000", 256, 1.9622802734e-06
+"quick find, microset", "worst_case 8.000", 256, 2.2750854492e-06
+"union find, microset", "worst_case 8.000", 256, 2.7259826660e-06
+"successor, 2-pass, microset", "worst_case 8.000", 256, 2.6588439941e-06
+"successor, recursive", "worst_case 0.125", 512, 7.0705413818e-07
+"successor, 2-pass", "worst_case 0.125", 512, 6.3438415527e-07
+"successor, 2-pass, checked", "worst_case 0.125", 512, 7.2898864746e-07
+"successor, halving", "worst_case 0.125", 512, 6.8397521973e-07
+"quick find", "worst_case 0.125", 512, 7.0781707764e-07
+"union find", "worst_case 0.125", 512, 7.5378417969e-07
+"quick find, microset", "worst_case 0.125", 512, 5.2642822266e-07
+"union find, microset", "worst_case 0.125", 512, 5.7315826416e-07
+"successor, 2-pass, microset", "worst_case 0.125", 512, 5.4874420166e-07
+"successor, recursive", "worst_case 0.250", 512, 9.0942382813e-07
+"successor, 2-pass", "worst_case 0.250", 512, 7.8048706055e-07
+"successor, 2-pass, checked", "worst_case 0.250", 512, 8.7394714355e-07
+"successor, halving", "worst_case 0.250", 512, 8.7890625000e-07
+"quick find", "worst_case 0.250", 512, 7.3719024658e-07
+"union find", "worst_case 0.250", 512, 7.9498291016e-07
+"quick find, microset", "worst_case 0.250", 512, 5.8250427246e-07
+"union find, microset", "worst_case 0.250", 512, 6.3056945801e-07
+"successor, 2-pass, microset", "worst_case 0.250", 512, 6.4735412598e-07
+"successor, recursive", "worst_case 0.500", 512, 1.4461517334e-06
+"successor, 2-pass", "worst_case 0.500", 512, 1.1432647705e-06
+"successor, 2-pass, checked", "worst_case 0.500", 512, 1.2145996094e-06
+"successor, halving", "worst_case 0.500", 512, 1.1718750000e-06
+"quick find", "worst_case 0.500", 512, 8.3923339844e-07
+"union find", "worst_case 0.500", 512, 9.1094970703e-07
+"quick find, microset", "worst_case 0.500", 512, 7.2441101074e-07
+"union find, microset", "worst_case 0.500", 512, 8.2550048828e-07
+"successor, 2-pass, microset", "worst_case 0.500", 512, 7.6408386230e-07
+"successor, recursive", "worst_case 1.000", 512, 2.3254394531e-06
+"successor, 2-pass", "worst_case 1.000", 512, 1.8798828125e-06
+"successor, 2-pass, checked", "worst_case 1.000", 512, 1.9676208496e-06
+"successor, halving", "worst_case 1.000", 512, 1.6983032227e-06
+"quick find", "worst_case 1.000", 512, 9.5138549805e-07
+"union find", "worst_case 1.000", 512, 1.1039733887e-06
+"quick find, microset", "worst_case 1.000", 512, 9.6511840820e-07
+"union find, microset", "worst_case 1.000", 512, 1.0993957520e-06
+"successor, 2-pass, microset", "worst_case 1.000", 512, 1.0871887207e-06
+"successor, recursive", "worst_case 2.000", 512, 4.4540405273e-06
+"successor, 2-pass", "worst_case 2.000", 512, 3.1356811523e-06
+"successor, 2-pass, checked", "worst_case 2.000", 512, 3.2409667969e-06
+"successor, halving", "worst_case 2.000", 512, 2.4070739746e-06
+"quick find", "worst_case 2.000", 512, 1.2840270996e-06
+"union find", "worst_case 2.000", 512, 1.5747070313e-06
+"quick find, microset", "worst_case 2.000", 512, 1.5106201172e-06
+"union find, microset", "worst_case 2.000", 512, 2.4993896484e-06
+"successor, 2-pass, microset", "worst_case 2.000", 512, 1.8051147461e-06
+"successor, recursive", "worst_case 4.000", 512, 6.3476562500e-06
+"successor, 2-pass", "worst_case 4.000", 512, 4.8995971680e-06
+"successor, 2-pass, checked", "worst_case 4.000", 512, 4.9224853516e-06
+"successor, halving", "worst_case 4.000", 512, 3.6254882812e-06
+"quick find", "worst_case 4.000", 512, 1.7883300781e-06
+"union find", "worst_case 4.000", 512, 2.3864746094e-06
+"quick find, microset", "worst_case 4.000", 512, 2.5543212891e-06
+"union find, microset", "worst_case 4.000", 512, 3.1570434570e-06
+"successor, 2-pass, microset", "worst_case 4.000", 512, 3.1555175781e-06
+"successor, recursive", "worst_case 8.000", 512, 9.7473144531e-06
+"successor, 2-pass", "worst_case 8.000", 512, 8.1848144531e-06
+"successor, 2-pass, checked", "worst_case 8.000", 512, 7.9254150391e-06
+"successor, halving", "worst_case 8.000", 512, 5.0262451172e-06
+"quick find", "worst_case 8.000", 512, 2.8442382813e-06
+"union find", "worst_case 8.000", 512, 3.9306640625e-06
+"quick find, microset", "worst_case 8.000", 512, 4.6554565430e-06
+"union find, microset", "worst_case 8.000", 512, 6.8725585937e-06
+"successor, 2-pass, microset", "worst_case 8.000", 512, 5.8624267578e-06
+"successor, recursive", "worst_case 0.125", 1024, 1.4701843262e-06
+"successor, 2-pass", "worst_case 0.125", 1024, 1.3389587402e-06
+"successor, 2-pass, checked", "worst_case 0.125", 1024, 1.5384674072e-06
+"successor, halving", "worst_case 0.125", 1024, 1.6983032227e-06
+"quick find", "worst_case 0.125", 1024, 1.3076782227e-06
+"union find", "worst_case 0.125", 1024, 1.4213562012e-06
+"quick find, microset", "worst_case 0.125", 1024, 1.0112762451e-06
+"union find, microset", "worst_case 0.125", 1024, 1.0650634766e-06
+"successor, 2-pass, microset", "worst_case 0.125", 1024, 1.1566162109e-06
+"successor, recursive", "worst_case 0.250", 1024, 1.9683837891e-06
+"successor, 2-pass", "worst_case 0.250", 1024, 1.6204833984e-06
+"successor, 2-pass, checked", "worst_case 0.250", 1024, 1.8005371094e-06
+"successor, halving", "worst_case 0.250", 1024, 1.6082763672e-06
+"quick find", "worst_case 0.250", 1024, 1.4945983887e-06
+"union find", "worst_case 0.250", 1024, 1.6296386719e-06
+"quick find, microset", "worst_case 0.250", 1024, 1.1276245117e-06
+"union find, microset", "worst_case 0.250", 1024, 1.2111663818e-06
+"successor, 2-pass, microset", "worst_case 0.250", 1024, 1.2798309326e-06
+"successor, recursive", "worst_case 0.500", 1024, 2.9914855957e-06
+"successor, 2-pass", "worst_case 0.500", 1024, 2.3307800293e-06
+"successor, 2-pass, checked", "worst_case 0.500", 1024, 2.5161743164e-06
+"successor, halving", "worst_case 0.500", 1024, 2.4391174316e-06
+"quick find", "worst_case 0.500", 1024, 1.5487670898e-06
+"union find", "worst_case 0.500", 1024, 1.8539428711e-06
+"quick find, microset", "worst_case 0.500", 1024, 1.4095306396e-06
+"union find, microset", "worst_case 0.500", 1024, 1.5792846680e-06
+"successor, 2-pass, microset", "worst_case 0.500", 1024, 1.5975952148e-06
+"successor, recursive", "worst_case 1.000", 1024, 5.3100585937e-06
+"successor, 2-pass", "worst_case 1.000", 1024, 4.2938232422e-06
+"successor, 2-pass, checked", "worst_case 1.000", 1024, 4.1687011719e-06
+"successor, halving", "worst_case 1.000", 1024, 3.7689208984e-06
+"quick find", "worst_case 1.000", 1024, 1.8798828125e-06
+"union find", "worst_case 1.000", 1024, 2.1278381348e-06
+"quick find, microset", "worst_case 1.000", 1024, 1.8600463867e-06
+"union find, microset", "worst_case 1.000", 1024, 2.1179199219e-06
+"successor, 2-pass, microset", "worst_case 1.000", 1024, 2.1789550781e-06
+"successor, recursive", "worst_case 2.000", 1024, 9.9182128906e-06
+"successor, 2-pass", "worst_case 2.000", 1024, 7.3608398437e-06
+"successor, 2-pass, checked", "worst_case 2.000", 1024, 7.8918457031e-06
+"successor, halving", "worst_case 2.000", 1024, 5.8059692383e-06
+"quick find", "worst_case 2.000", 1024, 2.4887084961e-06
+"union find", "worst_case 2.000", 1024, 3.0235290527e-06
+"quick find, microset", "worst_case 2.000", 1024, 2.9449462891e-06
+"union find, microset", "worst_case 2.000", 1024, 4.8522949219e-06
+"successor, 2-pass, microset", "worst_case 2.000", 1024, 3.7582397461e-06
+"successor, recursive", "worst_case 4.000", 1024, 1.3781738281e-05
+"successor, 2-pass", "worst_case 4.000", 1024, 1.0861206055e-05
+"successor, 2-pass, checked", "worst_case 4.000", 1024, 1.1132812500e-05
+"successor, halving", "worst_case 4.000", 1024, 9.1125488281e-06
+"quick find", "worst_case 4.000", 1024, 3.6865234375e-06
+"union find", "worst_case 4.000", 1024, 4.7180175781e-06
+"quick find, microset", "worst_case 4.000", 1024, 4.9102783203e-06
+"union find, microset", "worst_case 4.000", 1024, 7.2662353516e-06
+"successor, 2-pass, microset", "worst_case 4.000", 1024, 6.4819335938e-06
+"successor, recursive", "worst_case 8.000", 1024, 2.0648193359e-05
+"successor, 2-pass", "worst_case 8.000", 1024, 1.7602539062e-05
+"successor, 2-pass, checked", "worst_case 8.000", 1024, 1.7077636719e-05
+"successor, halving", "worst_case 8.000", 1024, 1.9830322266e-05
+"quick find", "worst_case 8.000", 1024, 5.8319091797e-06
+"union find", "worst_case 8.000", 1024, 7.3303222656e-06
+"quick find, microset", "worst_case 8.000", 1024, 8.4716796875e-06
+"union find, microset", "worst_case 8.000", 1024, 1.4599609375e-05
+"successor, 2-pass, microset", "worst_case 8.000", 1024, 1.1761474609e-05
+"successor, recursive", "worst_case 0.125", 2048, 2.9891967773e-06
+"successor, 2-pass", "worst_case 0.125", 2048, 2.5886535645e-06
+"successor, 2-pass, checked", "worst_case 0.125", 2048, 2.9891967773e-06
+"successor, halving", "worst_case 0.125", 2048, 3.7643432617e-06
+"quick find", "worst_case 0.125", 2048, 3.1738281250e-06
+"union find", "worst_case 0.125", 2048, 3.5049438477e-06
+"quick find, microset", "worst_case 0.125", 2048, 2.0523071289e-06
+"union find, microset", "worst_case 0.125", 2048, 2.1560668945e-06
+"successor, 2-pass, microset", "worst_case 0.125", 2048, 2.3727416992e-06
+"successor, recursive", "worst_case 0.250", 2048, 3.9855957031e-06
+"successor, 2-pass", "worst_case 0.250", 2048, 3.3996582031e-06
+"successor, 2-pass, checked", "worst_case 0.250", 2048, 3.7338256836e-06
+"successor, halving", "worst_case 0.250", 2048, 2.7389526367e-06
+"quick find", "worst_case 0.250", 2048, 3.1402587891e-06
+"union find", "worst_case 0.250", 2048, 3.4027099609e-06
+"quick find, microset", "worst_case 0.250", 2048, 2.2811889648e-06
+"union find, microset", "worst_case 0.250", 2048, 2.4452209473e-06
+"successor, 2-pass, microset", "worst_case 0.250", 2048, 2.5772094727e-06
+"successor, recursive", "worst_case 0.500", 2048, 5.8700561523e-06
+"successor, 2-pass", "worst_case 0.500", 2048, 4.8782348633e-06
+"successor, 2-pass, checked", "worst_case 0.500", 2048, 5.2520751953e-06
+"successor, halving", "worst_case 0.500", 2048, 5.5297851562e-06
+"quick find", "worst_case 0.500", 2048, 3.2882690430e-06
+"union find", "worst_case 0.500", 2048, 3.6224365234e-06
+"quick find, microset", "worst_case 0.500", 2048, 2.9022216797e-06
+"union find, microset", "worst_case 0.500", 2048, 3.1982421875e-06
+"successor, 2-pass, microset", "worst_case 0.500", 2048, 3.2562255859e-06
+"successor, recursive", "worst_case 1.000", 2048, 1.2036132812e-05
+"successor, 2-pass", "worst_case 1.000", 2048, 8.5479736328e-06
+"successor, 2-pass, checked", "worst_case 1.000", 2048, 8.7524414062e-06
+"successor, halving", "worst_case 1.000", 2048, 8.5632324219e-06
+"quick find", "worst_case 1.000", 2048, 4.0252685547e-06
+"union find", "worst_case 1.000", 2048, 4.3884277344e-06
+"quick find, microset", "worst_case 1.000", 2048, 3.6987304688e-06
+"union find, microset", "worst_case 1.000", 2048, 4.4311523437e-06
+"successor, 2-pass, microset", "worst_case 1.000", 2048, 4.3579101562e-06
+"successor, recursive", "worst_case 2.000", 2048, 2.1252441406e-05
+"successor, 2-pass", "worst_case 2.000", 2048, 1.6735839844e-05
+"successor, 2-pass, checked", "worst_case 2.000", 2048, 1.7028808594e-05
+"successor, halving", "worst_case 2.000", 2048, 1.5759277344e-05
+"quick find", "worst_case 2.000", 2048, 5.1147460937e-06
+"union find", "worst_case 2.000", 2048, 6.2866210938e-06
+"quick find, microset", "worst_case 2.000", 2048, 5.9188842773e-06
+"union find, microset", "worst_case 2.000", 2048, 8.9599609375e-06
+"successor, 2-pass, microset", "worst_case 2.000", 2048, 7.5012207031e-06
+"successor, recursive", "worst_case 4.000", 2048, 3.1494140625e-05
+"successor, 2-pass", "worst_case 4.000", 2048, 2.4078369141e-05
+"successor, 2-pass, checked", "worst_case 4.000", 2048, 2.4377441406e-05
+"successor, halving", "worst_case 4.000", 2048, 2.7722167969e-05
+"quick find", "worst_case 4.000", 2048, 7.3822021484e-06
+"union find", "worst_case 4.000", 2048, 9.4055175781e-06
+"quick find, microset", "worst_case 4.000", 2048, 1.0174560547e-05
+"union find, microset", "worst_case 4.000", 2048, 1.5185546875e-05
+"successor, 2-pass, microset", "worst_case 4.000", 2048, 1.3085937500e-05
+"successor, recursive", "worst_case 8.000", 2048, 4.4458007812e-05
+"successor, 2-pass", "worst_case 8.000", 2048, 3.5449218750e-05
+"successor, 2-pass, checked", "worst_case 8.000", 2048, 3.4973144531e-05
+"successor, halving", "worst_case 8.000", 2048, 5.5126953125e-05
+"quick find", "worst_case 8.000", 2048, 1.1752319336e-05
+"union find", "worst_case 8.000", 2048, 1.4733886719e-05
+"quick find, microset", "worst_case 8.000", 2048, 1.7187500000e-05
+"union find, microset", "worst_case 8.000", 2048, 2.8808593750e-05
+"successor, 2-pass, microset", "worst_case 8.000", 2048, 2.4468994141e-05
+"successor, recursive", "worst_case 0.125", 4096, 5.8929443359e-06
+"successor, 2-pass", "worst_case 0.125", 4096, 5.0704956055e-06
+"successor, 2-pass, checked", "worst_case 0.125", 4096, 5.8105468750e-06
+"successor, halving", "worst_case 0.125", 4096, 8.1085205078e-06
+"quick find", "worst_case 0.125", 4096, 5.9478759766e-06
+"union find", "worst_case 0.125", 4096, 6.5002441406e-06
+"quick find, microset", "worst_case 0.125", 4096, 4.0740966797e-06
+"union find, microset", "worst_case 0.125", 4096, 4.3014526367e-06
+"successor, 2-pass, microset", "worst_case 0.125", 4096, 4.6691894531e-06
+"successor, recursive", "worst_case 0.250", 4096, 8.1237792969e-06
+"successor, 2-pass", "worst_case 0.250", 4096, 7.3852539062e-06
+"successor, 2-pass, checked", "worst_case 0.250", 4096, 7.7453613281e-06
+"successor, halving", "worst_case 0.250", 4096, 8.8623046875e-06
+"quick find", "worst_case 0.250", 4096, 6.3415527344e-06
+"union find", "worst_case 0.250", 4096, 6.9274902344e-06
+"quick find, microset", "worst_case 0.250", 4096, 4.3792724609e-06
+"union find, microset", "worst_case 0.250", 4096, 4.9316406250e-06
+"successor, 2-pass, microset", "worst_case 0.250", 4096, 5.2124023438e-06
+"successor, recursive", "worst_case 0.500", 4096, 1.3006591797e-05
+"successor, 2-pass", "worst_case 0.500", 4096, 1.0784912109e-05
+"successor, 2-pass, checked", "worst_case 0.500", 4096, 1.1114501953e-05
+"successor, halving", "worst_case 0.500", 4096, 1.3354492188e-05
+"quick find", "worst_case 0.500", 4096, 6.9335937500e-06
+"union find", "worst_case 0.500", 4096, 8.0383300781e-06
+"quick find, microset", "worst_case 0.500", 4096, 5.7830810547e-06
+"union find, microset", "worst_case 0.500", 4096, 6.4392089844e-06
+"successor, 2-pass, microset", "worst_case 0.500", 4096, 6.4025878906e-06
+"successor, recursive", "worst_case 1.000", 4096, 2.2790527344e-05
+"successor, 2-pass", "worst_case 1.000", 4096, 1.7926025391e-05
+"successor, 2-pass, checked", "worst_case 1.000", 4096, 1.7822265625e-05
+"successor, halving", "worst_case 1.000", 4096, 2.3132324219e-05
+"quick find", "worst_case 1.000", 4096, 8.3953857422e-06
+"union find", "worst_case 1.000", 4096, 9.3505859375e-06
+"quick find, microset", "worst_case 1.000", 4096, 7.3760986328e-06
+"union find, microset", "worst_case 1.000", 4096, 8.7005615234e-06
+"successor, 2-pass, microset", "worst_case 1.000", 4096, 8.6761474609e-06
+"successor, recursive", "worst_case 2.000", 4096, 4.5153808594e-05
+"successor, 2-pass", "worst_case 2.000", 4096, 3.5473632813e-05
+"successor, 2-pass, checked", "worst_case 2.000", 4096, 3.5632324219e-05
+"successor, halving", "worst_case 2.000", 4096, 4.2932128906e-05
+"quick find", "worst_case 2.000", 4096, 1.0717773438e-05
+"union find", "worst_case 2.000", 4096, 1.3452148438e-05
+"quick find, microset", "worst_case 2.000", 4096, 1.2237548828e-05
+"union find, microset", "worst_case 2.000", 4096, 1.6357421875e-05
+"successor, 2-pass, microset", "worst_case 2.000", 4096, 1.7480468750e-05
+"successor, recursive", "worst_case 4.000", 4096, 6.5478515625e-05
+"successor, 2-pass", "worst_case 4.000", 4096, 4.9511718750e-05
+"successor, 2-pass, checked", "worst_case 4.000", 4096, 5.0708007812e-05
+"successor, halving", "worst_case 4.000", 4096, 7.1582031250e-05
+"quick find", "worst_case 4.000", 4096, 1.5136718750e-05
+"union find", "worst_case 4.000", 4096, 1.9073486328e-05
+"quick find, microset", "worst_case 4.000", 4096, 1.9213867188e-05
+"union find, microset", "worst_case 4.000", 4096, 2.8454589844e-05
+"successor, 2-pass, microset", "worst_case 4.000", 4096, 2.9748535156e-05
+"successor, recursive", "worst_case 8.000", 4096, 9.2211914063e-05
+"successor, 2-pass", "worst_case 8.000", 4096, 7.3242187500e-05
+"successor, 2-pass, checked", "worst_case 8.000", 4096, 7.4560546875e-05
+"successor, halving", "worst_case 8.000", 4096, 1.2036132812e-04
+"quick find", "worst_case 8.000", 4096, 2.4261474609e-05
+"union find", "worst_case 8.000", 4096, 3.0944824219e-05
+"quick find, microset", "worst_case 8.000", 4096, 3.5620117188e-05
+"union find, microset", "worst_case 8.000", 4096, 5.1611328125e-05
+"successor, 2-pass, microset", "worst_case 8.000", 4096, 4.8974609375e-05
+"successor, recursive", "worst_case 0.125", 8192, 1.2634277344e-05
+"successor, 2-pass", "worst_case 0.125", 8192, 1.0418701172e-05
+"successor, 2-pass, checked", "worst_case 0.125", 8192, 1.1785888672e-05
+"successor, halving", "worst_case 0.125", 8192, 1.8804931641e-05
+"quick find", "worst_case 0.125", 8192, 1.2548828125e-05
+"union find", "worst_case 0.125", 8192, 1.3061523438e-05
+"quick find, microset", "worst_case 0.125", 8192, 8.0169677734e-06
+"union find, microset", "worst_case 0.125", 8192, 8.5235595703e-06
+"successor, 2-pass, microset", "worst_case 0.125", 8192, 9.1491699219e-06
+"successor, recursive", "worst_case 0.250", 8192, 1.7968750000e-05
+"successor, 2-pass", "worst_case 0.250", 8192, 1.6735839844e-05
+"successor, 2-pass, checked", "worst_case 0.250", 8192, 1.7761230469e-05
+"successor, halving", "worst_case 0.250", 8192, 2.4078369141e-05
+"quick find", "worst_case 0.250", 8192, 1.3537597656e-05
+"union find", "worst_case 0.250", 8192, 1.4642333984e-05
+"quick find, microset", "worst_case 0.250", 8192, 8.3007812500e-06
+"union find, microset", "worst_case 0.250", 8192, 9.6984863281e-06
+"successor, 2-pass, microset", "worst_case 0.250", 8192, 1.0693359375e-05
+"successor, recursive", "worst_case 0.500", 8192, 2.8613281250e-05
+"successor, 2-pass", "worst_case 0.500", 8192, 2.3486328125e-05
+"successor, 2-pass, checked", "worst_case 0.500", 8192, 2.3999023437e-05
+"successor, halving", "worst_case 0.500", 8192, 3.5705566406e-05
+"quick find", "worst_case 0.500", 8192, 1.4764404297e-05
+"union find", "worst_case 0.500", 8192, 1.6406250000e-05
+"quick find, microset", "worst_case 0.500", 8192, 1.1544799805e-05
+"union find, microset", "worst_case 0.500", 8192, 1.2377929688e-05
+"successor, 2-pass, microset", "worst_case 0.500", 8192, 1.3537597656e-05
+"successor, recursive", "worst_case 1.000", 8192, 4.8901367188e-05
+"successor, 2-pass", "worst_case 1.000", 8192, 4.0759277344e-05
+"successor, 2-pass, checked", "worst_case 1.000", 8192, 3.9379882812e-05
+"successor, halving", "worst_case 1.000", 8192, 5.6347656250e-05
+"quick find", "worst_case 1.000", 8192, 1.6278076172e-05
+"union find", "worst_case 1.000", 8192, 1.9067382813e-05
+"quick find, microset", "worst_case 1.000", 8192, 1.4208984375e-05
+"union find, microset", "worst_case 1.000", 8192, 1.7852783203e-05
+"successor, 2-pass, microset", "worst_case 1.000", 8192, 1.7706298828e-05
+"successor, recursive", "worst_case 2.000", 8192, 9.3652343750e-05
+"successor, 2-pass", "worst_case 2.000", 8192, 7.5244140625e-05
+"successor, 2-pass, checked", "worst_case 2.000", 8192, 7.5854492188e-05
+"successor, halving", "worst_case 2.000", 8192, 9.7412109375e-05
+"quick find", "worst_case 2.000", 8192, 2.2460937500e-05
+"union find", "worst_case 2.000", 8192, 2.6452636719e-05
+"quick find, microset", "worst_case 2.000", 8192, 2.3815917969e-05
+"union find, microset", "worst_case 2.000", 8192, 3.1677246094e-05
+"successor, 2-pass, microset", "worst_case 2.000", 8192, 4.3872070312e-05
+"successor, recursive", "worst_case 4.000", 8192, 1.4125976563e-04
+"successor, 2-pass", "worst_case 4.000", 8192, 1.0424804687e-04
+"successor, 2-pass, checked", "worst_case 4.000", 8192, 1.0380859375e-04
+"successor, halving", "worst_case 4.000", 8192, 1.6909179687e-04
+"quick find", "worst_case 4.000", 8192, 3.0444335938e-05
+"union find", "worst_case 4.000", 8192, 3.9306640625e-05
+"quick find, microset", "worst_case 4.000", 8192, 3.9550781250e-05
+"union find, microset", "worst_case 4.000", 8192, 5.2197265625e-05
+"successor, 2-pass, microset", "worst_case 4.000", 8192, 6.6992187500e-05
+"successor, recursive", "worst_case 8.000", 8192, 2.0410156250e-04
+"successor, 2-pass", "worst_case 8.000", 8192, 1.5292968750e-04
+"successor, 2-pass, checked", "worst_case 8.000", 8192, 1.5087890625e-04
+"successor, halving", "worst_case 8.000", 8192, 2.5917968750e-04
+"quick find", "worst_case 8.000", 8192, 4.7534179688e-05
+"union find", "worst_case 8.000", 8192, 6.1621093750e-05
+"quick find, microset", "worst_case 8.000", 8192, 7.0117187500e-05
+"union find, microset", "worst_case 8.000", 8192, 1.0458984375e-04
+"successor, 2-pass, microset", "worst_case 8.000", 8192, 1.1679687500e-04
+"successor, recursive", "worst_case 0.125", 16384, 2.7954101563e-05
+"successor, 2-pass", "worst_case 0.125", 16384, 2.1728515625e-05
+"successor, 2-pass, checked", "worst_case 0.125", 16384, 2.4084472656e-05
+"successor, halving", "worst_case 0.125", 16384, 4.0625000000e-05
+"quick find", "worst_case 0.125", 16384, 2.4816894531e-05
+"union find", "worst_case 0.125", 16384, 2.6562500000e-05
+"quick find, microset", "worst_case 0.125", 16384, 1.6320800781e-05
+"union find, microset", "worst_case 0.125", 16384, 1.7285156250e-05
+"successor, 2-pass, microset", "worst_case 0.125", 16384, 1.8591308594e-05
+"successor, recursive", "worst_case 0.250", 16384, 3.8220214844e-05
+"successor, 2-pass", "worst_case 0.250", 16384, 3.5107421875e-05
+"successor, 2-pass, checked", "worst_case 0.250", 16384, 3.6303710937e-05
+"successor, halving", "worst_case 0.250", 16384, 5.4809570313e-05
+"quick find", "worst_case 0.250", 16384, 2.6782226562e-05
+"union find", "worst_case 0.250", 16384, 2.7148437500e-05
+"quick find, microset", "worst_case 0.250", 16384, 1.7663574219e-05
+"union find, microset", "worst_case 0.250", 16384, 1.9531250000e-05
+"successor, 2-pass, microset", "worst_case 0.250", 16384, 2.0794677734e-05
+"successor, recursive", "worst_case 0.500", 16384, 6.1914062500e-05
+"successor, 2-pass", "worst_case 0.500", 16384, 5.1269531250e-05
+"successor, 2-pass, checked", "worst_case 0.500", 16384, 5.3125000000e-05
+"successor, halving", "worst_case 0.500", 16384, 7.8906250000e-05
+"quick find", "worst_case 0.500", 16384, 2.8002929687e-05
+"union find", "worst_case 0.500", 16384, 2.9919433594e-05
+"quick find, microset", "worst_case 0.500", 16384, 2.2088623047e-05
+"union find, microset", "worst_case 0.500", 16384, 2.5061035156e-05
+"successor, 2-pass, microset", "worst_case 0.500", 16384, 2.5244140625e-05
+"successor, recursive", "worst_case 1.000", 16384, 1.2119140625e-04
+"successor, 2-pass", "worst_case 1.000", 16384, 8.7988281250e-05
+"successor, 2-pass, checked", "worst_case 1.000", 16384, 8.5205078125e-05
+"successor, halving", "worst_case 1.000", 16384, 1.2451171875e-04
+"quick find", "worst_case 1.000", 16384, 3.2055664063e-05
+"union find", "worst_case 1.000", 16384, 3.6755371094e-05
+"quick find, microset", "worst_case 1.000", 16384, 2.8247070312e-05
+"union find, microset", "worst_case 1.000", 16384, 3.3715820313e-05
+"successor, 2-pass, microset", "worst_case 1.000", 16384, 3.5156250000e-05
+"successor, recursive", "worst_case 2.000", 16384, 2.0761718750e-04
+"successor, 2-pass", "worst_case 2.000", 16384, 1.6796875000e-04
+"successor, 2-pass, checked", "worst_case 2.000", 16384, 1.6621093750e-04
+"successor, halving", "worst_case 2.000", 16384, 2.1425781250e-04
+"quick find", "worst_case 2.000", 16384, 4.7949218750e-05
+"union find", "worst_case 2.000", 16384, 5.9912109375e-05
+"quick find, microset", "worst_case 2.000", 16384, 4.7656250000e-05
+"union find, microset", "worst_case 2.000", 16384, 6.0620117188e-05
+"successor, 2-pass, microset", "worst_case 2.000", 16384, 1.0322265625e-04
+"successor, recursive", "worst_case 4.000", 16384, 3.0205078125e-04
+"successor, 2-pass", "worst_case 4.000", 16384, 2.2519531250e-04
+"successor, 2-pass, checked", "worst_case 4.000", 16384, 2.2539062500e-04
+"successor, halving", "worst_case 4.000", 16384, 3.5781250000e-04
+"quick find", "worst_case 4.000", 16384, 5.9448242187e-05
+"union find", "worst_case 4.000", 16384, 7.5805664062e-05
+"quick find, microset", "worst_case 4.000", 16384, 7.8027343750e-05
+"union find, microset", "worst_case 4.000", 16384, 1.0390625000e-04
+"successor, 2-pass, microset", "worst_case 4.000", 16384, 1.7197265625e-04
+"successor, recursive", "worst_case 8.000", 16384, 4.5859375000e-04
+"successor, 2-pass", "worst_case 8.000", 16384, 3.2714843750e-04
+"successor, 2-pass, checked", "worst_case 8.000", 16384, 3.3046875000e-04
+"successor, halving", "worst_case 8.000", 16384, 5.8906250000e-04
+"quick find", "worst_case 8.000", 16384, 9.6923828125e-05
+"union find", "worst_case 8.000", 16384, 1.2187500000e-04
+"quick find, microset", "worst_case 8.000", 16384, 1.3930664062e-04
+"union find, microset", "worst_case 8.000", 16384, 1.9189453125e-04
+"successor, 2-pass, microset", "worst_case 8.000", 16384, 2.8291015625e-04
+"successor, recursive", "worst_case 0.125", 32768, 6.2939453125e-05
+"successor, 2-pass", "worst_case 0.125", 32768, 4.5471191406e-05
+"successor, 2-pass, checked", "worst_case 0.125", 32768, 4.9462890625e-05
+"successor, halving", "worst_case 0.125", 32768, 8.5888671875e-05
+"quick find", "worst_case 0.125", 32768, 4.9267578125e-05
+"union find", "worst_case 0.125", 32768, 5.3002929687e-05
+"quick find, microset", "worst_case 0.125", 32768, 3.2568359375e-05
+"union find, microset", "worst_case 0.125", 32768, 3.4228515625e-05
+"successor, 2-pass, microset", "worst_case 0.125", 32768, 3.7646484375e-05
+"successor, recursive", "worst_case 0.250", 32768, 8.6767578125e-05
+"successor, 2-pass", "worst_case 0.250", 32768, 7.1484375000e-05
+"successor, 2-pass, checked", "worst_case 0.250", 32768, 7.7978515625e-05
+"successor, halving", "worst_case 0.250", 32768, 1.1791992187e-04
+"quick find", "worst_case 0.250", 32768, 4.8828125000e-05
+"union find", "worst_case 0.250", 32768, 5.5419921875e-05
+"quick find, microset", "worst_case 0.250", 32768, 3.4448242188e-05
+"union find, microset", "worst_case 0.250", 32768, 3.7255859375e-05
+"successor, 2-pass, microset", "worst_case 0.250", 32768, 4.2553710938e-05
+"successor, recursive", "worst_case 0.500", 32768, 1.3955078125e-04
+"successor, 2-pass", "worst_case 0.500", 32768, 1.2216796875e-04
+"successor, 2-pass, checked", "worst_case 0.500", 32768, 1.3159179687e-04
+"successor, halving", "worst_case 0.500", 32768, 1.7192382812e-04
+"quick find", "worst_case 0.500", 32768, 5.8154296875e-05
+"union find", "worst_case 0.500", 32768, 6.5307617187e-05
+"quick find, microset", "worst_case 0.500", 32768, 4.4433593750e-05
+"union find, microset", "worst_case 0.500", 32768, 4.8974609375e-05
+"successor, 2-pass, microset", "worst_case 0.500", 32768, 5.2416992187e-05
+"successor, recursive", "worst_case 1.000", 32768, 2.5839843750e-04
+"successor, 2-pass", "worst_case 1.000", 32768, 1.9277343750e-04
+"successor, 2-pass, checked", "worst_case 1.000", 32768, 1.9531250000e-04
+"successor, halving", "worst_case 1.000", 32768, 2.6796875000e-04
+"quick find", "worst_case 1.000", 32768, 6.5185546875e-05
+"union find", "worst_case 1.000", 32768, 7.3681640625e-05
+"quick find, microset", "worst_case 1.000", 32768, 5.7006835937e-05
+"union find, microset", "worst_case 1.000", 32768, 6.4892578125e-05
+"successor, 2-pass, microset", "worst_case 1.000", 32768, 6.7626953125e-05
+"successor, recursive", "worst_case 2.000", 32768, 4.4550781250e-04
+"successor, 2-pass", "worst_case 2.000", 32768, 3.6152343750e-04
+"successor, 2-pass, checked", "worst_case 2.000", 32768, 3.6953125000e-04
+"successor, halving", "worst_case 2.000", 32768, 4.7617187500e-04
+"quick find", "worst_case 2.000", 32768, 9.7216796875e-05
+"union find", "worst_case 2.000", 32768, 1.1025390625e-04
+"quick find, microset", "worst_case 2.000", 32768, 9.5800781250e-05
+"union find, microset", "worst_case 2.000", 32768, 1.1708984375e-04
+"successor, 2-pass, microset", "worst_case 2.000", 32768, 2.0078125000e-04
+"successor, recursive", "worst_case 4.000", 32768, 6.4921875000e-04
+"successor, 2-pass", "worst_case 4.000", 32768, 4.9453125000e-04
+"successor, 2-pass, checked", "worst_case 4.000", 32768, 4.8984375000e-04
+"successor, halving", "worst_case 4.000", 32768, 7.7597656250e-04
+"quick find", "worst_case 4.000", 32768, 1.1962890625e-04
+"union find", "worst_case 4.000", 32768, 1.5439453125e-04
+"quick find, microset", "worst_case 4.000", 32768, 1.5825195312e-04
+"union find, microset", "worst_case 4.000", 32768, 2.0468750000e-04
+"successor, 2-pass, microset", "worst_case 4.000", 32768, 3.9023437500e-04
+"successor, recursive", "worst_case 8.000", 32768, 9.7187500000e-04
+"successor, 2-pass", "worst_case 8.000", 32768, 7.2167968750e-04
+"successor, 2-pass, checked", "worst_case 8.000", 32768, 7.2070312500e-04
+"successor, halving", "worst_case 8.000", 32768, 1.3445312500e-03
+"quick find", "worst_case 8.000", 32768, 1.9013671875e-04
+"union find", "worst_case 8.000", 32768, 2.3144531250e-04
+"quick find, microset", "worst_case 8.000", 32768, 2.7031250000e-04
+"union find, microset", "worst_case 8.000", 32768, 3.8281250000e-04
+"successor, 2-pass, microset", "worst_case 8.000", 32768, 6.7695312500e-04
+"successor, recursive", "worst_case 0.125", 65536, 1.3666992187e-04
+"successor, 2-pass", "worst_case 0.125", 65536, 9.7753906250e-05
+"successor, 2-pass, checked", "worst_case 0.125", 65536, 1.0644531250e-04
+"successor, halving", "worst_case 0.125", 65536, 1.7880859375e-04
+"quick find", "worst_case 0.125", 65536, 1.0117187500e-04
+"union find", "worst_case 0.125", 65536, 1.1230468750e-04
+"quick find, microset", "worst_case 0.125", 65536, 6.4916992187e-05
+"union find, microset", "worst_case 0.125", 65536, 6.8041992188e-05
+"successor, 2-pass, microset", "worst_case 0.125", 65536, 7.4169921875e-05
+"successor, recursive", "worst_case 0.250", 65536, 2.0781250000e-04
+"successor, 2-pass", "worst_case 0.250", 65536, 1.7265625000e-04
+"successor, 2-pass, checked", "worst_case 0.250", 65536, 1.6708984375e-04
+"successor, halving", "worst_case 0.250", 65536, 2.3886718750e-04
+"quick find", "worst_case 0.250", 65536, 1.0727539063e-04
+"union find", "worst_case 0.250", 65536, 1.2250976563e-04
+"quick find, microset", "worst_case 0.250", 65536, 7.1386718750e-05
+"union find, microset", "worst_case 0.250", 65536, 7.8710937500e-05
+"successor, 2-pass, microset", "worst_case 0.250", 65536, 8.5571289062e-05
+"successor, recursive", "worst_case 0.500", 65536, 3.0810546875e-04
+"successor, 2-pass", "worst_case 0.500", 65536, 2.8886718750e-04
+"successor, 2-pass, checked", "worst_case 0.500", 65536, 3.1787109375e-04
+"successor, halving", "worst_case 0.500", 65536, 3.5097656250e-04
+"quick find", "worst_case 0.500", 65536, 1.1943359375e-04
+"union find", "worst_case 0.500", 65536, 1.2695312500e-04
+"quick find, microset", "worst_case 0.500", 65536, 8.9453125000e-05
+"union find, microset", "worst_case 0.500", 65536, 9.9560546875e-05
+"successor, 2-pass, microset", "worst_case 0.500", 65536, 1.0756835937e-04
+"successor, recursive", "worst_case 1.000", 65536, 5.4726562500e-04
+"successor, 2-pass", "worst_case 1.000", 65536, 3.9101562500e-04
+"successor, 2-pass, checked", "worst_case 1.000", 65536, 3.9492187500e-04
+"successor, halving", "worst_case 1.000", 65536, 5.4960937500e-04
+"quick find", "worst_case 1.000", 65536, 1.3183593750e-04
+"union find", "worst_case 1.000", 65536, 1.4238281250e-04
+"quick find, microset", "worst_case 1.000", 65536, 1.1245117188e-04
+"union find, microset", "worst_case 1.000", 65536, 1.3750000000e-04
+"successor, 2-pass, microset", "worst_case 1.000", 65536, 1.4541015625e-04
+"successor, recursive", "worst_case 2.000", 65536, 1.0132812500e-03
+"successor, 2-pass", "worst_case 2.000", 65536, 8.0937500000e-04
+"successor, 2-pass, checked", "worst_case 2.000", 65536, 8.0937500000e-04
+"successor, halving", "worst_case 2.000", 65536, 1.0109375000e-03
+"quick find", "worst_case 2.000", 65536, 1.9042968750e-04
+"union find", "worst_case 2.000", 65536, 2.2607421875e-04
+"quick find, microset", "worst_case 2.000", 65536, 1.8876953125e-04
+"union find, microset", "worst_case 2.000", 65536, 2.2988281250e-04
+"successor, 2-pass, microset", "worst_case 2.000", 65536, 4.0878906250e-04
+"successor, recursive", "worst_case 4.000", 65536, 1.3910156250e-03
+"successor, 2-pass", "worst_case 4.000", 65536, 1.0621093750e-03
+"successor, 2-pass, checked", "worst_case 4.000", 65536, 1.0593750000e-03
+"successor, halving", "worst_case 4.000", 65536, 1.6843750000e-03
+"quick find", "worst_case 4.000", 65536, 2.4609375000e-04
+"union find", "worst_case 4.000", 65536, 3.2773437500e-04
+"quick find, microset", "worst_case 4.000", 65536, 3.1660156250e-04
+"union find, microset", "worst_case 4.000", 65536, 4.0644531250e-04
+"successor, 2-pass, microset", "worst_case 4.000", 65536, 7.4628906250e-04
+"successor, recursive", "worst_case 8.000", 65536, 2.1359375000e-03
+"successor, 2-pass", "worst_case 8.000", 65536, 1.5828125000e-03
+"successor, 2-pass, checked", "worst_case 8.000", 65536, 1.5410156250e-03
+"successor, halving", "worst_case 8.000", 65536, 2.9140625000e-03
+"quick find", "worst_case 8.000", 65536, 4.2460937500e-04
+"union find", "worst_case 8.000", 65536, 5.4804687500e-04
+"quick find, microset", "worst_case 8.000", 65536, 5.8300781250e-04
+"union find, microset", "worst_case 8.000", 65536, 7.7382812500e-04
+"successor, 2-pass, microset", "worst_case 8.000", 65536, 1.4539062500e-03
+"successor, recursive", "worst_case 0.125", 131072, 2.9296875000e-04
+"successor, 2-pass", "worst_case 0.125", 131072, 2.1054687500e-04
+"successor, 2-pass, checked", "worst_case 0.125", 131072, 2.3291015625e-04
+"successor, halving", "worst_case 0.125", 131072, 3.6240234375e-04
+"quick find", "worst_case 0.125", 131072, 2.1005859375e-04
+"union find", "worst_case 0.125", 131072, 2.1582031250e-04
+"quick find, microset", "worst_case 0.125", 131072, 1.3002929687e-04
+"union find, microset", "worst_case 0.125", 131072, 1.3842773437e-04
+"successor, 2-pass, microset", "worst_case 0.125", 131072, 1.5541992187e-04
+"successor, recursive", "worst_case 0.250", 131072, 4.8945312500e-04
+"successor, 2-pass", "worst_case 0.250", 131072, 3.9589843750e-04
+"successor, 2-pass, checked", "worst_case 0.250", 131072, 4.1269531250e-04
+"successor, halving", "worst_case 0.250", 131072, 5.0781250000e-04
+"quick find", "worst_case 0.250", 131072, 2.2187500000e-04
+"union find", "worst_case 0.250", 131072, 2.4101562500e-04
+"quick find, microset", "worst_case 0.250", 131072, 1.4697265625e-04
+"union find, microset", "worst_case 0.250", 131072, 1.5585937500e-04
+"successor, 2-pass, microset", "worst_case 0.250", 131072, 1.7041015625e-04
+"successor, recursive", "worst_case 0.500", 131072, 7.3007812500e-04
+"successor, 2-pass", "worst_case 0.500", 131072, 6.5976562500e-04
+"successor, 2-pass, checked", "worst_case 0.500", 131072, 7.5253906250e-04
+"successor, halving", "worst_case 0.500", 131072, 7.3476562500e-04
+"quick find", "worst_case 0.500", 131072, 2.4472656250e-04
+"union find", "worst_case 0.500", 131072, 2.5976562500e-04
+"quick find, microset", "worst_case 0.500", 131072, 1.8159179688e-04
+"union find, microset", "worst_case 0.500", 131072, 2.0175781250e-04
+"successor, 2-pass, microset", "worst_case 0.500", 131072, 2.1728515625e-04
+"successor, recursive", "worst_case 1.000", 131072, 1.2843750000e-03
+"successor, 2-pass", "worst_case 1.000", 131072, 8.2929687500e-04
+"successor, 2-pass, checked", "worst_case 1.000", 131072, 8.3671875000e-04
+"successor, halving", "worst_case 1.000", 131072, 1.1773437500e-03
+"quick find", "worst_case 1.000", 131072, 2.7519531250e-04
+"union find", "worst_case 1.000", 131072, 2.8750000000e-04
+"quick find, microset", "worst_case 1.000", 131072, 2.1757812500e-04
+"union find, microset", "worst_case 1.000", 131072, 2.5937500000e-04
+"successor, 2-pass, microset", "worst_case 1.000", 131072, 2.7636718750e-04
+"successor, recursive", "worst_case 2.000", 131072, 2.1937500000e-03
+"successor, 2-pass", "worst_case 2.000", 131072, 1.7593750000e-03
+"successor, 2-pass, checked", "worst_case 2.000", 131072, 1.8382812500e-03
+"successor, halving", "worst_case 2.000", 131072, 2.1765625000e-03
+"quick find", "worst_case 2.000", 131072, 3.7773437500e-04
+"union find", "worst_case 2.000", 131072, 4.8554687500e-04
+"quick find, microset", "worst_case 2.000", 131072, 3.8125000000e-04
+"union find, microset", "worst_case 2.000", 131072, 4.6992187500e-04
+"successor, 2-pass, microset", "worst_case 2.000", 131072, 8.0312500000e-04
+"successor, recursive", "worst_case 4.000", 131072, 3.1265625000e-03
+"successor, 2-pass", "worst_case 4.000", 131072, 2.3609375000e-03
+"successor, 2-pass, checked", "worst_case 4.000", 131072, 2.3539062500e-03
+"successor, halving", "worst_case 4.000", 131072, 3.6968750000e-03
+"quick find", "worst_case 4.000", 131072, 5.6210937500e-04
+"union find", "worst_case 4.000", 131072, 7.3125000000e-04
+"quick find, microset", "worst_case 4.000", 131072, 6.2812500000e-04
+"union find, microset", "worst_case 4.000", 131072, 7.9414062500e-04
+"successor, 2-pass, microset", "worst_case 4.000", 131072, 1.3882812500e-03
+"successor, recursive", "worst_case 8.000", 131072, 5.1343750000e-03
+"successor, 2-pass", "worst_case 8.000", 131072, 3.3546875000e-03
+"successor, 2-pass, checked", "worst_case 8.000", 131072, 3.1937500000e-03
+"successor, halving", "worst_case 8.000", 131072, 6.3000000000e-03
+"quick find", "worst_case 8.000", 131072, 9.4218750000e-04
+"union find", "worst_case 8.000", 131072, 1.2468750000e-03
+"quick find, microset", "worst_case 8.000", 131072, 1.1835937500e-03
+"union find, microset", "worst_case 8.000", 131072, 1.5906250000e-03
+"successor, 2-pass, microset", "worst_case 8.000", 131072, 2.7906250000e-03
+"successor, recursive", "worst_case 0.125", 262144, 7.5468750000e-04
+"successor, 2-pass", "worst_case 0.125", 262144, 5.7089843750e-04
+"successor, 2-pass, checked", "worst_case 0.125", 262144, 6.1484375000e-04
+"successor, halving", "worst_case 0.125", 262144, 8.0703125000e-04
+"quick find", "worst_case 0.125", 262144, 4.1835937500e-04
+"union find", "worst_case 0.125", 262144, 4.4101562500e-04
+"quick find, microset", "worst_case 0.125", 262144, 2.5703125000e-04
+"union find, microset", "worst_case 0.125", 262144, 2.6972656250e-04
+"successor, 2-pass, microset", "worst_case 0.125", 262144, 3.1875000000e-04
+"successor, recursive", "worst_case 0.250", 262144, 1.2289062500e-03
+"successor, 2-pass", "worst_case 0.250", 262144, 1.0148437500e-03
+"successor, 2-pass, checked", "worst_case 0.250", 262144, 1.0101562500e-03
+"successor, halving", "worst_case 0.250", 262144, 1.0726562500e-03
+"quick find", "worst_case 0.250", 262144, 4.3203125000e-04
+"union find", "worst_case 0.250", 262144, 4.5019531250e-04
+"quick find, microset", "worst_case 0.250", 262144, 2.8603515625e-04
+"union find, microset", "worst_case 0.250", 262144, 3.1171875000e-04
+"successor, 2-pass, microset", "worst_case 0.250", 262144, 3.3750000000e-04
+"successor, recursive", "worst_case 0.500", 262144, 1.7375000000e-03
+"successor, 2-pass", "worst_case 0.500", 262144, 1.6714843750e-03
+"successor, 2-pass, checked", "worst_case 0.500", 262144, 1.7382812500e-03
+"successor, halving", "worst_case 0.500", 262144, 1.5718750000e-03
+"quick find", "worst_case 0.500", 262144, 5.0507812500e-04
+"union find", "worst_case 0.500", 262144, 5.6445312500e-04
+"quick find, microset", "worst_case 0.500", 262144, 3.7539062500e-04
+"union find, microset", "worst_case 0.500", 262144, 4.1738281250e-04
+"successor, 2-pass, microset", "worst_case 0.500", 262144, 4.4062500000e-04
+"successor, recursive", "worst_case 1.000", 262144, 2.8328125000e-03
+"successor, 2-pass", "worst_case 1.000", 262144, 1.7398437500e-03
+"successor, 2-pass, checked", "worst_case 1.000", 262144, 1.7671875000e-03
+"successor, halving", "worst_case 1.000", 262144, 2.4343750000e-03
+"quick find", "worst_case 1.000", 262144, 6.7656250000e-04
+"union find", "worst_case 1.000", 262144, 6.3515625000e-04
+"quick find, microset", "worst_case 1.000", 262144, 4.4765625000e-04
+"union find, microset", "worst_case 1.000", 262144, 5.4394531250e-04
+"successor, 2-pass, microset", "worst_case 1.000", 262144, 5.7890625000e-04
+"successor, recursive", "worst_case 2.000", 262144, 5.5000000000e-03
+"successor, 2-pass", "worst_case 2.000", 262144, 4.3218750000e-03
+"successor, 2-pass, checked", "worst_case 2.000", 262144, 4.4234375000e-03
+"successor, halving", "worst_case 2.000", 262144, 4.7437500000e-03
+"quick find", "worst_case 2.000", 262144, 8.8007812500e-04
+"union find", "worst_case 2.000", 262144, 1.1171875000e-03
+"quick find, microset", "worst_case 2.000", 262144, 7.9062500000e-04
+"union find, microset", "worst_case 2.000", 262144, 9.3828125000e-04
+"successor, 2-pass, microset", "worst_case 2.000", 262144, 1.7375000000e-03
+"successor, recursive", "worst_case 4.000", 262144, 7.8500000000e-03
+"successor, 2-pass", "worst_case 4.000", 262144, 5.5593750000e-03
+"successor, 2-pass, checked", "worst_case 4.000", 262144, 5.6531250000e-03
+"successor, halving", "worst_case 4.000", 262144, 8.1437500000e-03
+"quick find", "worst_case 4.000", 262144, 1.4234375000e-03
+"union find", "worst_case 4.000", 262144, 1.7937500000e-03
+"quick find, microset", "worst_case 4.000", 262144, 1.3242187500e-03
+"union find, microset", "worst_case 4.000", 262144, 1.7210937500e-03
+"successor, 2-pass, microset", "worst_case 4.000", 262144, 2.6609375000e-03
+"successor, recursive", "worst_case 8.000", 262144, 1.3028125000e-02
+"successor, 2-pass", "worst_case 8.000", 262144, 7.9312500000e-03
+"successor, 2-pass, checked", "worst_case 8.000", 262144, 7.6500000000e-03
+"successor, halving", "worst_case 8.000", 262144, 1.3587500000e-02
+"quick find", "worst_case 8.000", 262144, 2.2296875000e-03
+"union find", "worst_case 8.000", 262144, 2.8546875000e-03
+"quick find, microset", "worst_case 8.000", 262144, 2.4359375000e-03
+"union find, microset", "worst_case 8.000", 262144, 3.3468750000e-03
+"successor, 2-pass, microset", "worst_case 8.000", 262144, 5.3781250000e-03
+"successor, recursive", "worst_case 0.125", 524288, 1.9312500000e-03
+"successor, 2-pass", "worst_case 0.125", 524288, 1.8796875000e-03
+"successor, 2-pass, checked", "worst_case 0.125", 524288, 1.9445312500e-03
+"successor, halving", "worst_case 0.125", 524288, 1.7296875000e-03
+"quick find", "worst_case 0.125", 524288, 9.9492187500e-04
+"union find", "worst_case 0.125", 524288, 1.1328125000e-03
+"quick find, microset", "worst_case 0.125", 524288, 5.2792968750e-04
+"union find, microset", "worst_case 0.125", 524288, 5.6171875000e-04
+"successor, 2-pass, microset", "worst_case 0.125", 524288, 6.2402343750e-04
+"successor, recursive", "worst_case 0.250", 524288, 3.1289062500e-03
+"successor, 2-pass", "worst_case 0.250", 524288, 3.1609375000e-03
+"successor, 2-pass, checked", "worst_case 0.250", 524288, 3.1406250000e-03
+"successor, halving", "worst_case 0.250", 524288, 2.3468750000e-03
+"quick find", "worst_case 0.250", 524288, 1.0910156250e-03
+"union find", "worst_case 0.250", 524288, 1.1179687500e-03
+"quick find, microset", "worst_case 0.250", 524288, 5.5761718750e-04
+"union find, microset", "worst_case 0.250", 524288, 6.0664062500e-04
+"successor, 2-pass, microset", "worst_case 0.250", 524288, 7.2792968750e-04
+"successor, recursive", "worst_case 0.500", 524288, 4.7750000000e-03
+"successor, 2-pass", "worst_case 0.500", 524288, 5.1343750000e-03
+"successor, 2-pass, checked", "worst_case 0.500", 524288, 5.1593750000e-03
+"successor, halving", "worst_case 0.500", 524288, 3.4046875000e-03
+"quick find", "worst_case 0.500", 524288, 1.1242187500e-03
+"union find", "worst_case 0.500", 524288, 1.2296875000e-03
+"quick find, microset", "worst_case 0.500", 524288, 7.4804687500e-04
+"union find, microset", "worst_case 0.500", 524288, 7.9687500000e-04
+"successor, 2-pass, microset", "worst_case 0.500", 524288, 8.8945312500e-04
+"successor, recursive", "worst_case 1.000", 524288, 6.9750000000e-03
+"successor, 2-pass", "worst_case 1.000", 524288, 5.8703125000e-03
+"successor, 2-pass, checked", "worst_case 1.000", 524288, 5.7187500000e-03
+"successor, halving", "worst_case 1.000", 524288, 5.3093750000e-03
+"quick find", "worst_case 1.000", 524288, 1.3515625000e-03
+"union find", "worst_case 1.000", 524288, 1.4242187500e-03
+"quick find, microset", "worst_case 1.000", 524288, 9.2265625000e-04
+"union find, microset", "worst_case 1.000", 524288, 1.0765625000e-03
+"successor, 2-pass, microset", "worst_case 1.000", 524288, 1.1941406250e-03
+"successor, recursive", "worst_case 2.000", 524288, 1.3900000000e-02
+"successor, 2-pass", "worst_case 2.000", 524288, 1.1434375000e-02
+"successor, 2-pass, checked", "worst_case 2.000", 524288, 1.1031250000e-02
+"successor, halving", "worst_case 2.000", 524288, 1.0693750000e-02
+"quick find", "worst_case 2.000", 524288, 2.1843750000e-03
+"union find", "worst_case 2.000", 524288, 2.8593750000e-03
+"quick find, microset", "worst_case 2.000", 524288, 1.6039062500e-03
+"union find, microset", "worst_case 2.000", 524288, 2.0000000000e-03
+"successor, 2-pass, microset", "worst_case 2.000", 524288, 4.0843750000e-03
+"successor, recursive", "worst_case 4.000", 524288, 2.0262500000e-02
+"successor, 2-pass", "worst_case 4.000", 524288, 1.4050000000e-02
+"successor, 2-pass, checked", "worst_case 4.000", 524288, 1.4143750000e-02
+"successor, halving", "worst_case 4.000", 524288, 1.8575000000e-02
+"quick find", "worst_case 4.000", 524288, 3.7328125000e-03
+"union find", "worst_case 4.000", 524288, 4.6187500000e-03
+"quick find, microset", "worst_case 4.000", 524288, 2.6625000000e-03
+"union find, microset", "worst_case 4.000", 524288, 3.5984375000e-03
+"successor, 2-pass, microset", "worst_case 4.000", 524288, 6.0078125000e-03
+"successor, recursive", "worst_case 8.000", 524288, 2.8325000000e-02
+"successor, 2-pass", "worst_case 8.000", 524288, 1.9225000000e-02
+"successor, 2-pass, checked", "worst_case 8.000", 524288, 1.9162500000e-02
+"successor, halving", "worst_case 8.000", 524288, 3.0000000000e-02
+"quick find", "worst_case 8.000", 524288, 6.5687500000e-03
+"union find", "worst_case 8.000", 524288, 7.9812500000e-03
+"quick find, microset", "worst_case 8.000", 524288, 4.9593750000e-03
+"union find, microset", "worst_case 8.000", 524288, 6.7437500000e-03
+"successor, 2-pass, microset", "worst_case 8.000", 524288, 1.0218750000e-02
+"successor, recursive", "worst_case 0.125", 1048576, 4.9843750000e-03
+"successor, 2-pass", "worst_case 0.125", 1048576, 5.7250000000e-03
+"successor, 2-pass, checked", "worst_case 0.125", 1048576, 5.6406250000e-03
+"successor, halving", "worst_case 0.125", 1048576, 3.7500000000e-03
+"quick find", "worst_case 0.125", 1048576, 2.4726562500e-03
+"union find", "worst_case 0.125", 1048576, 2.4421875000e-03
+"quick find, microset", "worst_case 0.125", 1048576, 1.0746093750e-03
+"union find, microset", "worst_case 0.125", 1048576, 1.1250000000e-03
+"successor, 2-pass, microset", "worst_case 0.125", 1048576, 1.3257812500e-03
+"successor, recursive", "worst_case 0.250", 1048576, 7.5750000000e-03
+"successor, 2-pass", "worst_case 0.250", 1048576, 8.7562500000e-03
+"successor, 2-pass, checked", "worst_case 0.250", 1048576, 9.0562500000e-03
+"successor, halving", "worst_case 0.250", 1048576, 5.1562500000e-03
+"quick find", "worst_case 0.250", 1048576, 2.6000000000e-03
+"union find", "worst_case 0.250", 1048576, 2.6687500000e-03
+"quick find, microset", "worst_case 0.250", 1048576, 1.1851562500e-03
+"union find, microset", "worst_case 0.250", 1048576, 1.2625000000e-03
+"successor, 2-pass, microset", "worst_case 0.250", 1048576, 1.4867187500e-03
+"successor, recursive", "worst_case 0.500", 1048576, 1.1906250000e-02
+"successor, 2-pass", "worst_case 0.500", 1048576, 1.7637500000e-02
+"successor, 2-pass, checked", "worst_case 0.500", 1048576, 1.7300000000e-02
+"successor, halving", "worst_case 0.500", 1048576, 7.7093750000e-03
+"quick find", "worst_case 0.500", 1048576, 2.6625000000e-03
+"union find", "worst_case 0.500", 1048576, 3.0679687500e-03
+"quick find, microset", "worst_case 0.500", 1048576, 1.5312500000e-03
+"union find, microset", "worst_case 0.500", 1048576, 1.7304687500e-03
+"successor, 2-pass, microset", "worst_case 0.500", 1048576, 1.8578125000e-03
+"successor, recursive", "worst_case 1.000", 1048576, 1.7131250000e-02
+"successor, 2-pass", "worst_case 1.000", 1048576, 1.5887500000e-02
+"successor, 2-pass, checked", "worst_case 1.000", 1048576, 1.5337500000e-02
+"successor, halving", "worst_case 1.000", 1048576, 1.1156250000e-02
+"quick find", "worst_case 1.000", 1048576, 2.8187500000e-03
+"union find", "worst_case 1.000", 1048576, 3.1484375000e-03
+"quick find, microset", "worst_case 1.000", 1048576, 1.9492187500e-03
+"union find, microset", "worst_case 1.000", 1048576, 2.3781250000e-03
+"successor, 2-pass, microset", "worst_case 1.000", 1048576, 2.3796875000e-03
+"successor, recursive", "worst_case 2.000", 1048576, 3.6100000000e-02
+"successor, 2-pass", "worst_case 2.000", 1048576, 2.8625000000e-02
+"successor, 2-pass, checked", "worst_case 2.000", 1048576, 2.8300000000e-02
+"successor, halving", "worst_case 2.000", 1048576, 2.5350000000e-02
+"quick find", "worst_case 2.000", 1048576, 7.4062500000e-03
+"union find", "worst_case 2.000", 1048576, 9.3062500000e-03
+"quick find, microset", "worst_case 2.000", 1048576, 3.3812500000e-03
+"union find, microset", "worst_case 2.000", 1048576, 4.2031250000e-03
+"successor, 2-pass, microset", "worst_case 2.000", 1048576, 9.0500000000e-03
+"successor, recursive", "worst_case 4.000", 1048576, 5.2350000000e-02
+"successor, 2-pass", "worst_case 4.000", 1048576, 3.5450000000e-02
+"successor, 2-pass, checked", "worst_case 4.000", 1048576, 3.4475000000e-02
+"successor, halving", "worst_case 4.000", 1048576, 4.1225000000e-02
+"quick find", "worst_case 4.000", 1048576, 1.2062500000e-02
+"union find", "worst_case 4.000", 1048576, 1.5875000000e-02
+"quick find, microset", "worst_case 4.000", 1048576, 5.6531250000e-03
+"union find, microset", "worst_case 4.000", 1048576, 7.2875000000e-03
+"successor, 2-pass, microset", "worst_case 4.000", 1048576, 1.4050000000e-02
+"successor, recursive", "worst_case 8.000", 1048576, 7.0200000000e-02
+"successor, 2-pass", "worst_case 8.000", 1048576, 4.8825000000e-02
+"successor, 2-pass, checked", "worst_case 8.000", 1048576, 5.2062500000e-02
+"successor, halving", "worst_case 8.000", 1048576, 7.3175000000e-02
+"quick find", "worst_case 8.000", 1048576, 2.2787500000e-02
+"union find", "worst_case 8.000", 1048576, 3.0950000000e-02
+"quick find, microset", "worst_case 8.000", 1048576, 1.0281250000e-02
+"union find, microset", "worst_case 8.000", 1048576, 1.3675000000e-02
+"successor, 2-pass, microset", "worst_case 8.000", 1048576, 2.0900000000e-02
+"successor, recursive", "worst_case 0.125", 2097152, 1.2262500000e-02
+"successor, 2-pass", "worst_case 0.125", 2097152, 1.5531250000e-02
+"successor, 2-pass, checked", "worst_case 0.125", 2097152, 1.5231250000e-02
+"successor, halving", "worst_case 0.125", 2097152, 8.3187500000e-03
+"quick find", "worst_case 0.125", 2097152, 5.2546875000e-03
+"union find", "worst_case 0.125", 2097152, 5.0093750000e-03
+"quick find, microset", "worst_case 0.125", 2097152, 2.2250000000e-03
+"union find, microset", "worst_case 0.125", 2097152, 2.2984375000e-03
+"successor, 2-pass, microset", "worst_case 0.125", 2097152, 2.6812500000e-03
+"successor, recursive", "worst_case 0.250", 2097152, 1.9050000000e-02
+"successor, 2-pass", "worst_case 0.250", 2097152, 2.6500000000e-02
+"successor, 2-pass, checked", "worst_case 0.250", 2097152, 2.5825000000e-02
+"successor, halving", "worst_case 0.250", 2097152, 1.1896875000e-02
+"quick find", "worst_case 0.250", 2097152, 5.4531250000e-03
+"union find", "worst_case 0.250", 2097152, 5.7218750000e-03
+"quick find, microset", "worst_case 0.250", 2097152, 2.3453125000e-03
+"union find, microset", "worst_case 0.250", 2097152, 2.5125000000e-03
+"successor, 2-pass, microset", "worst_case 0.250", 2097152, 3.0695312500e-03
+"successor, recursive", "worst_case 0.500", 2097152, 2.9187500000e-02
+"successor, 2-pass", "worst_case 0.500", 2097152, 4.6750000000e-02
+"successor, 2-pass, checked", "worst_case 0.500", 2097152, 4.4800000000e-02
+"successor, halving", "worst_case 0.500", 2097152, 1.7350000000e-02
+"quick find", "worst_case 0.500", 2097152, 6.0593750000e-03
+"union find", "worst_case 0.500", 2097152, 7.0968750000e-03
+"quick find, microset", "worst_case 0.500", 2097152, 3.1593750000e-03
+"union find, microset", "worst_case 0.500", 2097152, 3.4562500000e-03
+"successor, 2-pass, microset", "worst_case 0.500", 2097152, 3.7625000000e-03
+"successor, recursive", "worst_case 1.000", 2097152, 3.8025000000e-02
+"successor, 2-pass", "worst_case 1.000", 2097152, 5.4850000000e-02
+"successor, 2-pass, checked", "worst_case 1.000", 2097152, 5.4400000000e-02
+"successor, halving", "worst_case 1.000", 2097152, 2.5187500000e-02
+"quick find", "worst_case 1.000", 2097152, 8.8812500000e-03
+"union find", "worst_case 1.000", 2097152, 1.3162500000e-02
+"quick find, microset", "worst_case 1.000", 2097152, 4.0156250000e-03
+"union find, microset", "worst_case 1.000", 2097152, 4.8250000000e-03
+"successor, 2-pass, microset", "worst_case 1.000", 2097152, 4.6375000000e-03
+"successor, recursive", "worst_case 2.000", 2097152, 1.1160000000e-01
+"successor, 2-pass", "worst_case 2.000", 2097152, 8.6850000000e-02
+"successor, 2-pass, checked", "worst_case 2.000", 2097152, 8.3950000000e-02
+"successor, halving", "worst_case 2.000", 2097152, 6.4750000000e-02
+"quick find", "worst_case 2.000", 2097152, 1.9656250000e-02
+"union find", "worst_case 2.000", 2097152, 2.7600000000e-02
+"quick find, microset", "worst_case 2.000", 2097152, 6.7500000000e-03
+"union find, microset", "worst_case 2.000", 2097152, 8.4125000000e-03
+"successor, 2-pass, microset", "worst_case 2.000", 2097152, 1.8556250000e-02
+"successor, recursive", "worst_case 4.000", 2097152, 1.5430000000e-01
+"successor, 2-pass", "worst_case 4.000", 2097152, 1.0985000000e-01
+"successor, 2-pass, checked", "worst_case 4.000", 2097152, 1.1010000000e-01
+"successor, halving", "worst_case 4.000", 2097152, 1.0970000000e-01
+"quick find", "worst_case 4.000", 2097152, 3.2562500000e-02
+"union find", "worst_case 4.000", 2097152, 4.3700000000e-02
+"quick find, microset", "worst_case 4.000", 2097152, 1.1325000000e-02
+"union find, microset", "worst_case 4.000", 2097152, 1.5012500000e-02
+"successor, 2-pass, microset", "worst_case 4.000", 2097152, 3.1725000000e-02
+"successor, recursive", "worst_case 8.000", 2097152, 1.9180000000e-01
+"successor, 2-pass", "worst_case 8.000", 2097152, 1.4400000000e-01
+"successor, 2-pass, checked", "worst_case 8.000", 2097152, 1.4180000000e-01
+"successor, halving", "worst_case 8.000", 2097152, 1.8040000000e-01
+"quick find", "worst_case 8.000", 2097152, 6.0100000000e-02
+"union find", "worst_case 8.000", 2097152, 8.2975000000e-02
+"quick find, microset", "worst_case 8.000", 2097152, 2.1200000000e-02
+"union find, microset", "worst_case 8.000", 2097152, 2.8375000000e-02
+"successor, 2-pass, microset", "worst_case 8.000", 2097152, 4.7675000000e-02
+"successor, recursive", "worst_case 0.125", 4194304, 2.8512500000e-02
+"successor, 2-pass", "worst_case 0.125", 4194304, 3.5925000000e-02
+"successor, 2-pass, checked", "worst_case 0.125", 4194304, 3.6925000000e-02
+"successor, halving", "worst_case 0.125", 4194304, 1.9525000000e-02
+"quick find", "worst_case 0.125", 4194304, 1.1150000000e-02
+"union find", "worst_case 0.125", 4194304, 1.0993750000e-02
+"quick find, microset", "worst_case 0.125", 4194304, 4.4609375000e-03
+"union find, microset", "worst_case 0.125", 4194304, 4.6125000000e-03
+"successor, 2-pass, microset", "worst_case 0.125", 4194304, 5.5828125000e-03
+"successor, recursive", "worst_case 0.250", 4194304, 4.5075000000e-02
+"successor, 2-pass", "worst_case 0.250", 4194304, 6.8150000000e-02
+"successor, 2-pass, checked", "worst_case 0.250", 4194304, 6.5525000000e-02
+"successor, halving", "worst_case 0.250", 4194304, 2.7275000000e-02
+"quick find", "worst_case 0.250", 4194304, 1.1515625000e-02
+"union find", "worst_case 0.250", 4194304, 1.1453125000e-02
+"quick find, microset", "worst_case 0.250", 4194304, 4.8281250000e-03
+"union find, microset", "worst_case 0.250", 4194304, 5.1312500000e-03
+"successor, 2-pass, microset", "worst_case 0.250", 4194304, 6.0812500000e-03
+"successor, recursive", "worst_case 0.500", 4194304, 6.9700000000e-02
+"successor, 2-pass", "worst_case 0.500", 4194304, 1.1900000000e-01
+"successor, 2-pass, checked", "worst_case 0.500", 4194304, 1.1825000000e-01
+"successor, halving", "worst_case 0.500", 4194304, 4.2250000000e-02
+"quick find", "worst_case 0.500", 4194304, 1.1868750000e-02
+"union find", "worst_case 0.500", 4194304, 1.3012500000e-02
+"quick find, microset", "worst_case 0.500", 4194304, 6.2187500000e-03
+"union find, microset", "worst_case 0.500", 4194304, 7.0718750000e-03
+"successor, 2-pass, microset", "worst_case 0.500", 4194304, 7.6062500000e-03
+"successor, recursive", "worst_case 1.000", 4194304, 9.3150000000e-02
+"successor, 2-pass", "worst_case 1.000", 4194304, 1.4540000000e-01
+"successor, 2-pass, checked", "worst_case 1.000", 4194304, 1.4570000000e-01
+"successor, halving", "worst_case 1.000", 4194304, 6.0350000000e-02
+"quick find", "worst_case 1.000", 4194304, 1.4287500000e-02
+"union find", "worst_case 1.000", 4194304, 1.9981250000e-02
+"quick find, microset", "worst_case 1.000", 4194304, 7.9687500000e-03
+"union find, microset", "worst_case 1.000", 4194304, 9.6187500000e-03
+"successor, 2-pass, microset", "worst_case 1.000", 4194304, 1.0300000000e-02
+"successor, recursive", "worst_case 2.000", 4194304, 3.3370000000e-01
+"successor, 2-pass", "worst_case 2.000", 4194304, 2.8910000000e-01
+"successor, 2-pass, checked", "worst_case 2.000", 4194304, 2.9095000000e-01
+"successor, halving", "worst_case 2.000", 4194304, 1.9050000000e-01
+"quick find", "worst_case 2.000", 4194304, 4.5925000000e-02
+"union find", "worst_case 2.000", 4194304, 6.6475000000e-02
+"quick find, microset", "worst_case 2.000", 4194304, 1.5356250000e-02
+"union find, microset", "worst_case 2.000", 4194304, 1.8187500000e-02
+"successor, 2-pass, microset", "worst_case 2.000", 4194304, 3.7850000000e-02
+"successor, recursive", "worst_case 4.000", 4194304, 4.3930000000e-01
+"successor, 2-pass", "worst_case 4.000", 4194304, 3.5820000000e-01
+"successor, 2-pass, checked", "worst_case 4.000", 4194304, 3.6110000000e-01
+"successor, halving", "worst_case 4.000", 4194304, 3.1375000000e-01
+"quick find", "worst_case 4.000", 4194304, 7.7100000000e-02
+"union find", "worst_case 4.000", 4194304, 1.0990000000e-01
+"quick find, microset", "worst_case 4.000", 4194304, 2.6825000000e-02
+"union find, microset", "worst_case 4.000", 4194304, 3.4537500000e-02
+"successor, 2-pass, microset", "worst_case 4.000", 4194304, 6.9425000000e-02
+"successor, recursive", "worst_case 8.000", 4194304, 5.9280000000e-01
+"successor, 2-pass", "worst_case 8.000", 4194304, 4.8070000000e-01
+"successor, 2-pass, checked", "worst_case 8.000", 4194304, 4.7870000000e-01
+"successor, halving", "worst_case 8.000", 4194304, 5.0330000000e-01
+"quick find", "worst_case 8.000", 4194304, 1.4140000000e-01
+"union find", "worst_case 8.000", 4194304, 2.0045000000e-01
+"quick find, microset", "worst_case 8.000", 4194304, 4.8275000000e-02
+"union find, microset", "worst_case 8.000", 4194304, 6.3750000000e-02
+"successor, 2-pass, microset", "worst_case 8.000", 4194304, 1.1000000000e-01
+"successor, recursive", "random 0.125", 2, 3.1888484955e-09
+"successor, 2-pass", "random 0.125", 2, 3.4838914871e-09
+"successor, 2-pass, checked", "random 0.125", 2, 3.7550926208e-09
+"successor, halving", "random 0.125", 2, 3.1709671021e-09
+"quick find", "random 0.125", 2, 3.6463141441e-09
+"union find", "random 0.125", 2, 5.4970383644e-09
+"quick find, microset", "random 0.125", 2, 4.5299530029e-09
+"union find, microset", "random 0.125", 2, 4.5120716095e-09
+"successor, 2-pass, microset", "random 0.125", 2, 4.5910477638e-09
+"successor, recursive", "random 0.250", 2, 3.2871961594e-09
+"successor, 2-pass", "random 0.250", 2, 3.3199787140e-09
+"successor, 2-pass, checked", "random 0.250", 2, 3.7461519241e-09
+"successor, halving", "random 0.250", 2, 3.0249357224e-09
+"quick find", "random 0.250", 2, 3.7163496017e-09
+"union find", "random 0.250", 2, 5.5044889450e-09
+"quick find, microset", "random 0.250", 2, 4.4733285904e-09
+"union find, microset", "random 0.250", 2, 4.5523047447e-09
+"successor, 2-pass, microset", "random 0.250", 2, 4.5642256737e-09
+"successor, recursive", "random 0.500", 2, 3.2588839531e-09
+"successor, 2-pass", "random 0.500", 2, 3.4853816032e-09
+"successor, 2-pass, checked", "random 0.500", 2, 3.7699937820e-09
+"successor, halving", "random 0.500", 2, 3.1203031540e-09
+"quick find", "random 0.500", 2, 3.8191676140e-09
+"union find", "random 0.500", 2, 5.4359436035e-09
+"quick find, microset", "random 0.500", 2, 4.5537948608e-09
+"union find, microset", "random 0.500", 2, 4.5135617256e-09
+"successor, 2-pass, microset", "random 0.500", 2, 4.3034553528e-09
+"successor, recursive", "random 1.000", 2, 3.8385391235e-09
+"successor, 2-pass", "random 1.000", 2, 4.3570995331e-09
+"successor, 2-pass, checked", "random 1.000", 2, 4.5955181122e-09
+"successor, halving", "random 1.000", 2, 3.5688281059e-09
+"quick find", "random 1.000", 2, 4.2125582695e-09
+"union find", "random 1.000", 2, 6.3538551331e-09
+"quick find, microset", "random 1.000", 2, 5.4106116295e-09
+"union find, microset", "random 1.000", 2, 5.3703784943e-09
+"successor, 2-pass, microset", "random 1.000", 2, 5.3822994232e-09
+"successor, recursive", "random 2.000", 2, 5.7220458984e-09
+"successor, 2-pass", "random 2.000", 2, 6.0170888901e-09
+"successor, 2-pass, checked", "random 2.000", 2, 6.2644481659e-09
+"successor, halving", "random 2.000", 2, 5.0336122513e-09
+"quick find", "random 2.000", 2, 5.4448843002e-09
+"union find", "random 2.000", 2, 7.8022480011e-09
+"quick find, microset", "random 2.000", 2, 6.1929225922e-09
+"union find, microset", "random 2.000", 2, 6.1988830566e-09
+"successor, 2-pass, microset", "random 2.000", 2, 6.1035156250e-09
+"successor, recursive", "random 4.000", 2, 8.5502862930e-09
+"successor, 2-pass", "random 4.000", 2, 8.8155269623e-09
+"successor, 2-pass, checked", "random 4.000", 2, 9.2864036560e-09
+"successor, halving", "random 4.000", 2, 7.1883201599e-09
+"quick find", "random 4.000", 2, 6.9260597229e-09
+"union find", "random 4.000", 2, 1.0079145432e-08
+"quick find, microset", "random 4.000", 2, 9.0658664703e-09
+"union find, microset", "random 4.000", 2, 8.7261199951e-09
+"successor, 2-pass, microset", "random 4.000", 2, 8.7320804596e-09
+"successor, recursive", "random 8.000", 2, 1.3852119446e-08
+"successor, 2-pass", "random 8.000", 2, 1.4805793762e-08
+"successor, 2-pass, checked", "random 8.000", 2, 1.5676021576e-08
+"successor, halving", "random 8.000", 2, 1.2284517288e-08
+"quick find", "random 8.000", 2, 1.0862946510e-08
+"union find", "random 8.000", 2, 1.5801191330e-08
+"quick find, microset", "random 8.000", 2, 1.4698505402e-08
+"union find, microset", "random 8.000", 2, 1.4925003052e-08
+"successor, 2-pass, microset", "random 8.000", 2, 1.4483928680e-08
+"successor, recursive", "random 0.125", 4, 4.9933791161e-09
+"successor, 2-pass", "random 0.125", 4, 5.0604343414e-09
+"successor, 2-pass, checked", "random 0.125", 4, 5.7339668274e-09
+"successor, halving", "random 0.125", 4, 4.7087669373e-09
+"quick find", "random 0.125", 4, 6.2644481659e-09
+"union find", "random 0.125", 4, 9.1493129730e-09
+"quick find, microset", "random 0.125", 4, 6.5326690674e-09
+"union find, microset", "random 0.125", 4, 6.5118074417e-09
+"successor, 2-pass, microset", "random 0.125", 4, 6.4522027969e-09
+"successor, recursive", "random 0.250", 4, 4.9799680710e-09
+"successor, 2-pass", "random 0.250", 4, 5.0529837608e-09
+"successor, 2-pass, checked", "random 0.250", 4, 5.1558017731e-09
+"successor, halving", "random 0.250", 4, 4.7266483307e-09
+"quick find", "random 0.250", 4, 5.5044889450e-09
+"union find", "random 0.250", 4, 8.3655118942e-09
+"quick find, microset", "random 0.250", 4, 6.2286853790e-09
+"union find, microset", "random 0.250", 4, 6.0796737671e-09
+"successor, 2-pass, microset", "random 0.250", 4, 6.1541795731e-09
+"successor, recursive", "random 0.500", 4, 7.4148178101e-09
+"successor, 2-pass", "random 0.500", 4, 6.9081783295e-09
+"successor, 2-pass, checked", "random 0.500", 4, 7.7068805695e-09
+"successor, halving", "random 0.500", 4, 5.8144330978e-09
+"quick find", "random 0.500", 4, 6.9975852966e-09
+"union find", "random 0.500", 4, 1.0538101196e-08
+"quick find, microset", "random 0.500", 4, 7.0452690125e-09
+"union find, microset", "random 0.500", 4, 7.1108341217e-09
+"successor, 2-pass, microset", "random 0.500", 4, 7.0303678513e-09
+"successor, recursive", "random 1.000", 4, 6.9439411163e-09
+"successor, 2-pass", "random 1.000", 4, 7.6055526733e-09
+"successor, 2-pass, checked", "random 1.000", 4, 8.5055828094e-09
+"successor, halving", "random 1.000", 4, 6.4581632614e-09
+"quick find", "random 1.000", 4, 7.2181224823e-09
+"union find", "random 1.000", 4, 1.0049343109e-08
+"quick find, microset", "random 1.000", 4, 8.7261199951e-09
+"union find, microset", "random 1.000", 4, 8.3178281784e-09
+"successor, 2-pass, microset", "random 1.000", 4, 8.5890293121e-09
+"successor, recursive", "random 2.000", 4, 1.0704994202e-08
+"successor, 2-pass", "random 2.000", 4, 1.1152029037e-08
+"successor, 2-pass, checked", "random 2.000", 4, 1.2174248695e-08
+"successor, halving", "random 2.000", 4, 9.5784664154e-09
+"quick find", "random 2.000", 4, 9.8168849945e-09
+"union find", "random 2.000", 4, 1.3720989227e-08
+"quick find, microset", "random 2.000", 4, 1.0979175568e-08
+"union find, microset", "random 2.000", 4, 1.0782480240e-08
+"successor, 2-pass, microset", "random 2.000", 4, 1.1110305786e-08
+"successor, recursive", "random 4.000", 4, 1.9252300262e-08
+"successor, 2-pass", "random 4.000", 4, 1.7452239990e-08
+"successor, 2-pass, checked", "random 4.000", 4, 1.8334388733e-08
+"successor, halving", "random 4.000", 4, 1.4466047287e-08
+"quick find", "random 4.000", 4, 1.4030933380e-08
+"union find", "random 4.000", 4, 2.0051002502e-08
+"quick find, microset", "random 4.000", 4, 1.6623735428e-08
+"union find, microset", "random 4.000", 4, 1.7392635345e-08
+"successor, 2-pass, microset", "random 4.000", 4, 1.6891956329e-08
+"successor, recursive", "random 8.000", 4, 3.3497810364e-08
+"successor, 2-pass", "random 8.000", 4, 3.0112266541e-08
+"successor, 2-pass, checked", "random 8.000", 4, 3.0994415283e-08
+"successor, halving", "random 8.000", 4, 2.5713443756e-08
+"quick find", "random 8.000", 4, 2.0766258240e-08
+"union find", "random 8.000", 4, 3.1864643097e-08
+"quick find, microset", "random 8.000", 4, 2.9468536377e-08
+"union find, microset", "random 8.000", 4, 2.9814243317e-08
+"successor, 2-pass, microset", "random 8.000", 4, 2.9492378235e-08
+"successor, recursive", "random 0.125", 8, 8.0496072769e-09
+"successor, 2-pass", "random 0.125", 8, 8.1777572632e-09
+"successor, 2-pass, checked", "random 0.125", 8, 9.7215175629e-09
+"successor, halving", "random 0.125", 8, 7.9751014709e-09
+"quick find", "random 0.125", 8, 1.0913610458e-08
+"union find", "random 0.125", 8, 1.6069412231e-08
+"quick find, microset", "random 0.125", 8, 1.0389089584e-08
+"union find, microset", "random 0.125", 8, 1.0126829147e-08
+"successor, 2-pass, microset", "random 0.125", 8, 1.0067224503e-08
+"successor, recursive", "random 0.250", 8, 9.8317861557e-09
+"successor, 2-pass", "random 0.250", 8, 9.7334384918e-09
+"successor, 2-pass, checked", "random 0.250", 8, 1.1050701141e-08
+"successor, halving", "random 0.250", 8, 8.8334083557e-09
+"quick find", "random 0.250", 8, 1.1181831360e-08
+"union find", "random 0.250", 8, 1.6927719116e-08
+"quick find, microset", "random 0.250", 8, 1.0904669762e-08
+"union find, microset", "random 0.250", 8, 1.1068582535e-08
+"successor, 2-pass, microset", "random 0.250", 8, 1.0833144188e-08
+"successor, recursive", "random 0.500", 8, 1.2743473053e-08
+"successor, 2-pass", "random 0.500", 8, 1.2075901031e-08
+"successor, 2-pass, checked", "random 0.500", 8, 1.3577938080e-08
+"successor, halving", "random 0.500", 8, 1.0770559311e-08
+"quick find", "random 0.500", 8, 1.3351440430e-08
+"union find", "random 0.500", 8, 1.8811225891e-08
+"quick find, microset", "random 0.500", 8, 1.2522935867e-08
+"union find, microset", "random 0.500", 8, 1.2707710266e-08
+"successor, 2-pass, microset", "random 0.500", 8, 1.2648105621e-08
+"successor, recursive", "random 1.000", 8, 1.4609098434e-08
+"successor, 2-pass", "random 1.000", 8, 1.5783309937e-08
+"successor, 2-pass, checked", "random 1.000", 8, 1.6731023788e-08
+"successor, halving", "random 1.000", 8, 1.2233853340e-08
+"quick find", "random 1.000", 8, 1.4078617096e-08
+"union find", "random 1.000", 8, 2.0897388458e-08
+"quick find, microset", "random 1.000", 8, 1.5485286713e-08
+"union find, microset", "random 1.000", 8, 1.4972686768e-08
+"successor, 2-pass, microset", "random 1.000", 8, 1.4907121658e-08
+"successor, recursive", "random 2.000", 8, 2.5498867035e-08
+"successor, 2-pass", "random 2.000", 8, 2.3913383484e-08
+"successor, 2-pass, checked", "random 2.000", 8, 2.4998188019e-08
+"successor, halving", "random 2.000", 8, 1.8471479416e-08
+"quick find", "random 2.000", 8, 2.0283460617e-08
+"union find", "random 2.000", 8, 2.8204917908e-08
+"quick find, microset", "random 2.000", 8, 1.9639730453e-08
+"union find, microset", "random 2.000", 8, 1.9609928131e-08
+"successor, 2-pass, microset", "random 2.000", 8, 1.9037723541e-08
+"successor, recursive", "random 4.000", 8, 3.5095214844e-08
+"successor, 2-pass", "random 4.000", 8, 3.5309791565e-08
+"successor, 2-pass, checked", "random 4.000", 8, 3.6156177521e-08
+"successor, halving", "random 4.000", 8, 2.7954578400e-08
+"quick find", "random 4.000", 8, 2.6381015778e-08
+"union find", "random 4.000", 8, 4.0245056152e-08
+"quick find, microset", "random 4.000", 8, 3.2305717468e-08
+"union find, microset", "random 4.000", 8, 3.2997131348e-08
+"successor, 2-pass, microset", "random 4.000", 8, 3.2079219818e-08
+"successor, recursive", "random 8.000", 8, 6.4039230347e-08
+"successor, 2-pass", "random 8.000", 8, 5.8412551880e-08
+"successor, 2-pass, checked", "random 8.000", 8, 5.9628486633e-08
+"successor, halving", "random 8.000", 8, 5.2547454834e-08
+"quick find", "random 8.000", 8, 4.3225288391e-08
+"union find", "random 8.000", 8, 6.1321258545e-08
+"quick find, microset", "random 8.000", 8, 5.7172775269e-08
+"union find, microset", "random 8.000", 8, 5.6791305542e-08
+"successor, 2-pass, microset", "random 8.000", 8, 5.6123733521e-08
+"successor, recursive", "random 0.125", 16, 1.6105175018e-08
+"successor, 2-pass", "random 0.125", 16, 1.5354156494e-08
+"successor, 2-pass, checked", "random 0.125", 16, 1.8382072449e-08
+"successor, halving", "random 0.125", 16, 1.4460086823e-08
+"quick find", "random 0.125", 16, 2.0414590836e-08
+"union find", "random 0.125", 16, 2.8395652771e-08
+"quick find, microset", "random 0.125", 16, 1.7857551575e-08
+"union find, microset", "random 0.125", 16, 1.8429756165e-08
+"successor, 2-pass, microset", "random 0.125", 16, 1.8453598022e-08
+"successor, recursive", "random 0.250", 16, 1.8894672394e-08
+"successor, 2-pass", "random 0.250", 16, 1.7237663269e-08
+"successor, 2-pass, checked", "random 0.250", 16, 1.9997358322e-08
+"successor, halving", "random 0.250", 16, 1.6152858734e-08
+"quick find", "random 0.250", 16, 2.2262334824e-08
+"union find", "random 0.250", 16, 3.4797191620e-08
+"quick find, microset", "random 0.250", 16, 2.0313262939e-08
+"union find, microset", "random 0.250", 16, 2.0128488541e-08
+"successor, 2-pass, microset", "random 0.250", 16, 2.0170211792e-08
+"successor, recursive", "random 0.500", 16, 2.3657083511e-08
+"successor, 2-pass", "random 0.500", 16, 2.3126602173e-08
+"successor, 2-pass, checked", "random 0.500", 16, 2.6595592499e-08
+"successor, halving", "random 0.500", 16, 1.9299983978e-08
+"quick find", "random 0.500", 16, 2.4527311325e-08
+"union find", "random 0.500", 16, 3.6144256592e-08
+"quick find, microset", "random 0.500", 16, 2.3412704468e-08
+"union find, microset", "random 0.500", 16, 2.3365020752e-08
+"successor, 2-pass, microset", "random 0.500", 16, 2.4324655533e-08
+"successor, recursive", "random 1.000", 16, 2.7084350586e-08
+"successor, 2-pass", "random 1.000", 16, 2.9659271240e-08
+"successor, 2-pass, checked", "random 1.000", 16, 3.2186508179e-08
+"successor, halving", "random 1.000", 16, 2.2941827774e-08
+"quick find", "random 1.000", 16, 2.6977062225e-08
+"union find", "random 1.000", 16, 3.8349628448e-08
+"quick find, microset", "random 1.000", 16, 2.5582313538e-08
+"union find, microset", "random 1.000", 16, 2.5367736816e-08
+"successor, 2-pass, microset", "random 1.000", 16, 2.5010108948e-08
+"successor, recursive", "random 2.000", 16, 4.2295455933e-08
+"successor, 2-pass", "random 2.000", 16, 4.3773651123e-08
+"successor, 2-pass, checked", "random 2.000", 16, 4.5490264893e-08
+"successor, halving", "random 2.000", 16, 3.5536289215e-08
+"quick find", "random 2.000", 16, 3.7121772766e-08
+"union find", "random 2.000", 16, 5.3310394287e-08
+"quick find, microset", "random 2.000", 16, 3.5512447357e-08
+"union find, microset", "random 2.000", 16, 3.5393238068e-08
+"successor, 2-pass, microset", "random 2.000", 16, 3.6001205444e-08
+"successor, recursive", "random 4.000", 16, 6.5422058105e-08
+"successor, 2-pass", "random 4.000", 16, 6.9522857666e-08
+"successor, 2-pass, checked", "random 4.000", 16, 6.9546699524e-08
+"successor, halving", "random 4.000", 16, 5.4430961609e-08
+"quick find", "random 4.000", 16, 5.0759315491e-08
+"union find", "random 4.000", 16, 7.7676773071e-08
+"quick find, microset", "random 4.000", 16, 6.5326690674e-08
+"union find, microset", "random 4.000", 16, 6.6614151001e-08
+"successor, 2-pass, microset", "random 4.000", 16, 6.4158439636e-08
+"successor, recursive", "random 8.000", 16, 1.2369155884e-07
+"successor, 2-pass", "random 8.000", 16, 1.2893676758e-07
+"successor, 2-pass, checked", "random 8.000", 16, 1.2712478638e-07
+"successor, halving", "random 8.000", 16, 1.3070106506e-07
+"quick find", "random 8.000", 16, 8.4781646729e-08
+"union find", "random 8.000", 16, 1.2254714966e-07
+"quick find, microset", "random 8.000", 16, 1.1482238770e-07
+"union find, microset", "random 8.000", 16, 1.1014938354e-07
+"successor, 2-pass, microset", "random 8.000", 16, 1.1382102966e-07
+"successor, recursive", "random 0.125", 32, 3.1042098999e-08
+"successor, 2-pass", "random 0.125", 32, 2.8777122498e-08
+"successor, 2-pass, checked", "random 0.125", 32, 3.4856796265e-08
+"successor, halving", "random 0.125", 32, 2.5844573975e-08
+"quick find", "random 0.125", 32, 3.9899349213e-08
+"union find", "random 0.125", 32, 5.8984756470e-08
+"quick find, microset", "random 0.125", 32, 4.0650367737e-08
+"union find, microset", "random 0.125", 32, 4.0280818939e-08
+"successor, 2-pass, microset", "random 0.125", 32, 3.8695335388e-08
+"successor, recursive", "random 0.250", 32, 3.2830238342e-08
+"successor, 2-pass", "random 0.250", 32, 3.2794475555e-08
+"successor, 2-pass, checked", "random 0.250", 32, 4.0042400360e-08
+"successor, halving", "random 0.250", 32, 3.0827522278e-08
+"quick find", "random 0.250", 32, 4.2545795441e-08
+"union find", "random 0.250", 32, 6.4420700073e-08
+"quick find, microset", "random 0.250", 32, 4.0602684021e-08
+"union find, microset", "random 0.250", 32, 4.0578842163e-08
+"successor, 2-pass, microset", "random 0.250", 32, 4.0233135223e-08
+"successor, recursive", "random 0.500", 32, 4.5013427734e-08
+"successor, 2-pass", "random 0.500", 32, 4.4226646423e-08
+"successor, 2-pass, checked", "random 0.500", 32, 4.9972534180e-08
+"successor, halving", "random 0.500", 32, 3.6334991455e-08
+"quick find", "random 0.500", 32, 4.8053264618e-08
+"union find", "random 0.500", 32, 7.2765350342e-08
+"quick find, microset", "random 0.500", 32, 4.9924850464e-08
+"union find, microset", "random 0.500", 32, 4.9924850464e-08
+"successor, 2-pass, microset", "random 0.500", 32, 4.8327445984e-08
+"successor, recursive", "random 1.000", 32, 5.4121017456e-08
+"successor, 2-pass", "random 1.000", 32, 5.8245658875e-08
+"successor, 2-pass, checked", "random 1.000", 32, 6.0796737671e-08
+"successor, halving", "random 1.000", 32, 4.4512748718e-08
+"quick find", "random 1.000", 32, 5.4478645325e-08
+"union find", "random 1.000", 32, 7.7533721924e-08
+"quick find, microset", "random 1.000", 32, 5.2261352539e-08
+"union find, microset", "random 1.000", 32, 5.6219100952e-08
+"successor, 2-pass, microset", "random 1.000", 32, 5.6862831116e-08
+"successor, recursive", "random 2.000", 32, 8.4018707275e-08
+"successor, 2-pass", "random 2.000", 32, 8.5234642029e-08
+"successor, 2-pass, checked", "random 2.000", 32, 8.9883804321e-08
+"successor, halving", "random 2.000", 32, 7.4195861816e-08
+"quick find", "random 2.000", 32, 7.2813034058e-08
+"union find", "random 2.000", 32, 1.1181831360e-07
+"quick find, microset", "random 2.000", 32, 7.5268745422e-08
+"union find, microset", "random 2.000", 32, 7.6961517334e-08
+"successor, 2-pass, microset", "random 2.000", 32, 7.3242187500e-08
+"successor, recursive", "random 4.000", 32, 1.3694763184e-07
+"successor, 2-pass", "random 4.000", 32, 1.3437271118e-07
+"successor, 2-pass, checked", "random 4.000", 32, 1.3847351074e-07
+"successor, halving", "random 4.000", 32, 1.2340545654e-07
+"quick find", "random 4.000", 32, 1.0395050049e-07
+"union find", "random 4.000", 32, 1.5406608582e-07
+"quick find, microset", "random 4.000", 32, 1.2655258179e-07
+"union find, microset", "random 4.000", 32, 1.2321472168e-07
+"successor, 2-pass, microset", "random 4.000", 32, 1.2598037720e-07
+"successor, recursive", "random 8.000", 32, 2.7532577515e-07
+"successor, 2-pass", "random 8.000", 32, 2.6798248291e-07
+"successor, 2-pass, checked", "random 8.000", 32, 2.4461746216e-07
+"successor, halving", "random 8.000", 32, 2.2029876709e-07
+"quick find", "random 8.000", 32, 1.7437934875e-07
+"union find", "random 8.000", 32, 2.4261474609e-07
+"quick find, microset", "random 8.000", 32, 2.3460388184e-07
+"union find, microset", "random 8.000", 32, 2.3479461670e-07
+"successor, 2-pass, microset", "random 8.000", 32, 2.3307800293e-07
+"successor, recursive", "random 0.125", 64, 5.9628486633e-08
+"successor, 2-pass", "random 0.125", 64, 5.5932998657e-08
+"successor, 2-pass, checked", "random 0.125", 64, 7.0548057556e-08
+"successor, halving", "random 0.125", 64, 5.2785873413e-08
+"quick find", "random 0.125", 64, 7.5936317444e-08
+"union find", "random 0.125", 64, 1.1138916016e-07
+"quick find, microset", "random 0.125", 64, 7.4005126953e-08
+"union find, microset", "random 0.125", 64, 7.1287155151e-08
+"successor, 2-pass, microset", "random 0.125", 64, 7.3051452637e-08
+"successor, recursive", "random 0.250", 64, 6.7996978760e-08
+"successor, 2-pass", "random 0.250", 64, 6.6232681274e-08
+"successor, 2-pass, checked", "random 0.250", 64, 7.7152252197e-08
+"successor, halving", "random 0.250", 64, 5.9938430786e-08
+"quick find", "random 0.250", 64, 8.3923339844e-08
+"union find", "random 0.250", 64, 1.2168884277e-07
+"quick find, microset", "random 0.250", 64, 7.7104568481e-08
+"union find, microset", "random 0.250", 64, 7.9035758972e-08
+"successor, 2-pass, microset", "random 0.250", 64, 7.6389312744e-08
+"successor, recursive", "random 0.500", 64, 8.5306167603e-08
+"successor, 2-pass", "random 0.500", 64, 8.4543228149e-08
+"successor, 2-pass, checked", "random 0.500", 64, 9.3269348145e-08
+"successor, halving", "random 0.500", 64, 7.3862075806e-08
+"quick find", "random 0.500", 64, 9.4985961914e-08
+"union find", "random 0.500", 64, 1.3766288757e-07
+"quick find, microset", "random 0.500", 64, 8.7475776672e-08
+"union find, microset", "random 0.500", 64, 8.6283683777e-08
+"successor, 2-pass, microset", "random 0.500", 64, 8.4376335144e-08
+"successor, recursive", "random 1.000", 64, 1.0590553284e-07
+"successor, 2-pass", "random 1.000", 64, 1.1320114136e-07
+"successor, 2-pass, checked", "random 1.000", 64, 1.1405944824e-07
+"successor, halving", "random 1.000", 64, 9.5605850220e-08
+"quick find", "random 1.000", 64, 1.1110305786e-07
+"union find", "random 1.000", 64, 1.5230178833e-07
+"quick find, microset", "random 1.000", 64, 1.0824203491e-07
+"union find, microset", "random 1.000", 64, 1.0671615601e-07
+"successor, 2-pass, microset", "random 1.000", 64, 1.0671615601e-07
+"successor, recursive", "random 2.000", 64, 1.6679763794e-07
+"successor, 2-pass", "random 2.000", 64, 1.7175674438e-07
+"successor, 2-pass, checked", "random 2.000", 64, 1.7576217651e-07
+"successor, halving", "random 2.000", 64, 1.4576911926e-07
+"quick find", "random 2.000", 64, 1.4896392822e-07
+"union find", "random 2.000", 64, 2.1343231201e-07
+"quick find, microset", "random 2.000", 64, 1.7566680908e-07
+"union find, microset", "random 2.000", 64, 1.7976760864e-07
+"successor, 2-pass, microset", "random 2.000", 64, 1.7776489258e-07
+"successor, recursive", "random 4.000", 64, 3.0765533447e-07
+"successor, 2-pass", "random 4.000", 64, 2.7408599854e-07
+"successor, 2-pass, checked", "random 4.000", 64, 2.7132034302e-07
+"successor, halving", "random 4.000", 64, 2.4967193604e-07
+"quick find", "random 4.000", 64, 2.1038055420e-07
+"union find", "random 4.000", 64, 3.1471252441e-07
+"quick find, microset", "random 4.000", 64, 2.5777816772e-07
+"union find, microset", "random 4.000", 64, 2.6283264160e-07
+"successor, 2-pass, microset", "random 4.000", 64, 2.6092529297e-07
+"successor, recursive", "random 8.000", 64, 6.4888000488e-07
+"successor, 2-pass", "random 8.000", 64, 5.0315856934e-07
+"successor, 2-pass, checked", "random 8.000", 64, 5.1860809326e-07
+"successor, halving", "random 8.000", 64, 4.7225952148e-07
+"quick find", "random 8.000", 64, 3.6544799805e-07
+"union find", "random 8.000", 64, 4.9552917480e-07
+"quick find, microset", "random 8.000", 64, 5.1345825195e-07
+"union find, microset", "random 8.000", 64, 5.3596496582e-07
+"successor, 2-pass, microset", "random 8.000", 64, 5.5103302002e-07
+"successor, recursive", "random 0.125", 128, 1.0876655579e-07
+"successor, 2-pass", "random 0.125", 128, 1.0490417480e-07
+"successor, 2-pass, checked", "random 0.125", 128, 1.3151168823e-07
+"successor, halving", "random 0.125", 128, 9.6607208252e-08
+"quick find", "random 0.125", 128, 1.5497207642e-07
+"union find", "random 0.125", 128, 2.2277832031e-07
+"quick find, microset", "random 0.125", 128, 1.2989044189e-07
+"union find, microset", "random 0.125", 128, 1.2965202332e-07
+"successor, 2-pass, microset", "random 0.125", 128, 1.3036727905e-07
+"successor, recursive", "random 0.250", 128, 1.3575553894e-07
+"successor, 2-pass", "random 0.250", 128, 1.3389587402e-07
+"successor, 2-pass, checked", "random 0.250", 128, 1.5201568604e-07
+"successor, halving", "random 0.250", 128, 1.2626647949e-07
+"quick find", "random 0.250", 128, 1.6851425171e-07
+"union find", "random 0.250", 128, 2.3870468140e-07
+"quick find, microset", "random 0.250", 128, 1.4047622681e-07
+"union find, microset", "random 0.250", 128, 1.4271736145e-07
+"successor, 2-pass, microset", "random 0.250", 128, 1.3999938965e-07
+"successor, recursive", "random 0.500", 128, 1.5411376953e-07
+"successor, 2-pass", "random 0.500", 128, 1.5559196472e-07
+"successor, 2-pass, checked", "random 0.500", 128, 1.8548965454e-07
+"successor, halving", "random 0.500", 128, 1.4281272888e-07
+"quick find", "random 0.500", 128, 1.8644332886e-07
+"union find", "random 0.500", 128, 2.7761459351e-07
+"quick find, microset", "random 0.500", 128, 1.7304420471e-07
+"union find, microset", "random 0.500", 128, 1.7790794373e-07
+"successor, 2-pass, microset", "random 0.500", 128, 1.7652511597e-07
+"successor, recursive", "random 1.000", 128, 2.0980834961e-07
+"successor, 2-pass", "random 1.000", 128, 2.2983551025e-07
+"successor, 2-pass, checked", "random 1.000", 128, 2.3784637451e-07
+"successor, halving", "random 1.000", 128, 1.9044876099e-07
+"quick find", "random 1.000", 128, 2.1982192993e-07
+"union find", "random 1.000", 128, 3.0736923218e-07
+"quick find, microset", "random 1.000", 128, 1.9655227661e-07
+"union find, microset", "random 1.000", 128, 1.9836425781e-07
+"successor, 2-pass, microset", "random 1.000", 128, 1.9297599792e-07
+"successor, recursive", "random 2.000", 128, 3.4046173096e-07
+"successor, 2-pass", "random 2.000", 128, 3.5247802734e-07
+"successor, 2-pass, checked", "random 2.000", 128, 3.4790039063e-07
+"successor, halving", "random 2.000", 128, 3.2463073730e-07
+"quick find", "random 2.000", 128, 2.9420852661e-07
+"union find", "random 2.000", 128, 4.4670104980e-07
+"quick find, microset", "random 2.000", 128, 2.8247833252e-07
+"union find, microset", "random 2.000", 128, 2.8266906738e-07
+"successor, 2-pass, microset", "random 2.000", 128, 2.8629302979e-07
+"successor, recursive", "random 4.000", 128, 5.9700012207e-07
+"successor, 2-pass", "random 4.000", 128, 5.5656433105e-07
+"successor, 2-pass, checked", "random 4.000", 128, 5.9661865234e-07
+"successor, halving", "random 4.000", 128, 5.1918029785e-07
+"quick find", "random 4.000", 128, 4.1961669922e-07
+"union find", "random 4.000", 128, 6.3953399658e-07
+"quick find, microset", "random 4.000", 128, 5.0830841064e-07
+"union find, microset", "random 4.000", 128, 5.1841735840e-07
+"successor, 2-pass, microset", "random 4.000", 128, 5.1498413086e-07
+"successor, recursive", "random 8.000", 128, 1.0829925537e-06
+"successor, 2-pass", "random 8.000", 128, 9.0408325195e-07
+"successor, 2-pass, checked", "random 8.000", 128, 1.1054992676e-06
+"successor, halving", "random 8.000", 128, 1.0757446289e-06
+"quick find", "random 8.000", 128, 6.7996978760e-07
+"union find", "random 8.000", 128, 9.8190307617e-07
+"quick find, microset", "random 8.000", 128, 1.0162353516e-06
+"union find, microset", "random 8.000", 128, 9.7236633301e-07
+"successor, 2-pass, microset", "random 8.000", 128, 9.5214843750e-07
+"successor, recursive", "random 0.125", 256, 2.0141601562e-07
+"successor, 2-pass", "random 0.125", 256, 2.0351409912e-07
+"successor, 2-pass, checked", "random 0.125", 256, 2.6321411133e-07
+"successor, halving", "random 0.125", 256, 1.9369125366e-07
+"quick find", "random 0.125", 256, 3.1757354736e-07
+"union find", "random 0.125", 256, 4.4326782227e-07
+"quick find, microset", "random 0.125", 256, 2.5062561035e-07
+"union find, microset", "random 0.125", 256, 2.5186538696e-07
+"successor, 2-pass, microset", "random 0.125", 256, 2.5568008423e-07
+"successor, recursive", "random 0.250", 256, 2.5939941406e-07
+"successor, 2-pass", "random 0.250", 256, 2.4986267090e-07
+"successor, 2-pass, checked", "random 0.250", 256, 3.0727386475e-07
+"successor, halving", "random 0.250", 256, 2.2907257080e-07
+"quick find", "random 0.250", 256, 3.4589767456e-07
+"union find", "random 0.250", 256, 4.7035217285e-07
+"quick find, microset", "random 0.250", 256, 2.6588439941e-07
+"union find, microset", "random 0.250", 256, 2.7256011963e-07
+"successor, 2-pass, microset", "random 0.250", 256, 2.6550292969e-07
+"successor, recursive", "random 0.500", 256, 3.0984878540e-07
+"successor, 2-pass", "random 0.500", 256, 3.2501220703e-07
+"successor, 2-pass, checked", "random 0.500", 256, 3.7136077881e-07
+"successor, halving", "random 0.500", 256, 3.0422210693e-07
+"quick find", "random 0.500", 256, 3.7956237793e-07
+"union find", "random 0.500", 256, 5.0277709961e-07
+"quick find, microset", "random 0.500", 256, 3.5037994385e-07
+"union find, microset", "random 0.500", 256, 3.6678314209e-07
+"successor, 2-pass, microset", "random 0.500", 256, 3.6544799805e-07
+"successor, recursive", "random 1.000", 256, 4.1580200195e-07
+"successor, 2-pass", "random 1.000", 256, 4.3754577637e-07
+"successor, 2-pass, checked", "random 1.000", 256, 4.4956207275e-07
+"successor, halving", "random 1.000", 256, 3.7193298340e-07
+"quick find", "random 1.000", 256, 4.3144226074e-07
+"union find", "random 1.000", 256, 5.9680938721e-07
+"quick find, microset", "random 1.000", 256, 3.9148330688e-07
+"union find, microset", "random 1.000", 256, 3.8127899170e-07
+"successor, 2-pass, microset", "random 1.000", 256, 3.6649703979e-07
+"successor, recursive", "random 2.000", 256, 6.6871643066e-07
+"successor, 2-pass", "random 2.000", 256, 6.9160461426e-07
+"successor, 2-pass, checked", "random 2.000", 256, 6.6642761230e-07
+"successor, halving", "random 2.000", 256, 5.6953430176e-07
+"quick find", "random 2.000", 256, 5.6838989258e-07
+"union find", "random 2.000", 256, 8.8119506836e-07
+"quick find, microset", "random 2.000", 256, 5.7144165039e-07
+"union find, microset", "random 2.000", 256, 5.8898925781e-07
+"successor, 2-pass, microset", "random 2.000", 256, 5.8059692383e-07
+"successor, recursive", "random 4.000", 256, 1.3175964355e-06
+"successor, 2-pass", "random 4.000", 256, 1.1024475098e-06
+"successor, 2-pass, checked", "random 4.000", 256, 1.2145996094e-06
+"successor, halving", "random 4.000", 256, 1.0200500488e-06
+"quick find", "random 4.000", 256, 8.3847045898e-07
+"union find", "random 4.000", 256, 1.2447357178e-06
+"quick find, microset", "random 4.000", 256, 1.0532379150e-06
+"union find, microset", "random 4.000", 256, 1.0269165039e-06
+"successor, 2-pass, microset", "random 4.000", 256, 1.0581970215e-06
+"successor, recursive", "random 8.000", 256, 2.3406982422e-06
+"successor, 2-pass", "random 8.000", 256, 1.8760681152e-06
+"successor, 2-pass, checked", "random 8.000", 256, 2.1331787109e-06
+"successor, halving", "random 8.000", 256, 2.0240783691e-06
+"quick find", "random 8.000", 256, 1.4762878418e-06
+"union find", "random 8.000", 256, 2.0896911621e-06
+"quick find, microset", "random 8.000", 256, 1.9836425781e-06
+"union find, microset", "random 8.000", 256, 2.0294189453e-06
+"successor, 2-pass, microset", "random 8.000", 256, 2.0980834961e-06
+"successor, recursive", "random 0.125", 512, 4.6920776367e-07
+"successor, 2-pass", "random 0.125", 512, 4.4860839844e-07
+"successor, 2-pass, checked", "random 0.125", 512, 5.2871704102e-07
+"successor, halving", "random 0.125", 512, 4.5356750488e-07
+"quick find", "random 0.125", 512, 6.2065124512e-07
+"union find", "random 0.125", 512, 8.7051391602e-07
+"quick find, microset", "random 0.125", 512, 4.6291351318e-07
+"union find, microset", "random 0.125", 512, 4.4555664062e-07
+"successor, 2-pass, microset", "random 0.125", 512, 4.5204162598e-07
+"successor, recursive", "random 0.250", 512, 4.9457550049e-07
+"successor, 2-pass", "random 0.250", 512, 4.8561096191e-07
+"successor, 2-pass, checked", "random 0.250", 512, 5.9394836426e-07
+"successor, halving", "random 0.250", 512, 4.4803619385e-07
+"quick find", "random 0.250", 512, 6.6490173340e-07
+"union find", "random 0.250", 512, 8.9187622070e-07
+"quick find, microset", "random 0.250", 512, 5.3176879883e-07
+"union find, microset", "random 0.250", 512, 5.3520202637e-07
+"successor, 2-pass, microset", "random 0.250", 512, 5.4397583008e-07
+"successor, recursive", "random 0.500", 512, 6.0768127441e-07
+"successor, 2-pass", "random 0.500", 512, 6.1759948730e-07
+"successor, 2-pass, checked", "random 0.500", 512, 7.3680877686e-07
+"successor, halving", "random 0.500", 512, 5.6705474854e-07
+"quick find", "random 0.500", 512, 7.6675415039e-07
+"union find", "random 0.500", 512, 1.0665893555e-06
+"quick find, microset", "random 0.500", 512, 6.6661834717e-07
+"union find, microset", "random 0.500", 512, 6.6528320312e-07
+"successor, 2-pass, microset", "random 0.500", 512, 6.4773559570e-07
+"successor, recursive", "random 1.000", 512, 7.6675415039e-07
+"successor, 2-pass", "random 1.000", 512, 8.8882446289e-07
+"successor, 2-pass, checked", "random 1.000", 512, 8.8653564453e-07
+"successor, halving", "random 1.000", 512, 6.8645477295e-07
+"quick find", "random 1.000", 512, 8.2855224609e-07
+"union find", "random 1.000", 512, 1.1871337891e-06
+"quick find, microset", "random 1.000", 512, 8.3198547363e-07
+"union find, microset", "random 1.000", 512, 8.7089538574e-07
+"successor, 2-pass, microset", "random 1.000", 512, 8.3847045898e-07
+"successor, recursive", "random 2.000", 512, 1.3442993164e-06
+"successor, 2-pass", "random 2.000", 512, 1.3435363770e-06
+"successor, 2-pass, checked", "random 2.000", 512, 1.3740539551e-06
+"successor, halving", "random 2.000", 512, 1.1474609375e-06
+"quick find", "random 2.000", 512, 1.2153625488e-06
+"union find", "random 2.000", 512, 1.7440795898e-06
+"quick find, microset", "random 2.000", 512, 1.1863708496e-06
+"union find, microset", "random 2.000", 512, 1.2008666992e-06
+"successor, 2-pass, microset", "random 2.000", 512, 1.1810302734e-06
+"successor, recursive", "random 4.000", 512, 2.2972106934e-06
+"successor, 2-pass", "random 4.000", 512, 2.1194458008e-06
+"successor, 2-pass, checked", "random 4.000", 512, 2.6145935059e-06
+"successor, halving", "random 4.000", 512, 2.0645141602e-06
+"quick find", "random 4.000", 512, 1.6830444336e-06
+"union find", "random 4.000", 512, 2.4955749512e-06
+"quick find, microset", "random 4.000", 512, 2.0874023438e-06
+"union find, microset", "random 4.000", 512, 2.1583557129e-06
+"successor, 2-pass, microset", "random 4.000", 512, 2.1209716797e-06
+"successor, recursive", "random 8.000", 512, 4.2968750000e-06
+"successor, 2-pass", "random 8.000", 512, 3.6346435547e-06
+"successor, 2-pass, checked", "random 8.000", 512, 4.3365478516e-06
+"successor, halving", "random 8.000", 512, 3.8803100586e-06
+"quick find", "random 8.000", 512, 2.9067993164e-06
+"union find", "random 8.000", 512, 4.2480468750e-06
+"quick find, microset", "random 8.000", 512, 4.1534423828e-06
+"union find, microset", "random 8.000", 512, 4.1458129883e-06
+"successor, 2-pass, microset", "random 8.000", 512, 4.1580200195e-06
+"successor, recursive", "random 0.125", 1024, 8.4991455078e-07
+"successor, 2-pass", "random 0.125", 1024, 8.2206726074e-07
+"successor, 2-pass, checked", "random 0.125", 1024, 1.0227203369e-06
+"successor, halving", "random 0.125", 1024, 7.9116821289e-07
+"quick find", "random 0.125", 1024, 1.2596130371e-06
+"union find", "random 0.125", 1024, 1.7486572266e-06
+"quick find, microset", "random 0.125", 1024, 9.0942382813e-07
+"union find, microset", "random 0.125", 1024, 9.1361999512e-07
+"successor, 2-pass, microset", "random 0.125", 1024, 8.9073181152e-07
+"successor, recursive", "random 0.250", 1024, 9.9105834961e-07
+"successor, 2-pass", "random 0.250", 1024, 1.0116577148e-06
+"successor, 2-pass, checked", "random 0.250", 1024, 1.1764526367e-06
+"successor, halving", "random 0.250", 1024, 9.0637207031e-07
+"quick find", "random 0.250", 1024, 1.2962341309e-06
+"union find", "random 0.250", 1024, 1.8325805664e-06
+"quick find, microset", "random 0.250", 1024, 1.0055541992e-06
+"union find, microset", "random 0.250", 1024, 1.0410308838e-06
+"successor, 2-pass, microset", "random 0.250", 1024, 1.0215759277e-06
+"successor, recursive", "random 0.500", 1024, 1.1188507080e-06
+"successor, 2-pass", "random 0.500", 1024, 1.2016296387e-06
+"successor, 2-pass, checked", "random 0.500", 1024, 1.3359069824e-06
+"successor, halving", "random 0.500", 1024, 1.0452270508e-06
+"quick find", "random 0.500", 1024, 1.4572143555e-06
+"union find", "random 0.500", 1024, 2.0904541016e-06
+"quick find, microset", "random 0.500", 1024, 1.2542724609e-06
+"union find, microset", "random 0.500", 1024, 1.2550354004e-06
+"successor, 2-pass, microset", "random 0.500", 1024, 1.2538909912e-06
+"successor, recursive", "random 1.000", 1024, 1.5258789063e-06
+"successor, 2-pass", "random 1.000", 1024, 1.5792846680e-06
+"successor, 2-pass, checked", "random 1.000", 1024, 1.8020629883e-06
+"successor, halving", "random 1.000", 1024, 1.3069152832e-06
+"quick find", "random 1.000", 1024, 1.7295837402e-06
+"union find", "random 1.000", 1024, 2.4238586426e-06
+"quick find, microset", "random 1.000", 1024, 1.5876770020e-06
+"union find, microset", "random 1.000", 1024, 1.5838623047e-06
+"successor, 2-pass, microset", "random 1.000", 1024, 1.5880584717e-06
+"successor, recursive", "random 2.000", 1024, 2.5703430176e-06
+"successor, 2-pass", "random 2.000", 1024, 2.6596069336e-06
+"successor, 2-pass, checked", "random 2.000", 1024, 3.1661987305e-06
+"successor, halving", "random 2.000", 1024, 2.3132324219e-06
+"quick find", "random 2.000", 1024, 2.4192810059e-06
+"union find", "random 2.000", 1024, 3.4637451172e-06
+"quick find, microset", "random 2.000", 1024, 2.6718139648e-06
+"union find, microset", "random 2.000", 1024, 2.7267456055e-06
+"successor, 2-pass, microset", "random 2.000", 1024, 2.7145385742e-06
+"successor, recursive", "random 4.000", 1024, 4.7058105469e-06
+"successor, 2-pass", "random 4.000", 1024, 4.1778564453e-06
+"successor, 2-pass, checked", "random 4.000", 1024, 5.5007934570e-06
+"successor, halving", "random 4.000", 1024, 4.2297363281e-06
+"quick find", "random 4.000", 1024, 3.4912109375e-06
+"union find", "random 4.000", 1024, 6.0058593750e-06
+"quick find, microset", "random 4.000", 1024, 4.8583984375e-06
+"union find, microset", "random 4.000", 1024, 4.9911499023e-06
+"successor, 2-pass, microset", "random 4.000", 1024, 4.8904418945e-06
+"successor, recursive", "random 8.000", 1024, 7.9956054688e-06
+"successor, 2-pass", "random 8.000", 1024, 7.2143554687e-06
+"successor, 2-pass, checked", "random 8.000", 1024, 8.8958740234e-06
+"successor, halving", "random 8.000", 1024, 7.6660156250e-06
+"quick find", "random 8.000", 1024, 6.3568115234e-06
+"union find", "random 8.000", 1024, 9.9609375000e-06
+"quick find, microset", "random 8.000", 1024, 8.3007812500e-06
+"union find, microset", "random 8.000", 1024, 8.3923339844e-06
+"successor, 2-pass, microset", "random 8.000", 1024, 8.5510253906e-06
+"successor, recursive", "random 0.125", 2048, 1.6891479492e-06
+"successor, 2-pass", "random 0.125", 2048, 1.6571044922e-06
+"successor, 2-pass, checked", "random 0.125", 2048, 1.9836425781e-06
+"successor, halving", "random 0.125", 2048, 1.5869140625e-06
+"quick find", "random 0.125", 2048, 2.7046203613e-06
+"union find", "random 0.125", 2048, 3.7322998047e-06
+"quick find, microset", "random 0.125", 2048, 2.0050048828e-06
+"union find, microset", "random 0.125", 2048, 1.9828796387e-06
+"successor, 2-pass, microset", "random 0.125", 2048, 1.9531250000e-06
+"successor, recursive", "random 0.250", 2048, 1.8814086914e-06
+"successor, 2-pass", "random 0.250", 2048, 1.8859863281e-06
+"successor, 2-pass, checked", "random 0.250", 2048, 2.3040771484e-06
+"successor, halving", "random 0.250", 2048, 1.7944335937e-06
+"quick find", "random 0.250", 2048, 2.7992248535e-06
+"union find", "random 0.250", 2048, 4.0344238281e-06
+"quick find, microset", "random 0.250", 2048, 2.2575378418e-06
+"union find, microset", "random 0.250", 2048, 2.2911071777e-06
+"successor, 2-pass, microset", "random 0.250", 2048, 2.2583007812e-06
+"successor, recursive", "random 0.500", 2048, 2.3185729980e-06
+"successor, 2-pass", "random 0.500", 2048, 2.3872375488e-06
+"successor, 2-pass, checked", "random 0.500", 2048, 2.6107788086e-06
+"successor, halving", "random 0.500", 2048, 2.0431518555e-06
+"quick find", "random 0.500", 2048, 2.9693603516e-06
+"union find", "random 0.500", 2048, 4.4708251953e-06
+"quick find, microset", "random 0.500", 2048, 2.9281616211e-06
+"union find, microset", "random 0.500", 2048, 2.9151916504e-06
+"successor, 2-pass, microset", "random 0.500", 2048, 3.0258178711e-06
+"successor, recursive", "random 1.000", 2048, 3.0174255371e-06
+"successor, 2-pass", "random 1.000", 2048, 3.1890869141e-06
+"successor, 2-pass, checked", "random 1.000", 2048, 4.1763305664e-06
+"successor, halving", "random 1.000", 2048, 2.7084350586e-06
+"quick find", "random 1.000", 2048, 3.8085937500e-06
+"union find", "random 1.000", 2048, 5.2307128906e-06
+"quick find, microset", "random 1.000", 2048, 3.8528442383e-06
+"union find, microset", "random 1.000", 2048, 3.7902832031e-06
+"successor, 2-pass, microset", "random 1.000", 2048, 3.9306640625e-06
+"successor, recursive", "random 2.000", 2048, 5.2734375000e-06
+"successor, 2-pass", "random 2.000", 2048, 5.3283691406e-06
+"successor, 2-pass, checked", "random 2.000", 2048, 6.9091796875e-06
+"successor, halving", "random 2.000", 2048, 4.3762207031e-06
+"quick find", "random 2.000", 2048, 5.4504394531e-06
+"union find", "random 2.000", 2048, 8.5754394531e-06
+"quick find, microset", "random 2.000", 2048, 6.1218261719e-06
+"union find, microset", "random 2.000", 2048, 6.4208984375e-06
+"successor, 2-pass, microset", "random 2.000", 2048, 6.6345214844e-06
+"successor, recursive", "random 4.000", 2048, 8.7524414062e-06
+"successor, 2-pass", "random 4.000", 2048, 8.4747314453e-06
+"successor, 2-pass, checked", "random 4.000", 2048, 1.1074829102e-05
+"successor, halving", "random 4.000", 2048, 8.1420898438e-06
+"quick find", "random 4.000", 2048, 8.5815429688e-06
+"union find", "random 4.000", 2048, 1.4916992188e-05
+"quick find, microset", "random 4.000", 2048, 1.0937500000e-05
+"union find, microset", "random 4.000", 2048, 1.1849975586e-05
+"successor, 2-pass, microset", "random 4.000", 2048, 1.1169433594e-05
+"successor, recursive", "random 8.000", 2048, 1.5051269531e-05
+"successor, 2-pass", "random 8.000", 2048, 1.4776611328e-05
+"successor, 2-pass, checked", "random 8.000", 2048, 1.7993164063e-05
+"successor, halving", "random 8.000", 2048, 1.6101074219e-05
+"quick find", "random 8.000", 2048, 1.4434814453e-05
+"union find", "random 8.000", 2048, 2.2668457031e-05
+"quick find, microset", "random 8.000", 2048, 1.7102050781e-05
+"union find, microset", "random 8.000", 2048, 1.7193603516e-05
+"successor, 2-pass, microset", "random 8.000", 2048, 1.7224121094e-05
+"successor, recursive", "random 0.125", 4096, 3.2104492188e-06
+"successor, 2-pass", "random 0.125", 4096, 3.1127929688e-06
+"successor, 2-pass, checked", "random 0.125", 4096, 4.1503906250e-06
+"successor, halving", "random 0.125", 4096, 3.0593872070e-06
+"quick find", "random 0.125", 4096, 5.4931640625e-06
+"union find", "random 0.125", 4096, 1.6455078125e-05
+"quick find, microset", "random 0.125", 4096, 4.1168212891e-06
+"union find, microset", "random 0.125", 4096, 4.1198730469e-06
+"successor, 2-pass, microset", "random 0.125", 4096, 4.1854858398e-06
+"successor, recursive", "random 0.250", 4096, 3.5491943359e-06
+"successor, 2-pass", "random 0.250", 4096, 3.6636352539e-06
+"successor, 2-pass, checked", "random 0.250", 4096, 4.8629760742e-06
+"successor, halving", "random 0.250", 4096, 3.1372070313e-06
+"quick find", "random 0.250", 4096, 6.0012817383e-06
+"union find", "random 0.250", 4096, 1.7834472656e-05
+"quick find, microset", "random 0.250", 4096, 5.0277709961e-06
+"union find, microset", "random 0.250", 4096, 5.0506591797e-06
+"successor, 2-pass, microset", "random 0.250", 4096, 4.8400878906e-06
+"successor, recursive", "random 0.500", 4096, 4.1839599609e-06
+"successor, 2-pass", "random 0.500", 4096, 4.4006347656e-06
+"successor, 2-pass, checked", "random 0.500", 4096, 6.7871093750e-06
+"successor, halving", "random 0.500", 4096, 4.1000366211e-06
+"quick find", "random 0.500", 4096, 7.1319580078e-06
+"union find", "random 0.500", 4096, 1.8426513672e-05
+"quick find, microset", "random 0.500", 4096, 6.6040039063e-06
+"union find, microset", "random 0.500", 4096, 6.9091796875e-06
+"successor, 2-pass, microset", "random 0.500", 4096, 6.5216064453e-06
+"successor, recursive", "random 1.000", 4096, 5.8349609375e-06
+"successor, 2-pass", "random 1.000", 4096, 6.2042236328e-06
+"successor, 2-pass, checked", "random 1.000", 4096, 1.0403442383e-05
+"successor, halving", "random 1.000", 4096, 5.1910400391e-06
+"quick find", "random 1.000", 4096, 9.5306396484e-06
+"union find", "random 1.000", 4096, 1.9744873047e-05
+"quick find, microset", "random 1.000", 4096, 1.0028076172e-05
+"union find, microset", "random 1.000", 4096, 1.0504150391e-05
+"successor, 2-pass, microset", "random 1.000", 4096, 1.0198974609e-05
+"successor, recursive", "random 2.000", 4096, 9.6466064453e-06
+"successor, 2-pass", "random 2.000", 4096, 1.0159301758e-05
+"successor, 2-pass, checked", "random 2.000", 4096, 1.3867187500e-05
+"successor, halving", "random 2.000", 4096, 8.7493896484e-06
+"quick find", "random 2.000", 4096, 1.3891601562e-05
+"union find", "random 2.000", 4096, 2.5866699219e-05
+"quick find, microset", "random 2.000", 4096, 1.3623046875e-05
+"union find, microset", "random 2.000", 4096, 1.3354492188e-05
+"successor, 2-pass, microset", "random 2.000", 4096, 1.3421630859e-05
+"successor, recursive", "random 4.000", 4096, 1.6485595703e-05
+"successor, 2-pass", "random 4.000", 4096, 1.6180419922e-05
+"successor, 2-pass, checked", "random 4.000", 4096, 2.2833251953e-05
+"successor, halving", "random 4.000", 4096, 1.5124511719e-05
+"quick find", "random 4.000", 4096, 2.1545410156e-05
+"union find", "random 4.000", 4096, 3.2788085938e-05
+"quick find, microset", "random 4.000", 4096, 2.0611572266e-05
+"union find, microset", "random 4.000", 4096, 2.0397949219e-05
+"successor, 2-pass, microset", "random 4.000", 4096, 2.0471191406e-05
+"successor, recursive", "random 8.000", 4096, 3.0236816406e-05
+"successor, 2-pass", "random 8.000", 4096, 2.8515625000e-05
+"successor, 2-pass, checked", "random 8.000", 4096, 3.4619140625e-05
+"successor, halving", "random 8.000", 4096, 2.8173828125e-05
+"quick find", "random 8.000", 4096, 3.0810546875e-05
+"union find", "random 8.000", 4096, 4.7387695312e-05
+"quick find, microset", "random 8.000", 4096, 3.8818359375e-05
+"union find, microset", "random 8.000", 4096, 4.2163085938e-05
+"successor, 2-pass, microset", "random 8.000", 4096, 4.1345214844e-05
+"successor, recursive", "random 0.125", 8192, 6.9458007812e-06
+"successor, 2-pass", "random 0.125", 8192, 6.9519042969e-06
+"successor, 2-pass, checked", "random 0.125", 8192, 1.4367675781e-05
+"successor, halving", "random 0.125", 8192, 6.7565917969e-06
+"quick find", "random 0.125", 8192, 2.0965576172e-05
+"union find", "random 0.125", 8192, 4.0771484375e-05
+"quick find, microset", "random 0.125", 8192, 1.2353515625e-05
+"union find, microset", "random 0.125", 8192, 1.2792968750e-05
+"successor, 2-pass, microset", "random 0.125", 8192, 1.2707519531e-05
+"successor, recursive", "random 0.250", 8192, 8.0810546875e-06
+"successor, 2-pass", "random 0.250", 8192, 7.6965332031e-06
+"successor, 2-pass, checked", "random 0.250", 8192, 1.4483642578e-05
+"successor, halving", "random 0.250", 8192, 7.4707031250e-06
+"quick find", "random 0.250", 8192, 1.9738769531e-05
+"union find", "random 0.250", 8192, 4.3640136719e-05
+"quick find, microset", "random 0.250", 8192, 1.4282226562e-05
+"union find, microset", "random 0.250", 8192, 1.4501953125e-05
+"successor, 2-pass, microset", "random 0.250", 8192, 1.4257812500e-05
+"successor, recursive", "random 0.500", 8192, 8.9233398437e-06
+"successor, 2-pass", "random 0.500", 8192, 8.9721679687e-06
+"successor, 2-pass, checked", "random 0.500", 8192, 1.8896484375e-05
+"successor, halving", "random 0.500", 8192, 9.7320556641e-06
+"quick find", "random 0.500", 8192, 2.2607421875e-05
+"union find", "random 0.500", 8192, 4.3945312500e-05
+"quick find, microset", "random 0.500", 8192, 1.7077636719e-05
+"union find, microset", "random 0.500", 8192, 1.6357421875e-05
+"successor, 2-pass, microset", "random 0.500", 8192, 1.6571044922e-05
+"successor, recursive", "random 1.000", 8192, 1.2902832031e-05
+"successor, 2-pass", "random 1.000", 8192, 1.1920166016e-05
+"successor, 2-pass, checked", "random 1.000", 8192, 2.3315429688e-05
+"successor, halving", "random 1.000", 8192, 1.1547851562e-05
+"quick find", "random 1.000", 8192, 2.7856445313e-05
+"union find", "random 1.000", 8192, 4.6728515625e-05
+"quick find, microset", "random 1.000", 8192, 2.2338867187e-05
+"union find, microset", "random 1.000", 8192, 2.3193359375e-05
+"successor, 2-pass, microset", "random 1.000", 8192, 2.2412109375e-05
+"successor, recursive", "random 2.000", 8192, 1.9738769531e-05
+"successor, 2-pass", "random 2.000", 8192, 2.1105957031e-05
+"successor, 2-pass, checked", "random 2.000", 8192, 3.1323242187e-05
+"successor, halving", "random 2.000", 8192, 1.7797851562e-05
+"quick find", "random 2.000", 8192, 3.6254882813e-05
+"union find", "random 2.000", 8192, 5.7519531250e-05
+"quick find, microset", "random 2.000", 8192, 2.9589843750e-05
+"union find, microset", "random 2.000", 8192, 2.9345703125e-05
+"successor, 2-pass, microset", "random 2.000", 8192, 2.9052734375e-05
+"successor, recursive", "random 4.000", 8192, 3.2543945313e-05
+"successor, 2-pass", "random 4.000", 8192, 3.3337402344e-05
+"successor, 2-pass, checked", "random 4.000", 8192, 4.7143554687e-05
+"successor, halving", "random 4.000", 8192, 3.0065917969e-05
+"quick find", "random 4.000", 8192, 5.0158691406e-05
+"union find", "random 4.000", 8192, 7.0117187500e-05
+"quick find, microset", "random 4.000", 8192, 4.0380859375e-05
+"union find, microset", "random 4.000", 8192, 4.0979003906e-05
+"successor, 2-pass, microset", "random 4.000", 8192, 3.9306640625e-05
+"successor, recursive", "random 8.000", 8192, 5.9057617188e-05
+"successor, 2-pass", "random 8.000", 8192, 5.8691406250e-05
+"successor, 2-pass, checked", "random 8.000", 8192, 7.2167968750e-05
+"successor, halving", "random 8.000", 8192, 6.0180664062e-05
+"quick find", "random 8.000", 8192, 6.9189453125e-05
+"union find", "random 8.000", 8192, 9.7827148437e-05
+"quick find, microset", "random 8.000", 8192, 6.8652343750e-05
+"union find, microset", "random 8.000", 8192, 6.8579101563e-05
+"successor, 2-pass, microset", "random 8.000", 8192, 6.9067382813e-05
+"successor, recursive", "random 0.125", 16384, 1.4624023437e-05
+"successor, 2-pass", "random 0.125", 16384, 1.4025878906e-05
+"successor, 2-pass, checked", "random 0.125", 16384, 3.4301757813e-05
+"successor, halving", "random 0.125", 16384, 1.6918945313e-05
+"quick find", "random 0.125", 16384, 6.3525390625e-05
+"union find", "random 0.125", 16384, 9.1748046875e-05
+"quick find, microset", "random 0.125", 16384, 3.0932617187e-05
+"union find, microset", "random 0.125", 16384, 3.0834960937e-05
+"successor, 2-pass, microset", "random 0.125", 16384, 3.0334472656e-05
+"successor, recursive", "random 0.250", 16384, 1.5051269531e-05
+"successor, 2-pass", "random 0.250", 16384, 1.5661621094e-05
+"successor, 2-pass, checked", "random 0.250", 16384, 3.5644531250e-05
+"successor, halving", "random 0.250", 16384, 1.6296386719e-05
+"quick find", "random 0.250", 16384, 5.9619140625e-05
+"union find", "random 0.250", 16384, 9.3750000000e-05
+"quick find, microset", "random 0.250", 16384, 3.3605957031e-05
+"union find, microset", "random 0.250", 16384, 3.4082031250e-05
+"successor, 2-pass, microset", "random 0.250", 16384, 3.4216308594e-05
+"successor, recursive", "random 0.500", 16384, 2.7270507812e-05
+"successor, 2-pass", "random 0.500", 16384, 1.9592285156e-05
+"successor, 2-pass, checked", "random 0.500", 16384, 4.2858886719e-05
+"successor, halving", "random 0.500", 16384, 1.8798828125e-05
+"quick find", "random 0.500", 16384, 6.1425781250e-05
+"union find", "random 0.500", 16384, 9.4384765625e-05
+"quick find, microset", "random 0.500", 16384, 3.7902832031e-05
+"union find, microset", "random 0.500", 16384, 3.8232421875e-05
+"successor, 2-pass, microset", "random 0.500", 16384, 3.8623046875e-05
+"successor, recursive", "random 1.000", 16384, 3.2324218750e-05
+"successor, 2-pass", "random 1.000", 16384, 2.6977539063e-05
+"successor, 2-pass, checked", "random 1.000", 16384, 4.9291992188e-05
+"successor, halving", "random 1.000", 16384, 2.4841308594e-05
+"quick find", "random 1.000", 16384, 7.0019531250e-05
+"union find", "random 1.000", 16384, 1.0058593750e-04
+"quick find, microset", "random 1.000", 16384, 4.6411132812e-05
+"union find, microset", "random 1.000", 16384, 4.6142578125e-05
+"successor, 2-pass, microset", "random 1.000", 16384, 4.6215820312e-05
+"successor, recursive", "random 2.000", 16384, 3.8378906250e-05
+"successor, 2-pass", "random 2.000", 16384, 4.2687988281e-05
+"successor, 2-pass, checked", "random 2.000", 16384, 6.6113281250e-05
+"successor, halving", "random 2.000", 16384, 3.6523437500e-05
+"quick find", "random 2.000", 16384, 8.5791015625e-05
+"union find", "random 2.000", 16384, 1.2089843750e-04
+"quick find, microset", "random 2.000", 16384, 5.9863281250e-05
+"union find, microset", "random 2.000", 16384, 6.0449218750e-05
+"successor, 2-pass, microset", "random 2.000", 16384, 5.7568359375e-05
+"successor, recursive", "random 4.000", 16384, 6.3134765625e-05
+"successor, 2-pass", "random 4.000", 16384, 6.5698242188e-05
+"successor, 2-pass, checked", "random 4.000", 16384, 9.5922851562e-05
+"successor, halving", "random 4.000", 16384, 5.4101562500e-05
+"quick find", "random 4.000", 16384, 1.0332031250e-04
+"union find", "random 4.000", 16384, 1.4277343750e-04
+"quick find, microset", "random 4.000", 16384, 8.2666015625e-05
+"union find, microset", "random 4.000", 16384, 8.8085937500e-05
+"successor, 2-pass, microset", "random 4.000", 16384, 8.8037109375e-05
+"successor, recursive", "random 8.000", 16384, 1.1357421875e-04
+"successor, 2-pass", "random 8.000", 16384, 1.1503906250e-04
+"successor, 2-pass, checked", "random 8.000", 16384, 1.4711914063e-04
+"successor, halving", "random 8.000", 16384, 1.0585937500e-04
+"quick find", "random 8.000", 16384, 1.4414062500e-04
+"union find", "random 8.000", 16384, 1.9804687500e-04
+"quick find, microset", "random 8.000", 16384, 1.3666992187e-04
+"union find, microset", "random 8.000", 16384, 1.3603515625e-04
+"successor, 2-pass, microset", "random 8.000", 16384, 1.3510742188e-04
+"successor, recursive", "random 0.125", 32768, 3.3374023437e-05
+"successor, 2-pass", "random 0.125", 32768, 3.7609863281e-05
+"successor, 2-pass, checked", "random 0.125", 32768, 7.5341796875e-05
+"successor, halving", "random 0.125", 32768, 3.8891601562e-05
+"quick find", "random 0.125", 32768, 1.5039062500e-04
+"union find", "random 0.125", 32768, 1.9628906250e-04
+"quick find, microset", "random 0.125", 32768, 6.7919921875e-05
+"union find, microset", "random 0.125", 32768, 6.9628906250e-05
+"successor, 2-pass, microset", "random 0.125", 32768, 6.8066406250e-05
+"successor, recursive", "random 0.250", 32768, 3.5461425781e-05
+"successor, 2-pass", "random 0.250", 32768, 3.8769531250e-05
+"successor, 2-pass, checked", "random 0.250", 32768, 7.8271484375e-05
+"successor, halving", "random 0.250", 32768, 4.7802734375e-05
+"quick find", "random 0.250", 32768, 1.4458007812e-04
+"union find", "random 0.250", 32768, 2.0371093750e-04
+"quick find, microset", "random 0.250", 32768, 7.5024414063e-05
+"union find, microset", "random 0.250", 32768, 7.4926757813e-05
+"successor, 2-pass, microset", "random 0.250", 32768, 7.3803710938e-05
+"successor, recursive", "random 0.500", 32768, 4.2578125000e-05
+"successor, 2-pass", "random 0.500", 32768, 4.2028808594e-05
+"successor, 2-pass, checked", "random 0.500", 32768, 8.9868164062e-05
+"successor, halving", "random 0.500", 32768, 4.3994140625e-05
+"quick find", "random 0.500", 32768, 1.4238281250e-04
+"union find", "random 0.500", 32768, 1.9843750000e-04
+"quick find, microset", "random 0.500", 32768, 8.4814453125e-05
+"union find, microset", "random 0.500", 32768, 8.5009765625e-05
+"successor, 2-pass, microset", "random 0.500", 32768, 8.5742187500e-05
+"successor, recursive", "random 1.000", 32768, 5.7641601563e-05
+"successor, 2-pass", "random 1.000", 32768, 5.4931640625e-05
+"successor, 2-pass, checked", "random 1.000", 32768, 1.0004882812e-04
+"successor, halving", "random 1.000", 32768, 5.5371093750e-05
+"quick find", "random 1.000", 32768, 1.4838867188e-04
+"union find", "random 1.000", 32768, 2.0371093750e-04
+"quick find, microset", "random 1.000", 32768, 9.2089843750e-05
+"union find, microset", "random 1.000", 32768, 9.3017578125e-05
+"successor, 2-pass, microset", "random 1.000", 32768, 9.5947265625e-05
+"successor, recursive", "random 2.000", 32768, 8.1103515625e-05
+"successor, 2-pass", "random 2.000", 32768, 8.2861328125e-05
+"successor, 2-pass, checked", "random 2.000", 32768, 1.3901367188e-04
+"successor, halving", "random 2.000", 32768, 7.5390625000e-05
+"quick find", "random 2.000", 32768, 1.8666992187e-04
+"union find", "random 2.000", 32768, 2.5556640625e-04
+"quick find, microset", "random 2.000", 32768, 1.2431640625e-04
+"union find, microset", "random 2.000", 32768, 1.2519531250e-04
+"successor, 2-pass, microset", "random 2.000", 32768, 1.2509765625e-04
+"successor, recursive", "random 4.000", 32768, 1.2187500000e-04
+"successor, 2-pass", "random 4.000", 32768, 1.2812500000e-04
+"successor, 2-pass, checked", "random 4.000", 32768, 1.9482421875e-04
+"successor, halving", "random 4.000", 32768, 1.1347656250e-04
+"quick find", "random 4.000", 32768, 2.2861328125e-04
+"union find", "random 4.000", 32768, 3.1367187500e-04
+"quick find, microset", "random 4.000", 32768, 1.5976562500e-04
+"union find, microset", "random 4.000", 32768, 1.7246093750e-04
+"successor, 2-pass, microset", "random 4.000", 32768, 1.7548828125e-04
+"successor, recursive", "random 8.000", 32768, 2.2539062500e-04
+"successor, 2-pass", "random 8.000", 32768, 2.2675781250e-04
+"successor, 2-pass, checked", "random 8.000", 32768, 2.9843750000e-04
+"successor, halving", "random 8.000", 32768, 2.0224609375e-04
+"quick find", "random 8.000", 32768, 3.0644531250e-04
+"union find", "random 8.000", 32768, 4.1796875000e-04
+"quick find, microset", "random 8.000", 32768, 2.7529296875e-04
+"union find, microset", "random 8.000", 32768, 2.7724609375e-04
+"successor, 2-pass, microset", "random 8.000", 32768, 2.7763671875e-04
+"successor, recursive", "random 0.125", 65536, 8.6840820313e-05
+"successor, 2-pass", "random 0.125", 65536, 8.9404296875e-05
+"successor, 2-pass, checked", "random 0.125", 65536, 1.3916015625e-04
+"successor, halving", "random 0.125", 65536, 6.6015625000e-05
+"quick find", "random 0.125", 65536, 2.8652343750e-04
+"union find", "random 0.125", 65536, 4.0898437500e-04
+"quick find, microset", "random 0.125", 65536, 1.3242187500e-04
+"union find, microset", "random 0.125", 65536, 1.3417968750e-04
+"successor, 2-pass, microset", "random 0.125", 65536, 1.3769531250e-04
+"successor, recursive", "random 0.250", 65536, 8.6816406250e-05
+"successor, 2-pass", "random 0.250", 65536, 1.0087890625e-04
+"successor, 2-pass, checked", "random 0.250", 65536, 1.4453125000e-04
+"successor, halving", "random 0.250", 65536, 1.0356445313e-04
+"quick find", "random 0.250", 65536, 2.8925781250e-04
+"union find", "random 0.250", 65536, 4.3750000000e-04
+"quick find, microset", "random 0.250", 65536, 1.4130859375e-04
+"union find, microset", "random 0.250", 65536, 1.3720703125e-04
+"successor, 2-pass, microset", "random 0.250", 65536, 1.4096679688e-04
+"successor, recursive", "random 0.500", 65536, 8.3935546875e-05
+"successor, 2-pass", "random 0.500", 65536, 9.8681640625e-05
+"successor, 2-pass, checked", "random 0.500", 65536, 1.6416015625e-04
+"successor, halving", "random 0.500", 65536, 9.0673828125e-05
+"quick find", "random 0.500", 65536, 2.9570312500e-04
+"union find", "random 0.500", 65536, 4.2246093750e-04
+"quick find, microset", "random 0.500", 65536, 1.4941406250e-04
+"union find, microset", "random 0.500", 65536, 1.5644531250e-04
+"successor, 2-pass, microset", "random 0.500", 65536, 1.5859375000e-04
+"successor, recursive", "random 1.000", 65536, 1.1811523438e-04
+"successor, 2-pass", "random 1.000", 65536, 1.1054687500e-04
+"successor, 2-pass, checked", "random 1.000", 65536, 1.8540039063e-04
+"successor, halving", "random 1.000", 65536, 1.2514648438e-04
+"quick find", "random 1.000", 65536, 3.0507812500e-04
+"union find", "random 1.000", 65536, 4.4257812500e-04
+"quick find, microset", "random 1.000", 65536, 1.8173828125e-04
+"union find, microset", "random 1.000", 65536, 1.8666992187e-04
+"successor, 2-pass, microset", "random 1.000", 65536, 1.8515625000e-04
+"successor, recursive", "random 2.000", 65536, 1.6259765625e-04
+"successor, 2-pass", "random 2.000", 65536, 1.6757812500e-04
+"successor, 2-pass, checked", "random 2.000", 65536, 2.5605468750e-04
+"successor, halving", "random 2.000", 65536, 1.5947265625e-04
+"quick find", "random 2.000", 65536, 3.5917968750e-04
+"union find", "random 2.000", 65536, 5.3085937500e-04
+"quick find, microset", "random 2.000", 65536, 2.4453125000e-04
+"union find, microset", "random 2.000", 65536, 2.5693359375e-04
+"successor, 2-pass, microset", "random 2.000", 65536, 2.4667968750e-04
+"successor, recursive", "random 4.000", 65536, 2.5322265625e-04
+"successor, 2-pass", "random 4.000", 65536, 2.6464843750e-04
+"successor, 2-pass, checked", "random 4.000", 65536, 3.7021484375e-04
+"successor, halving", "random 4.000", 65536, 2.2734375000e-04
+"quick find", "random 4.000", 65536, 4.3437500000e-04
+"union find", "random 4.000", 65536, 6.5390625000e-04
+"quick find, microset", "random 4.000", 65536, 3.4335937500e-04
+"union find, microset", "random 4.000", 65536, 3.6777343750e-04
+"successor, 2-pass, microset", "random 4.000", 65536, 3.5605468750e-04
+"successor, recursive", "random 8.000", 65536, 4.4804687500e-04
+"successor, 2-pass", "random 8.000", 65536, 4.7929687500e-04
+"successor, 2-pass, checked", "random 8.000", 65536, 5.7480468750e-04
+"successor, halving", "random 8.000", 65536, 4.1445312500e-04
+"quick find", "random 8.000", 65536, 5.6718750000e-04
+"union find", "random 8.000", 65536, 8.9453125000e-04
+"quick find, microset", "random 8.000", 65536, 5.9257812500e-04
+"union find, microset", "random 8.000", 65536, 6.3964843750e-04
+"successor, 2-pass, microset", "random 8.000", 65536, 6.5156250000e-04
+"successor, recursive", "random 0.125", 131072, 1.8017578125e-04
+"successor, 2-pass", "random 0.125", 131072, 1.2080078125e-04
+"successor, 2-pass, checked", "random 0.125", 131072, 2.0957031250e-04
+"successor, halving", "random 0.125", 131072, 1.2792968750e-04
+"quick find", "random 0.125", 131072, 4.1250000000e-04
+"union find", "random 0.125", 131072, 7.7578125000e-04
+"quick find, microset", "random 0.125", 131072, 2.0644531250e-04
+"union find, microset", "random 0.125", 131072, 2.0683593750e-04
+"successor, 2-pass, microset", "random 0.125", 131072, 2.1474609375e-04
+"successor, recursive", "random 0.250", 131072, 2.0307617187e-04
+"successor, 2-pass", "random 0.250", 131072, 1.8188476562e-04
+"successor, 2-pass, checked", "random 0.250", 131072, 2.3105468750e-04
+"successor, halving", "random 0.250", 131072, 1.4892578125e-04
+"quick find", "random 0.250", 131072, 4.2070312500e-04
+"union find", "random 0.250", 131072, 8.1796875000e-04
+"quick find, microset", "random 0.250", 131072, 2.1904296875e-04
+"union find, microset", "random 0.250", 131072, 2.3242187500e-04
+"successor, 2-pass, microset", "random 0.250", 131072, 2.2558593750e-04
+"successor, recursive", "random 0.500", 131072, 1.9912109375e-04
+"successor, 2-pass", "random 0.500", 131072, 1.9965820313e-04
+"successor, 2-pass, checked", "random 0.500", 131072, 2.6113281250e-04
+"successor, halving", "random 0.500", 131072, 2.0156250000e-04
+"quick find", "random 0.500", 131072, 4.4101562500e-04
+"union find", "random 0.500", 131072, 8.0742187500e-04
+"quick find, microset", "random 0.500", 131072, 2.4843750000e-04
+"union find, microset", "random 0.500", 131072, 2.6962890625e-04
+"successor, 2-pass, microset", "random 0.500", 131072, 2.6992187500e-04
+"successor, recursive", "random 1.000", 131072, 2.1835937500e-04
+"successor, 2-pass", "random 1.000", 131072, 2.2695312500e-04
+"successor, 2-pass, checked", "random 1.000", 131072, 3.0468750000e-04
+"successor, halving", "random 1.000", 131072, 2.3027343750e-04
+"quick find", "random 1.000", 131072, 4.7324218750e-04
+"union find", "random 1.000", 131072, 8.5078125000e-04
+"quick find, microset", "random 1.000", 131072, 3.2607421875e-04
+"union find, microset", "random 1.000", 131072, 3.4970703125e-04
+"successor, 2-pass, microset", "random 1.000", 131072, 3.4082031250e-04
+"successor, recursive", "random 2.000", 131072, 3.2949218750e-04
+"successor, 2-pass", "random 2.000", 131072, 3.4443359375e-04
+"successor, 2-pass, checked", "random 2.000", 131072, 4.4375000000e-04
+"successor, halving", "random 2.000", 131072, 3.2773437500e-04
+"quick find", "random 2.000", 131072, 5.8203125000e-04
+"union find", "random 2.000", 131072, 9.6718750000e-04
+"quick find, microset", "random 2.000", 131072, 4.6093750000e-04
+"union find, microset", "random 2.000", 131072, 5.0468750000e-04
+"successor, 2-pass, microset", "random 2.000", 131072, 4.9980468750e-04
+"successor, recursive", "random 4.000", 131072, 4.9570312500e-04
+"successor, 2-pass", "random 4.000", 131072, 5.2207031250e-04
+"successor, 2-pass, checked", "random 4.000", 131072, 6.6308593750e-04
+"successor, halving", "random 4.000", 131072, 4.5195312500e-04
+"quick find", "random 4.000", 131072, 7.2187500000e-04
+"union find", "random 4.000", 131072, 1.1601562500e-03
+"quick find, microset", "random 4.000", 131072, 6.7089843750e-04
+"union find, microset", "random 4.000", 131072, 7.8613281250e-04
+"successor, 2-pass, microset", "random 4.000", 131072, 7.8281250000e-04
+"successor, recursive", "random 8.000", 131072, 9.4062500000e-04
+"successor, 2-pass", "random 8.000", 131072, 9.7773437500e-04
+"successor, 2-pass, checked", "random 8.000", 131072, 1.1101562500e-03
+"successor, halving", "random 8.000", 131072, 8.4960937500e-04
+"quick find", "random 8.000", 131072, 1.0195312500e-03
+"union find", "random 8.000", 131072, 1.6281250000e-03
+"quick find, microset", "random 8.000", 131072, 1.2140625000e-03
+"union find, microset", "random 8.000", 131072, 1.4031250000e-03
+"successor, 2-pass, microset", "random 8.000", 131072, 1.4238281250e-03
+"successor, recursive", "random 0.125", 262144, 3.9140625000e-04
+"successor, 2-pass", "random 0.125", 262144, 2.8115234375e-04
+"successor, 2-pass, checked", "random 0.125", 262144, 3.2421875000e-04
+"successor, halving", "random 0.125", 262144, 2.8242187500e-04
+"quick find", "random 0.125", 262144, 5.9179687500e-04
+"union find", "random 0.125", 262144, 1.3984375000e-03
+"quick find, microset", "random 0.125", 262144, 3.0859375000e-04
+"union find, microset", "random 0.125", 262144, 3.2480468750e-04
+"successor, 2-pass, microset", "random 0.125", 262144, 3.1425781250e-04
+"successor, recursive", "random 0.250", 262144, 3.5195312500e-04
+"successor, 2-pass", "random 0.250", 262144, 2.7333984375e-04
+"successor, 2-pass, checked", "random 0.250", 262144, 3.6972656250e-04
+"successor, halving", "random 0.250", 262144, 3.2246093750e-04
+"quick find", "random 0.250", 262144, 6.1152343750e-04
+"union find", "random 0.250", 262144, 1.4562500000e-03
+"quick find, microset", "random 0.250", 262144, 3.5527343750e-04
+"union find, microset", "random 0.250", 262144, 3.7578125000e-04
+"successor, 2-pass, microset", "random 0.250", 262144, 3.6884765625e-04
+"successor, recursive", "random 0.500", 262144, 4.6250000000e-04
+"successor, 2-pass", "random 0.500", 262144, 4.2333984375e-04
+"successor, 2-pass, checked", "random 0.500", 262144, 4.6386718750e-04
+"successor, halving", "random 0.500", 262144, 4.1367187500e-04
+"quick find", "random 0.500", 262144, 6.2460937500e-04
+"union find", "random 0.500", 262144, 1.4593750000e-03
+"quick find, microset", "random 0.500", 262144, 4.2226562500e-04
+"union find, microset", "random 0.500", 262144, 4.6289062500e-04
+"successor, 2-pass, microset", "random 0.500", 262144, 4.6992187500e-04
+"successor, recursive", "random 1.000", 262144, 5.6484375000e-04
+"successor, 2-pass", "random 1.000", 262144, 4.6855468750e-04
+"successor, 2-pass, checked", "random 1.000", 262144, 5.2500000000e-04
+"successor, halving", "random 1.000", 262144, 4.3671875000e-04
+"quick find", "random 1.000", 262144, 7.0078125000e-04
+"union find", "random 1.000", 262144, 1.5570312500e-03
+"quick find, microset", "random 1.000", 262144, 5.2578125000e-04
+"union find, microset", "random 1.000", 262144, 6.1015625000e-04
+"successor, 2-pass, microset", "random 1.000", 262144, 6.0371093750e-04
+"successor, recursive", "random 2.000", 262144, 7.7656250000e-04
+"successor, 2-pass", "random 2.000", 262144, 7.2187500000e-04
+"successor, 2-pass, checked", "random 2.000", 262144, 7.8398437500e-04
+"successor, halving", "random 2.000", 262144, 6.2656250000e-04
+"quick find", "random 2.000", 262144, 9.0937500000e-04
+"union find", "random 2.000", 262144, 1.8531250000e-03
+"quick find, microset", "random 2.000", 262144, 8.3437500000e-04
+"union find, microset", "random 2.000", 262144, 9.4375000000e-04
+"successor, 2-pass, microset", "random 2.000", 262144, 9.1250000000e-04
+"successor, recursive", "random 4.000", 262144, 1.0640625000e-03
+"successor, 2-pass", "random 4.000", 262144, 1.1062500000e-03
+"successor, 2-pass, checked", "random 4.000", 262144, 1.2414062500e-03
+"successor, halving", "random 4.000", 262144, 9.3476562500e-04
+"quick find", "random 4.000", 262144, 1.1750000000e-03
+"union find", "random 4.000", 262144, 2.3148437500e-03
+"quick find, microset", "random 4.000", 262144, 1.3503906250e-03
+"union find, microset", "random 4.000", 262144, 1.6328125000e-03
+"successor, 2-pass, microset", "random 4.000", 262144, 1.6304687500e-03
+"successor, recursive", "random 8.000", 262144, 1.9945312500e-03
+"successor, 2-pass", "random 8.000", 262144, 2.0718750000e-03
+"successor, 2-pass, checked", "random 8.000", 262144, 2.1539062500e-03
+"successor, halving", "random 8.000", 262144, 1.6914062500e-03
+"quick find", "random 8.000", 262144, 1.9226562500e-03
+"union find", "random 8.000", 262144, 3.2375000000e-03
+"quick find, microset", "random 8.000", 262144, 2.2359375000e-03
+"union find, microset", "random 8.000", 262144, 2.9515625000e-03
+"successor, 2-pass, microset", "random 8.000", 262144, 2.8914062500e-03
+"successor, recursive", "random 0.125", 524288, 6.1718750000e-04
+"successor, 2-pass", "random 0.125", 524288, 5.6171875000e-04
+"successor, 2-pass, checked", "random 0.125", 524288, 5.9648437500e-04
+"successor, halving", "random 0.125", 524288, 6.1523437500e-04
+"quick find", "random 0.125", 524288, 9.7304687500e-04
+"union find", "random 0.125", 524288, 2.2500000000e-03
+"quick find, microset", "random 0.125", 524288, 5.4785156250e-04
+"union find, microset", "random 0.125", 524288, 5.6054687500e-04
+"successor, 2-pass, microset", "random 0.125", 524288, 5.3281250000e-04
+"successor, recursive", "random 0.250", 524288, 7.4511718750e-04
+"successor, 2-pass", "random 0.250", 524288, 8.1894531250e-04
+"successor, 2-pass, checked", "random 0.250", 524288, 6.8125000000e-04
+"successor, halving", "random 0.250", 524288, 8.0859375000e-04
+"quick find", "random 0.250", 524288, 1.0585937500e-03
+"union find", "random 0.250", 524288, 2.2828125000e-03
+"quick find, microset", "random 0.250", 524288, 6.2890625000e-04
+"union find, microset", "random 0.250", 524288, 6.6210937500e-04
+"successor, 2-pass, microset", "random 0.250", 524288, 6.4179687500e-04
+"successor, recursive", "random 0.500", 524288, 8.0937500000e-04
+"successor, 2-pass", "random 0.500", 524288, 7.6796875000e-04
+"successor, 2-pass, checked", "random 0.500", 524288, 8.4296875000e-04
+"successor, halving", "random 0.500", 524288, 6.9570312500e-04
+"quick find", "random 0.500", 524288, 1.1421875000e-03
+"union find", "random 0.500", 524288, 2.4273437500e-03
+"quick find, microset", "random 0.500", 524288, 7.7421875000e-04
+"union find, microset", "random 0.500", 524288, 8.1171875000e-04
+"successor, 2-pass, microset", "random 0.500", 524288, 8.0234375000e-04
+"successor, recursive", "random 1.000", 524288, 9.4492187500e-04
+"successor, 2-pass", "random 1.000", 524288, 9.6796875000e-04
+"successor, 2-pass, checked", "random 1.000", 524288, 1.0179687500e-03
+"successor, halving", "random 1.000", 524288, 1.1718750000e-03
+"quick find", "random 1.000", 524288, 1.2300781250e-03
+"union find", "random 1.000", 524288, 2.5656250000e-03
+"quick find, microset", "random 1.000", 524288, 9.9296875000e-04
+"union find, microset", "random 1.000", 524288, 1.1105468750e-03
+"successor, 2-pass, microset", "random 1.000", 524288, 1.1359375000e-03
+"successor, recursive", "random 2.000", 524288, 1.4261718750e-03
+"successor, 2-pass", "random 2.000", 524288, 1.4695312500e-03
+"successor, 2-pass, checked", "random 2.000", 524288, 1.5601562500e-03
+"successor, halving", "random 2.000", 524288, 1.4835937500e-03
+"quick find", "random 2.000", 524288, 1.7281250000e-03
+"union find", "random 2.000", 524288, 3.1312500000e-03
+"quick find, microset", "random 2.000", 524288, 1.5859375000e-03
+"union find, microset", "random 2.000", 524288, 1.8062500000e-03
+"successor, 2-pass, microset", "random 2.000", 524288, 1.8718750000e-03
+"successor, recursive", "random 4.000", 524288, 2.3000000000e-03
+"successor, 2-pass", "random 4.000", 524288, 2.3765625000e-03
+"successor, 2-pass, checked", "random 4.000", 524288, 2.3609375000e-03
+"successor, halving", "random 4.000", 524288, 1.9390625000e-03
+"quick find", "random 4.000", 524288, 2.2445312500e-03
+"union find", "random 4.000", 524288, 3.9625000000e-03
+"quick find, microset", "random 4.000", 524288, 2.5875000000e-03
+"union find, microset", "random 4.000", 524288, 3.2156250000e-03
+"successor, 2-pass, microset", "random 4.000", 524288, 3.2859375000e-03
+"successor, recursive", "random 8.000", 524288, 3.8593750000e-03
+"successor, 2-pass", "random 8.000", 524288, 4.0218750000e-03
+"successor, 2-pass, checked", "random 8.000", 524288, 4.1250000000e-03
+"successor, halving", "random 8.000", 524288, 3.5218750000e-03
+"quick find", "random 8.000", 524288, 3.9000000000e-03
+"union find", "random 8.000", 524288, 6.1718750000e-03
+"quick find, microset", "random 8.000", 524288, 4.8312500000e-03
+"union find, microset", "random 8.000", 524288, 6.2500000000e-03
+"successor, 2-pass, microset", "random 8.000", 524288, 6.0281250000e-03
+"successor, recursive", "random 0.125", 1048576, 1.9031250000e-03
+"successor, 2-pass", "random 0.125", 1048576, 1.7859375000e-03
+"successor, 2-pass, checked", "random 0.125", 1048576, 1.1964843750e-03
+"successor, halving", "random 0.125", 1048576, 1.5398437500e-03
+"quick find", "random 0.125", 1048576, 1.8062500000e-03
+"union find", "random 0.125", 1048576, 3.4796875000e-03
+"quick find, microset", "random 0.125", 1048576, 9.6718750000e-04
+"union find, microset", "random 0.125", 1048576, 9.8828125000e-04
+"successor, 2-pass, microset", "random 0.125", 1048576, 9.9765625000e-04
+"successor, recursive", "random 0.250", 1048576, 1.4148437500e-03
+"successor, 2-pass", "random 0.250", 1048576, 1.3300781250e-03
+"successor, 2-pass, checked", "random 0.250", 1048576, 1.3054687500e-03
+"successor, halving", "random 0.250", 1048576, 2.1023437500e-03
+"quick find", "random 0.250", 1048576, 2.0406250000e-03
+"union find", "random 0.250", 1048576, 3.6906250000e-03
+"quick find, microset", "random 0.250", 1048576, 1.1851562500e-03
+"union find, microset", "random 0.250", 1048576, 1.2445312500e-03
+"successor, 2-pass, microset", "random 0.250", 1048576, 1.2347656250e-03
+"successor, recursive", "random 0.500", 1048576, 1.5703125000e-03
+"successor, 2-pass", "random 0.500", 1048576, 1.5960937500e-03
+"successor, 2-pass, checked", "random 0.500", 1048576, 1.6906250000e-03
+"successor, halving", "random 0.500", 1048576, 1.5820312500e-03
+"quick find", "random 0.500", 1048576, 2.0937500000e-03
+"union find", "random 0.500", 1048576, 3.8343750000e-03
+"quick find, microset", "random 0.500", 1048576, 1.4929687500e-03
+"union find, microset", "random 0.500", 1048576, 1.5890625000e-03
+"successor, 2-pass, microset", "random 0.500", 1048576, 1.6250000000e-03
+"successor, recursive", "random 1.000", 1048576, 2.0703125000e-03
+"successor, 2-pass", "random 1.000", 1048576, 2.1062500000e-03
+"successor, 2-pass, checked", "random 1.000", 1048576, 2.0843750000e-03
+"successor, halving", "random 1.000", 1048576, 1.8968750000e-03
+"quick find", "random 1.000", 1048576, 2.4367187500e-03
+"union find", "random 1.000", 1048576, 4.3625000000e-03
+"quick find, microset", "random 1.000", 1048576, 1.9531250000e-03
+"union find, microset", "random 1.000", 1048576, 2.2265625000e-03
+"successor, 2-pass, microset", "random 1.000", 1048576, 2.3421875000e-03
+"successor, recursive", "random 2.000", 1048576, 3.1234375000e-03
+"successor, 2-pass", "random 2.000", 1048576, 3.0929687500e-03
+"successor, 2-pass, checked", "random 2.000", 1048576, 3.0265625000e-03
+"successor, halving", "random 2.000", 1048576, 2.7984375000e-03
+"quick find", "random 2.000", 1048576, 3.2406250000e-03
+"union find", "random 2.000", 1048576, 5.1625000000e-03
+"quick find, microset", "random 2.000", 1048576, 3.1335937500e-03
+"union find, microset", "random 2.000", 1048576, 3.5093750000e-03
+"successor, 2-pass, microset", "random 2.000", 1048576, 3.6562500000e-03
+"successor, recursive", "random 4.000", 1048576, 4.5484375000e-03
+"successor, 2-pass", "random 4.000", 1048576, 4.7843750000e-03
+"successor, 2-pass, checked", "random 4.000", 1048576, 4.9406250000e-03
+"successor, halving", "random 4.000", 1048576, 4.3562500000e-03
+"quick find", "random 4.000", 1048576, 4.4625000000e-03
+"union find", "random 4.000", 1048576, 7.2562500000e-03
+"quick find, microset", "random 4.000", 1048576, 5.3781250000e-03
+"union find, microset", "random 4.000", 1048576, 6.3250000000e-03
+"successor, 2-pass, microset", "random 4.000", 1048576, 6.6250000000e-03
+"successor, recursive", "random 8.000", 1048576, 7.6375000000e-03
+"successor, 2-pass", "random 8.000", 1048576, 8.0937500000e-03
+"successor, 2-pass, checked", "random 8.000", 1048576, 8.2937500000e-03
+"successor, halving", "random 8.000", 1048576, 6.8500000000e-03
+"quick find", "random 8.000", 1048576, 7.3625000000e-03
+"union find", "random 8.000", 1048576, 1.0543750000e-02
+"quick find, microset", "random 8.000", 1048576, 9.4562500000e-03
+"union find, microset", "random 8.000", 1048576, 1.2437500000e-02
+"successor, 2-pass, microset", "random 8.000", 1048576, 1.2300000000e-02
+"successor, recursive", "random 0.125", 2097152, 3.5718750000e-03
+"successor, 2-pass", "random 0.125", 2097152, 3.4984375000e-03
+"successor, 2-pass, checked", "random 0.125", 2097152, 2.3539062500e-03
+"successor, halving", "random 0.125", 2097152, 2.8031250000e-03
+"quick find", "random 0.125", 2097152, 3.5218750000e-03
+"union find", "random 0.125", 2097152, 6.1265625000e-03
+"quick find, microset", "random 0.125", 2097152, 1.9375000000e-03
+"union find, microset", "random 0.125", 2097152, 2.0648437500e-03
+"successor, 2-pass, microset", "random 0.125", 2097152, 2.0039062500e-03
+"successor, recursive", "random 0.250", 2097152, 4.1140625000e-03
+"successor, 2-pass", "random 0.250", 2097152, 3.2562500000e-03
+"successor, 2-pass, checked", "random 0.250", 2097152, 2.6468750000e-03
+"successor, halving", "random 0.250", 2097152, 3.2687500000e-03
+"quick find", "random 0.250", 2097152, 3.6812500000e-03
+"union find", "random 0.250", 2097152, 6.3375000000e-03
+"quick find, microset", "random 0.250", 2097152, 2.3218750000e-03
+"union find, microset", "random 0.250", 2097152, 2.3757812500e-03
+"successor, 2-pass, microset", "random 0.250", 2097152, 2.4273437500e-03
+"successor, recursive", "random 0.500", 2097152, 3.5031250000e-03
+"successor, 2-pass", "random 0.500", 2097152, 3.5250000000e-03
+"successor, 2-pass, checked", "random 0.500", 2097152, 3.2781250000e-03
+"successor, halving", "random 0.500", 2097152, 4.6062500000e-03
+"quick find", "random 0.500", 2097152, 4.2500000000e-03
+"union find", "random 0.500", 2097152, 6.7625000000e-03
+"quick find, microset", "random 0.500", 2097152, 2.9203125000e-03
+"union find, microset", "random 0.500", 2097152, 3.1523437500e-03
+"successor, 2-pass, microset", "random 0.500", 2097152, 3.2109375000e-03
+"successor, recursive", "random 1.000", 2097152, 4.7531250000e-03
+"successor, 2-pass", "random 1.000", 2097152, 4.1156250000e-03
+"successor, 2-pass, checked", "random 1.000", 2097152, 4.0750000000e-03
+"successor, halving", "random 1.000", 2097152, 4.3531250000e-03
+"quick find", "random 1.000", 2097152, 4.6937500000e-03
+"union find", "random 1.000", 2097152, 7.5406250000e-03
+"quick find, microset", "random 1.000", 2097152, 3.7656250000e-03
+"union find, microset", "random 1.000", 2097152, 4.4546875000e-03
+"successor, 2-pass, microset", "random 1.000", 2097152, 4.5906250000e-03
+"successor, recursive", "random 2.000", 2097152, 6.2000000000e-03
+"successor, 2-pass", "random 2.000", 2097152, 6.1453125000e-03
+"successor, 2-pass, checked", "random 2.000", 2097152, 5.8843750000e-03
+"successor, halving", "random 2.000", 2097152, 5.7218750000e-03
+"quick find", "random 2.000", 2097152, 6.3312500000e-03
+"union find", "random 2.000", 2097152, 9.6375000000e-03
+"quick find, microset", "random 2.000", 2097152, 6.3656250000e-03
+"union find, microset", "random 2.000", 2097152, 7.3125000000e-03
+"successor, 2-pass, microset", "random 2.000", 2097152, 7.8250000000e-03
+"successor, recursive", "random 4.000", 2097152, 9.0437500000e-03
+"successor, 2-pass", "random 4.000", 2097152, 9.4437500000e-03
+"successor, 2-pass, checked", "random 4.000", 2097152, 9.2500000000e-03
+"successor, halving", "random 4.000", 2097152, 8.3437500000e-03
+"quick find", "random 4.000", 2097152, 8.6437500000e-03
+"union find", "random 4.000", 2097152, 1.3262500000e-02
+"quick find, microset", "random 4.000", 2097152, 1.0575000000e-02
+"union find, microset", "random 4.000", 2097152, 1.3275000000e-02
+"successor, 2-pass, microset", "random 4.000", 2097152, 1.3312500000e-02
+"successor, recursive", "random 8.000", 2097152, 1.5331250000e-02
+"successor, 2-pass", "random 8.000", 2097152, 1.6793750000e-02
+"successor, 2-pass, checked", "random 8.000", 2097152, 1.6881250000e-02
+"successor, halving", "random 8.000", 2097152, 1.4150000000e-02
+"quick find", "random 8.000", 2097152, 1.3912500000e-02
+"union find", "random 8.000", 2097152, 1.9737500000e-02
+"quick find, microset", "random 8.000", 2097152, 1.7887500000e-02
+"union find, microset", "random 8.000", 2097152, 2.3700000000e-02
+"successor, 2-pass, microset", "random 8.000", 2097152, 2.3500000000e-02
+"successor, recursive", "random 0.125", 4194304, 5.7406250000e-03
+"successor, 2-pass", "random 0.125", 4194304, 5.3281250000e-03
+"successor, 2-pass, checked", "random 0.125", 4194304, 4.5625000000e-03
+"successor, halving", "random 0.125", 4194304, 5.9687500000e-03
+"quick find", "random 0.125", 4194304, 6.8875000000e-03
+"union find", "random 0.125", 4194304, 1.1643750000e-02
+"quick find, microset", "random 0.125", 4194304, 3.8968750000e-03
+"union find, microset", "random 0.125", 4194304, 4.0437500000e-03
+"successor, 2-pass, microset", "random 0.125", 4194304, 4.1078125000e-03
+"successor, recursive", "random 0.250", 4194304, 8.2250000000e-03
+"successor, 2-pass", "random 0.250", 4194304, 6.5500000000e-03
+"successor, 2-pass, checked", "random 0.250", 4194304, 5.2218750000e-03
+"successor, halving", "random 0.250", 4194304, 6.6437500000e-03
+"quick find", "random 0.250", 4194304, 7.2437500000e-03
+"union find", "random 0.250", 4194304, 1.1593750000e-02
+"quick find, microset", "random 0.250", 4194304, 4.6937500000e-03
+"union find, microset", "random 0.250", 4194304, 4.7859375000e-03
+"successor, 2-pass, microset", "random 0.250", 4194304, 4.8375000000e-03
+"successor, recursive", "random 0.500", 4194304, 8.4375000000e-03
+"successor, 2-pass", "random 0.500", 4194304, 7.1031250000e-03
+"successor, 2-pass, checked", "random 0.500", 4194304, 6.4375000000e-03
+"successor, halving", "random 0.500", 4194304, 7.3375000000e-03
+"quick find", "random 0.500", 4194304, 7.6875000000e-03
+"union find", "random 0.500", 4194304, 1.2765625000e-02
+"quick find, microset", "random 0.500", 4194304, 5.5937500000e-03
+"union find, microset", "random 0.500", 4194304, 5.9375000000e-03
+"successor, 2-pass, microset", "random 0.500", 4194304, 6.4281250000e-03
+"successor, recursive", "random 1.000", 4194304, 8.0375000000e-03
+"successor, 2-pass", "random 1.000", 4194304, 8.7875000000e-03
+"successor, 2-pass, checked", "random 1.000", 4194304, 8.2625000000e-03
+"successor, halving", "random 1.000", 4194304, 8.7218750000e-03
+"quick find", "random 1.000", 4194304, 9.0875000000e-03
+"union find", "random 1.000", 4194304, 1.4412500000e-02
+"quick find, microset", "random 1.000", 4194304, 7.6750000000e-03
+"union find, microset", "random 1.000", 4194304, 8.9250000000e-03
+"successor, 2-pass, microset", "random 1.000", 4194304, 9.1625000000e-03
+"successor, recursive", "random 2.000", 4194304, 1.3450000000e-02
+"successor, 2-pass", "random 2.000", 4194304, 1.2556250000e-02
+"successor, 2-pass, checked", "random 2.000", 4194304, 1.1887500000e-02
+"successor, halving", "random 2.000", 4194304, 1.1468750000e-02
+"quick find", "random 2.000", 4194304, 1.2650000000e-02
+"union find", "random 2.000", 4194304, 1.8306250000e-02
+"quick find, microset", "random 2.000", 4194304, 1.2637500000e-02
+"union find, microset", "random 2.000", 4194304, 1.4650000000e-02
+"successor, 2-pass, microset", "random 2.000", 4194304, 1.5612500000e-02
+"successor, recursive", "random 4.000", 4194304, 1.7537500000e-02
+"successor, 2-pass", "random 4.000", 4194304, 1.9425000000e-02
+"successor, 2-pass, checked", "random 4.000", 4194304, 1.9312500000e-02
+"successor, halving", "random 4.000", 4194304, 1.7037500000e-02
+"quick find", "random 4.000", 4194304, 1.7506250000e-02
+"union find", "random 4.000", 4194304, 2.6112500000e-02
+"quick find, microset", "random 4.000", 4194304, 2.1700000000e-02
+"union find, microset", "random 4.000", 4194304, 2.7100000000e-02
+"successor, 2-pass, microset", "random 4.000", 4194304, 2.6250000000e-02
+"successor, recursive", "random 8.000", 4194304, 2.8675000000e-02
+"successor, 2-pass", "random 8.000", 4194304, 3.2237500000e-02
+"successor, 2-pass, checked", "random 8.000", 4194304, 3.2475000000e-02
+"successor, halving", "random 8.000", 4194304, 2.8700000000e-02
+"quick find", "random 8.000", 4194304, 3.0175000000e-02
+"union find", "random 8.000", 4194304, 4.1462500000e-02
+"quick find, microset", "random 8.000", 4194304, 3.8662500000e-02
+"union find, microset", "random 8.000", 4194304, 5.1100000000e-02
+"successor, 2-pass, microset", "random 8.000", 4194304, 4.9025000000e-02

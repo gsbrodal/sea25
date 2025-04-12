@@ -1,0 +1,543 @@
+\documentclass[a4paper]{lipics-v2021}
+\usepackage[utf8]{inputenc}
+\pdfoutput=1
+\nolinenumbers
+
+\usepackage{tikz}
+\usepackage{hyperref}
+\graphicspath{{./plots/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\let\epsilon\varepsilon
+\newcommand{\Oh}{\mathcal{O}}
+\newcommand{\floor}[1]{\left\lfloor{#1}\right\rfloor}
+\newcommand{\ceil}[1]{\left\lceil #1\right\rceil}
+\newcommand{\successor}{\mathrm{succ}}
+\newcommand{\predecessor}{\mathrm{pred}}
+
+\newsavebox{\myframedbox}
+\newenvironment{figurebox}
+  {\begin{lrbox}{\myframedbox}%
+   \begin{minipage}{\dimexpr\linewidth-2\fboxsep-2\fboxrule}%
+   \centering}
+  {\end{minipage}%
+   \end{lrbox}\fbox{\usebox{\myframedbox}}}
+
+\newcommand{\plot}[1]{\includegraphics[width=0.49\textwidth]{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Pseudo code macros
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\FuncName}[1]{\textup{\textsc{#1}}}
+\newcommand{\Init}{\FuncName{Init}}
+\newcommand{\Delete}{\FuncName{Delete}}
+\newcommand{\Insert}{\FuncName{Insert}}
+\newcommand{\Succ}{\FuncName{Succ}}
+\newcommand{\Pred}{\FuncName{Pred}}
+\newcommand{\RangeReport}{\FuncName{RangeReport}}
+\newcommand{\Union}{\FuncName{Union}}
+\newcommand{\Find}{\FuncName{Find}}
+
+\newcommand{\Keyword}[1]{\textbf{#1}}
+\newcommand{\WHILE}[1]{\Keyword{while} $#1$ \Keyword{do}}
+\newcommand{\ASSIGN}[2]{\mbox{$#1 \;\leftarrow\; #2$}}
+\newcommand{\RETURN}[1]{\Keyword{return} $#1$}
+\newcommand{\IF}[1]{\Keyword{if} $#1$ \Keyword{then}}
+\newcommand{\ELSE}{\Keyword{ELSE}}
+\newcommand{\AND}{~\Keyword{and}~}
+\newcommand{\PROC}[2]{\Keyword{Proc} \FuncName{#1}($#2$)}
+\newcommand{\FOR}[3]{\Keyword{for} \ASSIGN{#1}{#2} \Keyword{to} $#3$ \Keyword{do}}
+
+\newenvironment{code}
+  {\begin{minipage}[t]{0cm}\begin{tabbing}~~~\=~~~\=~~~\=~~~\=\kill}
+  {\end{tabbing}\end{minipage}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Array data structure
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\datastructure}[3]{ %\datastructure{n}{value,value,...}{i1/j1, i2/j2,...}
+  \begin{tikzpicture}[scale=0.5, baseline=(current bounding box.north)]
+    \draw (0.5,0) -- (#1+0.5,0);
+    \draw (0.5,1) -- (#1+0.5,1);
+    \foreach \i in {0, ..., #1} \draw (\i+0.5, 0) -- ++(0, 1);
+    \foreach \i in {1, ..., #1} \node at (\i, 1.5) {\scriptsize \i};
+    \foreach \i in {#2} \node at (\i, 0.5) {\textbf{\i}};
+    \foreach \i/\j in {#3} {
+      \node at (\i, 0.5) {\j};
+      \path[-latex] (\i+0.05, -0.1) edge[bend right=30] (\j-0.05, -0.1);
+      }
+    \node at (-0.25, 0.5) {$A$};
+  \end{tikzpicture}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Front matter
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{A Simple Integer Successor-Delete Data Structure}
+
+\titlerunning{A Simple Integer Successor-Delete Data Structure}
+
+\author{Gerth Stølting Brodal}{Aarhus University, Department of Computer Science, Denmark \and \url{http://www.cs.au.dk/~gerth}}{gerth@cs.au.dk}{https://orcid.org/0000-0001-9054-915X}{} % Author specific funding
+
+\funding{Supported by Independent Research Fund Denmark, grant 9131-00113B}
+
+\authorrunning{G.\,S. Brodal}
+
+\Copyright{Gerth Stølting Brodal}
+
+\begin{CCSXML}
+  <ccs2012>
+    <concept>
+      <concept_id>10003752.10003809.10010031</concept_id>
+      <concept_desc>Theory of computation~Data structures design and analysis</concept_desc>
+      <concept_significance>500</concept_significance>
+    </concept>
+  </ccs2012>
+\end{CCSXML}
+
+\ccsdesc[500]{Theory of computation~Data structures design and analysis}
+
+\EventEditors{Petra Mutzel and Nicola Prezza}
+\EventNoEds{2}
+\EventLongTitle{23rd International Symposium on Experimental Algorithms (SEA 2025)}
+\EventShortTitle{SEA 2025}
+\EventAcronym{SEA}
+\EventYear{2025}
+\EventDate{July 22--24, 2025}
+\EventLocation{Venice, Italy}
+\EventLogo{}
+\SeriesVolume{338}
+\ArticleNo{14}
+
+\keywords{Successor queries, deletions, interval union-find, union-find}
+
+\supplementdetails[subcategory={Source Code}]{Software}{https://github.com/gsbrodal/sea25}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+  We consider a simple decremental data structure for maintaining a set of integers, that supports initializing the set to $\{1,2,\ldots,n\}$ followed by $d$ deletions and $s$ successor queries in arbitrary order in total $\Oh\big(n+d+s\cdot (1+\log_{\max(2,s/n)} \min(s,n))\big)$ time. The data structure consists of a single array of $n$ integers. A straightforward modification allows the data structure to also support $p$~predecessor and $r$ range queries, with a total output $k$, in total $\Oh\big(n+d+k+q \cdot (1+\log_{\max(2,q/n)} \min(q,n))\big)$ time, where $q=s+p+r$. The data structure is essentially a special case of the classic union-find data structure with path compression but with unweighted linking (i.e., without linking by rank or size), that is known to achieve logarithmic amortized time bounds (Tarjan and van Leeuwen,~1984). In this paper we study the efficiency of this simple data structure, and compare it to other, theoretically superior, data structures.
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We consider a simple decremental data structure for maintaining a set of integers~$S$, under the operations $\Delete(i)$ and $\Succ(i)$, where initially $S=\{1,2,\ldots,n\}$. The delete operation $\Delete(i)$ removes the value $i$ from $S$ (or leaves the set unchanged if $i \notin S$), and the successor query $\Succ(i)$ returns the smallest value in $S$ larger than or equal to~$i$, i.e., $\successor(S, i)=\min \{ j \in S \mid j \geq i \}$. Figure~\ref{fig:succ-delete} shows the full code for the operations and an example of the data structure for a set of values. The data structure consists of a single array~$A[1..n]$ of $n$ integers. We view $A[i]$ as a pointer from index $i$ to index $A[i]$ in $A$: if $i\in S$ then $A[i] = i$; otherwise $i<A[i]\leq \successor(S, i)$. Figure~\ref{fig:nested} shows a minimal sequence of operations resulting in non-nested pointers ($2<3<A[2]<A[3]$). A simple modification of the data structure also supports the predecessor query $\Pred(i)$ that returns the largest value in $S$ smaller than or equal to $i$, i.e., $\predecessor(S, i)=\max \{ j \in S \mid j \leq i \}$. The only modification is that for $i\in S$ we let $A[i] = \predecessor(S, i-1)$ instead of $A[i]=i$. See Figure~\ref{fig:succ-pred-delete}.
+
+The structure in Figure~\ref{fig:succ-delete} is likely folklore in practice (but we failed to find a reference in the literature). The data structure is interesting due to its simplicity, low space usage (an array of $n$ integers), and low constants in the running time, but there exist data structures in the literature with theoretically superior complexity. See Table~\ref{tab:results}.
+
+\begin{figure}[p]
+  \begin{figurebox}
+    \begin{code}
+    \PROC{Init}{n} \\
+      \> Create $A[1..n]$ \\
+      \> \FOR{i}{1}{n} \\
+      \>\> \ASSIGN{A[i]}{i}
+    \end{code}
+    \hfill
+    \begin{code}
+      \PROC{Delete}{i} \\
+      \> \ASSIGN{A[i]}{i + 1}
+    \end{code}
+    \hfill
+    \begin{code}
+      \PROC{Succ}{i} \\
+      \> \IF{A[i] = i} \\
+      \>\> \RETURN{i} \\
+      \> \ASSIGN{A[i]}{\Succ(A[i])} \\
+      \> \RETURN{A[i]}
+    \end{code}
+    \hfill
+    \begin{code}
+      \PROC{Succ}{i} \\
+      \> \ASSIGN{j}{i} \\
+      \> \WHILE{j < A[j]} \\
+      \>\> \ASSIGN{j}{A[j]} \\
+      \> \WHILE{i < A[i]} \\
+      \>\> \ASSIGN{i'}{A[i]} \\
+      \>\> \ASSIGN{A[i]}{j} \\
+      \>\> \ASSIGN{i}{i'} \\
+      \> \RETURN{j}
+    \end{code}
+    \\[2ex]
+    \datastructure{20}{1, 12, 15, 17, 19, 20}{2/12, 3/7, 4/5, 5/11, 6/7, 7/12, 8/11, 9/10, 10/11, 11/12, 13/15, 14/15, 16/17, 18/19}
+  \end{figurebox}
+
+  \caption{$\Succ$-$\Delete$ implementation with two alternative implementations of $\Succ$ using path compression: (left) recursive and (right) iterative two-pass. (Bottom) a data structure for $S=\{1,12,15,17,19,20\}$, where $A[i]=i$ for $i \in S$ and $i < A[i] \leq \successor(S,i)$ for $i \notin S$. We view $A[i]$ as a ``pointer'' to another index of~$A$, where $\successor(S, i) = \successor(S, A[i])$. The values of $A$ depend on the sequence of operations performed. Note that pointers are not necessarily nested.}
+  \label{fig:succ-delete}
+  
+  \vspace{5ex}
+  
+  \begin{figurebox}
+    \datastructure{5}{1,4,5}{2/3, 3/4} \hfill
+    \datastructure{5}{1,4,5}{2/4, 3/4} \hfill
+    \datastructure{5}{1,5}{2/4, 3/4, 4/5} \hfill
+    \datastructure{5}{1,5}{2/4, 3/5, 4/5}
+  \end{figurebox}
+
+  \caption{A minimal sequence of operations resulting in non-nested pointers: $\Init(5)$, $\Delete(2)$, $\Delete(3)$, $\Succ(2)$, $\Delete(4)$, and $\Succ(3)$. The figure shows the states after each of the last four operations. }
+  \label{fig:nested}
+
+  \vspace{5ex}
+  
+  \begin{figurebox}
+    \centering
+    \begin{tabular}{lll}
+      \begin{code}
+        \PROC{Init}{n} \\
+        \> Create $A[1..n]$ \\
+        \> \FOR{i}{1}{n} \\
+        \>\> \ASSIGN{A[i]}{i-1}
+      \end{code}
+      &
+      \begin{code}
+        \PROC{Delete}{i} \\
+        \> \IF{A[i] \leq i} \\
+        \>\> \ASSIGN{j}{\Succ(i+1)} \\
+        \>\> \ASSIGN{A[j]}{A[i]} \\
+        \>\> \ASSIGN{A[i]}{j} \\
+      \end{code}
+      &
+      \smash{%
+      \begin{code}
+        \PROC{Succ}{i} \\
+        \> \ASSIGN{j}{i} \\
+        \> \WHILE{j < A[j]} \\
+        \>\> \ASSIGN{j}{A[j]} \\
+        \> \WHILE{i < A[i]} \\
+        \>\> \ASSIGN{i'}{A[i]} \\
+        \>\> \ASSIGN{A[i]}{j} \\
+        \>\> \ASSIGN{i}{i'} \\
+        \> \RETURN{j}
+      \end{code}
+      }
+      \\
+      \begin{code}
+        \PROC{Pred}{i} \\
+        \> \IF{A[i] \leq i} \\
+        \>\> \RETURN{i} \\
+        \> \RETURN{A[\textsc{Succ}(i)]}
+      \end{code}
+      &
+      \begin{code}
+        \PROC{RangeReport}{i, j} \\
+        \> \ASSIGN{j}{\Pred(j)} \\
+        \> \WHILE{i \leq j} \\
+        \>\> report $j$ \\
+        \>\> \ASSIGN{j}{A[j]}
+      \end{code}
+    \end{tabular}
+
+    \begin{tikzpicture}[scale=0.5]
+      \draw (0.5,0) rectangle (25.5,1);
+      \foreach \i in {1, ..., 24} \draw (\i+0.5, 0) -- ++(0, 1);
+      \foreach \i in {1, ..., 25} \node at (\i, 1.5) {\scriptsize \i};
+      \foreach \i/\j in {2/3, 4/7, 5/6, 6/7, 8/11, 9/10, 10/11, 12/17, 13/16, 14/17, 15/16, 16/17, 18/20, 19/20, 21/25, 22/23, 23/25, 24/25} {
+        \node at (\i, 0.5) {\j};
+        \path[-latex] (\i+0.05, -0.1) edge[bend right=30] (\j-0.05, -0.1);
+      }
+      \foreach \i/\j in {1/0, 3/1, 7/3, 11/7, 17/11, 20/17, 25/20} {
+        \node at (\i, 0.5) {\textbf{\j}};
+        \path[-latex] (\i-0.05, 1.9) edge[bend right=30] (\j+0.05, 1.9);
+      }
+      \node at (-0.25, 0.5) {$A$};
+    \end{tikzpicture}
+  \end{figurebox}
+
+  \caption{\Succ-\Pred-$\Delete$ implementation and a data structure for $\{1,3,7,11,17,20,25\}$.}
+  \label{fig:succ-pred-delete}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Related work}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+To support successor queries on a statics set, the canonical solution is to store the values in sorted order in an array and perform successor queries using binary search in $\Oh(\log |S|)$ time. In the static case of integers, the successors can be stored explicitly in an array of size~$n$, and successor queries can be looked up in constant time. If the set~$S$ is dynamic, the classic solution is to store the values in a balanced binary search tree, like an AVL-tree~\cite{AVL62} or a red-black tree~\cite{GuibasSedgewick78}, supporting insertions, deletions, and successor and predecessor queries in $\Oh(\log |S|)$ time. Binary search trees are inherently node oriented, where each of the $|S|$ nodes stores at least a value and two pointers to its two children, and possibly some bits of balance information (splay trees~\cite{SleatorTarjan85} do not store any balance information in the nodes, but the time bounds are amortized). \emph{Implicit} binary search trees~\cite{FranceschiniG03,FranceschiniG06,Munro86} reduce the space usage to a single array of size~$|S|$ storing a permutation of~$S$ (all additional information is encoded in the permutation of the values). In this paper we even allow the data structures to use space $\Oh(n)$, where $n$ can be much larger than $|S|$ after many deletions. Another binary tree solution is an augmented static binary tree with leaves left-to-right representing~$1,\ldots,n$, and where each node stores the maximum non-deleted node in its subtree. Such a tree can be stored in an array of size~$\Oh(n)$ (where the children of node $i$ are nodes $2i$ and $2i+1$, like in the binary heaps by Williams~\cite{Williams64}) and supports updates and successor queries in $\Oh(\log n)$ time.
+
+\begin{table}
+  \caption{Various solutions to the successor-delete problem over the integers $\{1,2,\ldots,n\}$. $\Oh_A$ denote amortized time bounds, $\alpha(m, n)$ is a very slowly growing inverse Ackermann like function.}
+  \label{tab:results}
+
+  \centering
+  \tabcolsep=0.75em
+  \begin{tabular}{lccc}
+    Reference & \Succ & \Delete & \Insert \\
+    \hline
+    Balanced binary search tree~\cite{AVL62,GuibasSedgewick78} & $\Oh(\log n)$ & $\Oh(\log n)$ & $\Oh(\log n)$ \\
+    Augmented static binary tree & $\Oh(\log n)$ & $\Oh(\log n)$ & $\Oh(\log n)$ \\
+    van Emde Boas trees~\cite{Boas77,BoasKaasZijlstra77} & $\Oh(\log\log n)$ & $\Oh(\log\log n)$ & $\Oh(\log\log n)$ \\
+    Succinct rank-select~\cite{LiLiangYuZhou23} & $\Oh\bigl(\frac{\log n}{\log\log n}\bigr)$ & $\Oh\bigl(\frac{\log n}{\log\log n}\bigr)$ & $\Oh\bigl(\frac{\log n}{\log\log n}\bigr)$ \\
+    Succinct successor~\cite{PibiriVenturini17} & $\Oh(\log\log n)$ & $\Oh_A\bigl(\frac{\log n}{\log\log n}\bigr)$ & $\Oh_A\bigl(\frac{\log n}{\log\log n}\bigr)$ \\
+    Union-find~\cite{Tarjan75} & $\Oh_A(\alpha(m, n))$ & $\Oh_A(\alpha(m, n))$ \\
+    Union-find, weighted linking only~\cite{Fischer72} & $\Oh(\log n)$ & $\Oh(\log n)$ \\
+    Union-find, path compression only~\cite{TarjanLeeuwen84} & $\Oh_A(\log n)$ & $\Oh_A(\log n)$ \\
+    Weighted quick-find (McIlroy and Morris) & $\Oh(1)$ & $\Oh_A(\log n)$ & \\
+    Interval union-find~\cite{GabowTarjan85} & $\Oh(1)$ & $\Oh_A(1)$ & \\
+    \emph{This paper} & $\Oh_A(\log n)$ & $\Oh_A(1)$ \\
+    \hline
+  \end{tabular}
+\end{table}
+
+Exploiting that values are integers, van Emde Boas, Kaas and Zijlstra~\cite{Boas77,BoasKaasZijlstra77} presented a dynamic data structure supporting insertions and deletions, and predecessor and successor queries in $\Oh(\log\log n)$ time and $\Oh(n)$ space. Lower bound trade-offs between query time and space usage (in the cell-probe model) were studied by Beame and Fich~\cite{BeameFich02} and P{\u{a}}tra{\c{s}}cu and Thorup~\cite{PatrascuThorup06}. Succinct rank-select data structures, i.e., data structures using space $\log_2 \binom{n}{|S|}+o(n)$ bits close to the information theoretic lower bound, can also be used to answer successor queries, see, e.g., the recent dynamic rank-select structure by Li, Liang,Yu, and Zhou~\cite{LiLiangYuZhou23}. Note that dynamic rank-select data structures have a lower bound of $\Omega(\log n/\log\log n)$ time, see P{\u{a}}tra{\c{s}}cu and Thorup~\cite{PatrascuThorup14} --- a higher lower bound than for predecessor and successor queries. Pibiri and Venturini~\cite{PibiriVenturini17} presented a data structure supporting insertions and deletions in $\Oh\bigl(\frac{\log n}{\log\log n}\bigr)$ amortized time, and successor and predecessor queries in $\Oh(\log\log n)$ time, using $\log_2 \binom{n}{|S|}+O(|S|)$ bits of space. Dinklage, Fischer and Herlez~\cite{DinklageFH21} did a comprehensive experimental study of dynamic integer predecessor data structures supporting both insertions and deletions.
+
+In this paper we only consider the decremental version of the problem, where values can only be deleted and never be inserted again. We allow the deletion of an already deleted value. This problem is in the literature known as the \emph{interval union-find} problem: Consecutive deleted integers form intervals with their (non-deleted) successor. Deleting an integer $i$ unions the two intervals of deleted integers to the left and right of~$i$. Italiano and Raman~\cite[Chapter~5.3]{ItalianoRaman99} give a survey of the results for the interval union-find problem and list some applications. By exploiting the power of the RAM model, a data structure by Gabow and Tarjan~\cite{GabowTarjan85} for the interval union-find problem supports successor queries in constant time and deletions in amortized constant time (see \cite{Tarjan85} for an introduction to amortized time analysis): Partition the integers $\{1,\ldots,n\}$ into \emph{microsets} of $b=\ceil{\log n}$ consecutive values. For each microset store the values in $S$ as a bitvector of length $b$ in a single word, and handle queries on a microset either by tabulation or dedicated RAM instructions (for finding the least or most significant set bit in a word\footnote{\url{https://en.wikipedia.org/wiki/Find_first_set}}). A separate interval-union data structure is maintained for the \emph{macroset} set $\bar{S} \subseteq \{1,\ldots,\ceil{n/b}\}$, where $i \in \bar{S}$ if and only if the $i$-th microset is non-empty, i.e., $S \cap [1+(i-1)\cdot b,i\cdot b]\neq \emptyset$. The \emph{macroset} structure consists of an array of size $\ceil{n/b}$ storing pointers to the nearest non-empty successor microset structure. The pointers are updated using the ``relabel the smaller half'' method when a microset becomes empty. While deletions and queries to microsets and queries to the macroset take constant time, deletions to the macroset take amortized $\Oh(\log n)$ time, but only happens when all $b$ values in a microset has been deleted, i.e., the overall time for $\Delete$ becomes amortized $\Oh\big(1+(\log n)/b\big)=\Oh(1)$. The macroset data structure is in the literature known as the \emph{weighted quick-find} data structure, and is attributed to McIlroy and Morris by Aho, Hopcroft and Ullman~\cite{AhoHU74}.
+
+The interval union-find problem is a special case of the \emph{union-find} problem, where an initial set of $n$ singleton sets are maintained under the union of two sets containing two values $i$ and~$j$, $\Union(i, j)$, and the query $\Find(i)$ that returns a representative value for the set containing~$i$. Galler and Fischer~\cite{GallerFischer64} introduced the rooted tree representation for the union-find problem, where each set is represented by a rooted tree, the root is the representative of the set, and each node stores a pointer to the parent node. A $\Find(i)$ operation traverses the path from node~$i$ to the root, and \emph{compresses} the path so that all visited nodes are shortcut to have the root as their parent, and $\Union(i,j)$ performs $\Find(i)$ and $\Find(j)$ and links the two roots, making the smaller tree (with respect to size or ``rank'') a child of the root of the larger tree. Path compression and weighted linked can be combined or applied separately. Only applying linking by size gives $\Oh(\log n)$ time $\Union$ and $\Find$ operations (Fischer~\cite{Fischer72}), whereas naive linking with path compression gives amortized $\Oh(\log n)$ time $\Union$ and $\Find$ operations (Tarjan and van Leeuwen~\cite[Theorem~4]{TarjanLeeuwen84}). Tarjan~\cite{Tarjan75} showed that combining path compression with weighted linking implies $m \geq n$ $\Find$ operations take $\Oh(m\cdot\alpha(m, n))$ time, where $\alpha(m, n)$ is a very slowly growing inverse Ackermann like function. Tarjan and van Leeuwen~\cite{TarjanLeeuwen84} analyzed various variations of path compression for the union-find problem. They proved that \emph{path halving} achieves asymptotically identical time $\Theta\bigl(m\log_{1+m/n} n\bigr)$ as path compression, for $m \geq n$ $\Find$ operations. Path halving was introduced by van Leeuwen and van der Weide~\cite{Weide80,LeeuwenWeide77}. Union-find structures replacing weighted linking by randomized linking were considered by Goel, Khanna, Larkin and Tarjan~\cite{GoelKLT14}, avoiding the space usage for weights or ranks. See Italiano and Raman~\cite[Chapter~4.2]{ItalianoRaman99} for a survey of the results for the union-find problem. An experimental evaluation of 55 union-find data structures was done by Patwary, Balir and Manne~\cite{PatwaryBM10} in the context of computing the connected components of various graphs, where a variant of Rem's union-find data structure (described by Dijkstra~\cite[Chapter~23]{Dijkstra76}) turned out to achieve the best performance.
+
+Any union-find structure can be combined with the microset-macroset idea to solve the interval union-find problem. For the union-find structure using linking by rank and path compression, we obtain an interval union-find structure supporting deletions and successor queries in amortized $\Oh(1)$ time: $d$ deletions cause at most $\Oh(d/\log n)$ unions in the macro-structure, creating $O(d/\log n)$ links. Since a link changing parent during a path compression is linked to a higher ranked node, a link can at most be changed $\Oh(\log n)$ times, and the total number of link updates during path compressions is $\Oh(d/\log n\cdot \log n)=\Oh(d)$. The resulting structure uses space $\Oh(n)$ bits.
+
+The data structure we consider in Figure~\ref{fig:succ-delete}, is essentially the same as the union-find data structure by Rem, both consisting of an array of self-loops and forward pointers, except that we only consider the restricted case of the interval union-find problem, allowing us to simplify the operations. We apply path compression without weighted linking, where the representative of a set is the successor of all values in the set, and where $\Delete(i)$ is $\Union(i, i+1)$, that links $i$ below $i+1$ without performing $\Find(i+1)$, i.e., without performing a path compression and where $i+1$ is not necessarily a root.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Results}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Heavily inspired by the results of Tarjan and van Leeuwen~\cite{TarjanLeeuwen84}, we obtain the following results. For the successor-delete data structure in Figure~\ref{fig:succ-delete} we obtain the following result.
+
+\begin{theorem}
+  \label{thm:succ-delete}
+  A sequence of $\Init(n)$ followed by $d$ $\Delete$ and $s$ $\Succ$ operations in arbitrary order takes $\Oh\big(n+d+s\cdot \big(1+\log_{\max(2,s/n)} \min(s,n)\big)\big)$ time.
+\end{theorem}
+
+Note that for a sublinear number of queries, $s \leq n$, the time is $\Oh(n+d+s\cdot\log s)$, e.g., for $s=\Oh(n/\log n)$ the time is $\Oh(n+d)$. For a superlinear number of queries, where $s\geq n^{1+\epsilon}$ for a constant $\epsilon > 0$, the time is
+$\Oh\big(n+d+s\cdot \big(1+\log_{n^{1+\epsilon} / n} n\big)\big) = \Oh\big(n+d+s\cdot (1+1 / \epsilon)\big)$.
+
+Our second result is that the data structure also supports the range reporting query $\RangeReport(i, j)$ in Figure~\ref{fig:succ-delete-variations}, that reports $S\cap[i,j]$ in sorted order. Provided we never delete a value already deleted or we use the $\Delete(i)$ operation in Figure~\ref{fig:succ-delete-variations}, that only modifies $A[i]$ if $i$ has not yet been deleted, we obtain the following result.
+
+\begin{theorem}
+  \label{thm:range-report}
+  A sequence of $\Init(n)$, followed by $d$ \Delete, $s$ \Succ, and $r$ $\RangeReport$ operations in arbitrary order, where the total output of the range reporting queries is~$k$, takes $\Oh\big(n+d+k+q \cdot \big(1+\log_{\max(2,q/n)} \min(q,n)\big)\big)$ time, where $q=s+r$.
+\end{theorem}
+
+Finally, a slight modification of our data structure also supports predecessor queries, see Figure~\ref{fig:succ-pred-delete} in Section~\ref{sec:succ-pred-delete}, and obtains the following result.
+
+\begin{theorem}
+  \label{thm:succ-pred-delete}
+  A sequence of $\Init(n)$, followed by $d$ \Delete, $s$ $\Succ$, $p$ $\Pred$ operations, and $r$ $\RangeReport$ operations in arbitrary order, where the total output of the range reporting queries is~$k$, takes $\Oh\big(n+d+k+q\cdot \big(1+\log_{\max(2,q/n)} \min(q,n)\big)\big)$ time, where $q=s+p+r$.
+\end{theorem}
+
+It should be noted that maintaining two copies of the successor-delete data structure of Theorem~\ref{thm:range-report}, one for each direction for reporting successor and predecessor queries, respectively, actually achieves Theorem~\ref{thm:succ-pred-delete}. The advantage of the data structure in Section~\ref{sec:succ-pred-delete} is that the space usage is only a single array of $n$~integers, and deletions only need to update a single array instead of two arrays.
+
+In Section~\ref{sec:experiments} we present our experimental results of comparing our data structure to the weighted quick-find data structure and the two-pass weighted union-find data structure with path compression, with and without using microsets.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Preliminaries}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Throughout this paper we consider maintaining a set $S \subseteq \{1,2,\ldots,n\}$. We let $\successor(S, i)=\min\{j \in S \mid j \geq i\}$ and $\predecessor(S, i)=\max\{j \in S \mid j \leq i\}$ denote the successor and predecessor of $i$ in $S$, respectively. We assume that the values $1$ and $n$ are never deleted, such that the $\successor(S, i)$ and $\predecessor(S, i)$ are always defined, for $1 \leq i \leq n$. (In our implementations we actually consider the integers $\{0,1,\ldots,n,n+1\}$, where $0$ and $n+1$ are never deleted, such that intuitively $0$ acts as $-\infty$ and $n+1$ as $+\infty$.)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Successor-delete}
+\label{sec:succ-delete}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Our basic successor-delete data structure is shown in Figure~\ref{fig:succ-delete}. It stores a set $S$, where $\{1, n\} \subseteq S \subseteq \{1, \ldots, n\}$. It consists of a single array $A[1..n]$. For $1\leq i\leq n$, it is an invariant that $i < A[i] \leq \successor(S, i)$ if $i\notin S$ and $A[i] = i$ if $i \in S$. We view $A[i]$ as a pointer from index~$i$ to index~$A[i]$ in $A$, such that all elements with $j$ as their successor in~$S$ form a rooted tree with $j$ as the root. See the pointers below the array~$A$ in Figure~\ref{fig:succ-delete}, where 12 is the root of the tree containing~$\{2,3,\ldots,12\}$.
+
+To compute $\successor(S, i)$, we can repeatedly let $i \leftarrow A[i]$ until $i=A[i]$. In the worst case this will take $\Oh(\successor(S, i)-i+1)$ time. To achieve a better amortized performance, we apply \emph{path compression} such that for each accessed $i$ we let it point directly to $\successor(S,i)$. Figure~\ref{fig:succ-delete} shows two implementations of $\Succ(i)$ with two different path compressions: recursively or through two iterative passes: first follow the path from $i$ to find the root $\successor(S, i)$, and in a second traversal of the path sets all pointers to point to $\successor(S, i)$. Applying the recursive compression or the two-pass path compression results in the same data structure, but the two-pass path compression does not require a recursion stack. Slightly less aggressive than path compression is \emph{path halving}, where every second node~$i$ on the path is shortcut to its grandparent, i.e., $A[i]\leftarrow A[A[i]]$. Path halving has the benefit that it can be implemented in a single traversal of the path from $i$ to $\successor(S, i)$, see Figure~\ref{fig:succ-delete-variations}. The analysis in Section~\ref{sec:analysis} only considers path compression.
+
+\begin{figure}[t]
+  \begin{figurebox}
+    \centering
+    \begin{code}
+      \PROC{Delete}{i} \\
+      \> \IF{A[i] = i} \\
+      \>\> \ASSIGN{A[i]}{i + 1}
+    \end{code}
+    \hspace{2.5em}
+    \begin{code}
+      \PROC{Succ}{i} \\
+      \> \WHILE{A[i] > i} \\
+      \>\> \ASSIGN{A[i]}{A[A[i]]} \\
+      \>\> \ASSIGN{i}{A[i]} \\
+      \> \RETURN{i}
+    \end{code}
+    \hspace{2.5em}
+    \begin{code}
+      \PROC{RangeReport}{i, j} \\
+      \> \WHILE{i \leq j} \\
+      \>\> \ASSIGN{i}{\Succ(i)} \\
+      \>\> \IF{i \leq j} \\
+      \>\>\> report $i$ \\
+      \>\>\> \ASSIGN{i}{i+1}
+    \end{code}
+  \end{figurebox}
+
+  \caption{Implementation of $\Delete$ that ensures $A[i]$ is increasing over time, a one-pass implementation of $\Succ$ using path halving, and range reporting query $\RangeReport(i,j)$, where~$1 \leq i \leq j \leq n$.}
+  \label{fig:succ-delete-variations}
+\end{figure}
+
+A $\Delete(i)$ operation could set $A[i]$ to $\successor(S,i+1)$. This would require a call to $\Succ(i+1)$ to update $A[i]$. We apply the simpler idea of just setting $A[i] \leftarrow i+1$, avoiding the call to $\Succ$ during $\Delete$ that would be the natural approach if we implemented the successor data structure using a union-find data structure. If $i\notin S$ when performing $\Delete(i)$, we in the code in Figure~\ref{fig:succ-delete} naively reset $A[i] \leftarrow i+1$, to avoid the check if~$A[i]=i$. If one added this check, see $\Delete$ in Figure~\ref{fig:succ-delete-variations}, we would only update $A[i]$ if $i \in S$. This would ensure that $A[i]$ over time only increases. Note that either way of implementing $\Delete$ can cause pointers not to be nested, as shown in Figure~\ref{fig:nested}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Range reporting}
+\label{sec:range}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Another operation one could consider supported is the $\RangeReport(i, j)$ operation that reports the values in $S \cap [i,j]$ in sorted order, where $1\leq i \leq j\leq n$. If all elements in $S$ were linked in increasing order, $\RangeReport(i, j)$ could trivially be supported by performing $\Succ(i)$ to find the first element to report (provided it is smaller than or equal to~$j$), and then traverse and report the elements of the linked list until the first element larger than $j$ is encountered. The time would be the time for a $\Succ$ query and then linear in the output. The data structure in Figure~\ref{fig:succ-delete} can support range reporting queries without such additional links: The first element to report can be found by performing $i\leftarrow\Succ(i)$, the next element in~$S$ can the found by performing $i\leftarrow\Succ(i+1)$, and so on, until $i$ is larger than $j$. See code in Figure~\ref{fig:succ-delete-variations}. Even that this approach applies multiple $\Succ$ queries, we in Section~\ref{sec:analysis} show that the amortized time for $\RangeReport$ is still the time for a single $\Succ$ query plus linear in the output, provided we are slightly careful about deletions.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Successor-predecessor-delete structure}
+\label{sec:succ-pred-delete}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+If both successor and predecessor queries should be supported, one could maintain two separate data structures, using one array for each query direction. A deletion would then require performing a deletion on two data structures. A more space efficient way is to use the data structure in Figure~\ref{fig:succ-delete}, but where we for each $i \in S$ store $A[i]=\predecessor(S, i-1)<i$, except for $A[1]=0$. It follows that all values in $S$ are linked in decreasing order in $A$. For~$i \notin S$, we define and maintain $i<A[i]\leq\successor(S,i)$ exactly as before. Figure~\ref{fig:succ-pred-delete} shows the resulting data structure, where $\Succ$ is implemented using two-pass path compression. Since $\Delete(i)$ for an $i \in S$ needs to remove $i$ from the linked list of values in $S$, we need to compute $\successor(S, i+1)$ using $\Succ(i+1)$, to update $A[\successor(S, i+1)]\leftarrow A[i]$. We can shortcut~$A[i]$ to point directly to $\successor(S, i+1)$, now it is anyway computed. To support $\Pred(i)$, observe that $\predecessor(S, i)$ is~$i$, when $i\in S$, i.e., $A[i] \leq i$. Otherwise, $\predecessor(S, i)=A[\successor(i)]$ for~$i \notin S$. Since we have a decreasing linked list of all elements in $S$, $\RangeReport(i,j)$ can be implemented by first finding the largest value in $S \cap [i,j]$ by performing $\Pred(j)$, and then traversing and reporting the values on the linked list in decreasing order until a value smaller than $i$ is encountered. The drawback of this solution is that for each $\Delete(i)$ operation a successor query is required to update $A[\Succ(i+1)]$. Elements are reported in decreasing order but can be changed to be increasing order by reversing the output (or mirroring the whole data structure), if this is desired.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Analysis}
+\label{sec:analysis}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In this section we analyze the theoretical performance of the proposed data structures, i.e., we give the proofs of Theorems~\ref{thm:succ-delete}--\ref{thm:succ-pred-delete}. The analysis follows the same lines of reasoning as used by Tarjan and van Leeuwen for the analysis of union-find data structures using naive linking~\cite{TarjanLeeuwen84}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Proof of Theorem~\ref{thm:succ-delete}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Consider the operations in Figure~\ref{fig:succ-delete}, and assume we perform $\Init(n)$ followed by $d$ $\Delete$ and $s$ $\Succ$ operations in an arbitrary order. The $\Init$ operation together with the $d$ $\Delete$ operations clearly take $\Oh(n+d)$ time. What remains is to analyze the time spent on the $s$ $\Succ$ queries. 
+
+We assume that we never delete a value that is already deleted (or we use the $\Delete$ operation in Figure~\ref{fig:succ-delete-variations}). We later show that this assumption is not necessary. Under this assumption, $A[i]=i$ until $i$ is deleted, where $A[i]$ is set to $i+1$. Subsequently, $A[i]$ is only changed by path compressions increasing $A[i]$, i.e., over time $A[i]$ is non-decreasing.
+
+For a successor query $\Succ(i)$, we denote the index $\successor(S, i)$ the \emph{root} of the query. Let~$R$ be the set of all root indices for the $s$ $\Succ$ queries during the sequence of operations. Clearly $|R| \leq \min(s,n)$. Consider the indegree of an index $i$ over time. While $i-1$ is not deleted, the indegree of $i$ is zero. When $i-1$ is deleted, $A[i-1]$ is set to point to $i$, and $i$ gets indegree one. If $i$ is never the root of a query, $i\notin R$, $i$ will never get another in-pointer, since path compressions only change pointers to point to the root of a query, and when $A[i-1]$ is increased (because of a path compression), $i$ gets indegree zero and the indegree of $i$ remains zero for the remainder of the sequence of operations.
+
+A $\Succ(i)$ query accesses a sequence of indices $i_0<i_1<\cdots<i_p$ in $A$, where $i_0=i$, $i_{j+1}=A[i_j]$ for $0 \leq j < p$, and $A[i_p]=i_p=\successor(S, i)$. For the query we count separately the accesses to three indices: the index~$i_0$ where the query starts, and the last two indices~$i_{p-1}$ and~$i_p$, where the pointers do not change. For the \emph{intermediate} nodes $i_1,\ldots,i_{p-2}$, we know they have indegree at least one before the query (since they are on the query path) and the in-pointer is updated (since we use path compression). If $i_j \notin R$ ($1\leq j \leq p-2$), then by the above discussion $i_j$ had indegree one before the query (a pointer from $i_j-1$) and indegree zero after the query, and no further query can have $i_j$ as an intermediate index (but we could visit $i_j$ because of a $\Succ(i_j)$ query, where it would play the role of ``$i_0$''). It follows that the total number of accesses by all $\Succ$ queries to intermediate nodes not in $R$ is at most $n$. It follows that the total number of nodes accessed by all queries is at most $3s+n$ plus the number of accesses to intermediate nodes in $R$.
+
+To bound the remaining number of accesses to intermediate nodes in $R$ we introduce the notion of \emph{rank} (like in \cite{TarjanLeeuwen84}). For $i\in R$ with $i < A[i]$, we define the \emph{rank} of~$i$ to be $r_i = \floor{\log_\Delta w_i}$, where $\Delta = \max(2, \ceil{s/n})$ and $w_i = \bigl|R \cap [i,A[i])\bigr| \geq 1$, i.e., the rank of $i$ is the base $\Delta$ logarithm of the number of indices between $i$ and $A[i]$ in the array (excluding~$A[i]$) that eventually become a root during the sequence of operations. If $i \in R$ has rank $r$, then $\Delta^r \leq w_i < \Delta^{r+1}$. Ranks are upper bounded by $\floor{\log_\Delta |R|}$. We refine each rank~$r$ into $\Delta-1$ \emph{levels}, $1 \leq \ell < \Delta$, where an index~$i$ of rank~$r$ has \emph{level} $\ell$ if $\ell \cdot \Delta^r \leq w_i < (\ell+1)\cdot\Delta^r$. Consider a path compression that shortcuts an index $i\in R$ over another index $j\in R$, i.e., $i\leq A[i] \leq j \leq A[j]$ before the shortcut is made and the new value of $A[i]$ is at least the old value of $A[j]$. If $r_i < r_j$ then the rank of $i$ increases by at least one (to rank $\geq r_j$), but if~$r_i=r_j$, then $r_i$ does not necessarily increase, but the level of index $i$ increases by at least one. It follows that for each $\Succ$ query and rank~$r$ at most one accessed index of rank~$r$ in~$R$ does not change neither rank nor level (the rightmost rank~$r$ index accessed). Over the sequence of operations, an index in $R$ can at most increase rank $\floor{\log_\Delta |R|}$ times and for each of the $1+\floor{\log_\Delta |R|}$ ranks it can increase level at most $\Delta-2$ times. It follows that the total number of accesses to nodes for all $\Succ$ queries is at most
+\[
+3s + n + s \cdot (1+\floor{\log_\Delta |R|}) + |R|\cdot\bigl(\floor{\log_\Delta |R|} + (\Delta-2)(1+\floor{\log_\Delta |R|})\bigr) \;.
+\]
+
+The total time for the sequence of operations becomes $\Oh\bigl(n+d+s+(s+|R|\Delta)\log_\Delta |R|\bigr)$. Using $\Delta = \max(2, \ceil{s/n})$ and $|R|\leq \min(s,n)$, the total time for $\Init(n)$, $d$ $\Delete$ and $s$ $\Succ$ queries is $\Oh\bigl(n+d+s \cdot (1 + \log_{\max(2, s/n)} \min(s,n))\bigr)$, as stated in Theorem~\ref{thm:succ-delete}.
+
+To avoid the assumption that we never delete a value that is already deleted, observe that performing $\Delete(i)$ when $A[i]>i$, resets $A[i] \leftarrow i+1$. If $i \in R$, then this causes $w_i$ to be reset to one, i.e., the rank of~$i$ is reset to zero and the level of~$i$ to one. But notice that the first path compression accessing $i$ will increase $A[i]$ to at least the value before the deletion, i.e., the lost (rank, level) potential is regained by the first access to $A[i]$. So, in the analysis above we only need to account for one additional access to $i$ for each $\Delete(i)$ operation. If $i+1\notin R$, then we above used that $i+1$ would never get indegree one again, if $A[i]>i+1$, and argued that we only would visit $i$ once as an intermediate. Setting $A[i] \leftarrow i+1$ will cause $i+1$ once again to gain indegree one, allowing one additional access to $A[i]$ as an intermidate node. We charge these two additional accesses to the deletion. The remaining analysis is unchanged, and Theorem~\ref{thm:succ-delete} holds without the assumption that we never delete a value that is already deleted.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Proof of Theorem~\ref{thm:range-report}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+In Figure~\ref{fig:succ-delete-variations} we show how to implement $\RangeReport(i,j)$ using repeated calls to $\Succ$. If $k$ is the size of the total output by $r$ $\RangeReport$ operations, these in total perform at most $r+k$ calls to $\Succ$. We can replace $s$ in Theorem~\ref{thm:succ-delete} with $s+r+k$ to obtain a bound on the total time for a sequence of operations also containing $r$ $\RangeReport$ queries. This bound is not linear in the output size~$k$ though.
+
+To give a better bound, we denote a subset of the links \emph{outer links}. If $i_1$ and $i_2$ are two consecutive elements in $S$, i.e., $i_2=\successor(S,i_1+1)$, then the links on the path from $i_1+1$ to~$i_2$ are the outer links. Observe, that $\RangeReport$ after the first $\Succ$ query has been performed only accesses outer links, which are shortcut, such that the outer path afterwards between $i_1$ and $i_2$ consists of a pointer directly from $i_1+1$ to $i_2$, i.e., all traversed links between $i_1$ and $i_2$ become non-outer links except for one. I.e., accessing the outer links can be charged to the output size plus the number of outer links becoming non-outer links, and the initial $\Succ(i)$ query.
+
+An outer link from $i$ is created when $i$ is deleted. Provided that we never set $A[i]\leftarrow i+1$ except for the initial deletion of $i$, a link that has become non-outer will never become outer again. It follows that we charge each $\Delete$ the creation of an outer link, and the total time becomes the bound given by Theorem~\ref{thm:succ-delete} plus $\Oh(k)$ for the output size~$k$, and replacing $s$ with $s+r$ in the bound, to cover the initial $\Succ$ query performed by each $\RangeReport$. This gives the bound stated in Theorem~\ref{thm:range-report}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Proof of Theorem~\ref{thm:succ-pred-delete}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The construction in Figure~\ref{fig:succ-pred-delete} is essentially the same as the structure in Figure~\ref{fig:succ-delete} with respect to forward pointers for deleted indices. To maintain the linked predecessor chain, a $\Delete(i)$ operation for $i \in S$ needs to perform a $\Succ(i+1)$ operation to update $A[\successor(S, i+1)] \leftarrow A[i]$, before setting $A[i] \leftarrow i+1$. The work is $\Oh(1)$ in addition to the cost for the call to $\Succ(i+1)$. 
+
+Similar to the argument for range-reporting queries in Theorem~\ref{thm:range-report}, the links followed by $\Succ(i+1)$ are outer links, and we can apply the same accounting as in Theorem~\ref{thm:range-report} that all outer links except one become non-outer links, and can be charged for the traversal. The link from $i$ to $i+1$ becomes a new outer link.
+
+Each of the $p$ $\Pred$ and $r$ $\RangeReport$ queries essentially perform one $\Succ$ query, plus constant work and work linear in the output, respectively. The total work becomes the cost of $s+p+r$ $\Succ$ queries, plus the output size~$k$, plus the cost of the $\Init$ and $\Delete$ operations. The bound stated in Theorem~\ref{thm:succ-pred-delete} follows from Theorem~\ref{thm:range-report}.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experimental evaluation}
+\label{sec:experiments}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Variants of the proposed successor-delete data structure and some data structures from the literature were implemented in C, storing~$A$ using 64~bit integers. The experiments were run on an HP EliteBook 640 G10 with an Intel Core i7-1365U processor, running Windows~11 (23H2), using GCC~14.2.0 (MSYS2), and compiled with optimization level~-O3. The source code is available on GitHub\footnote{\url{https://github.com/gsbrodal/sea25}}.
+
+Each data point includes the time for $\Init(n)$, and all $\Delete$ and $\Succ$ operations performed. The time is the average over at least five runs, but sufficiently many runs to get a total running time of at least one second. Each data point is the minimum observed repeating the evaluation three times. We tested the correctness of all algorithms evaluated by checking if they returned the same answers to all tested successor queries (this test is not included in the measured running times).
+
+We implemented five versions of the proposed successor-delete data structure:
+1) with no path compression,
+2) using recursive path compression,
+3) a two-pass path compression,
+4) a two-pass path compression and checked deletions, and
+5) path halving.
+For 1)\,--\,3) and 5), deletions are implemented as in Figure~\ref{fig:succ-delete}, where $A[i]$ is always set to $i+1$ when $i$ is deleted, whereas 4) only updates $A[i]$ if $i$ is still in the set, i.e., $A[i]=i$ (Figure~\ref{fig:succ-delete-variations}). Furthermore, we implemented
+6) the weighted quick-find data structure and
+7) the union-find data structure with weighted linking and two-pass path compression. Whereas 1)\,--\,5) only store the array~$A$ of integers, both 6) and 7) store an array with three integers per node (parent pointer, weight, and the maximum in the set, i.e., the successor of all elements in the set).
+Finally, we applied the microset-macroset idea from \cite{GabowTarjan85} to
+8) the weighted quick-find structure,
+9) the union-find structure with path compression and linking by weight, and
+10) the successor-delete data structure with two-pass path compression.
+For 8)\,--\,10) a microset consists of 64 bits stored in a single \verb|long long|, and we use the GCC builtin function \verb|__builtin_ctzll| to compute the successor inside a microset\footnote{\url{https://gcc.gnu.org/onlinedocs/gcc/Bit-Operation-Builtins.html}}.
+
+That path compression is crucial to our data structure should be obvious: If we delete all elements without performing any path compression, all indices form one long chain of length~$n$, and $\Succ(1)$ will take linear time. Figure~\ref{fig:plot-query-1}(left) shows that the total time is quadratic for $\Init(n)$ followed by deleting all elements and performing $\Succ(1)$ $n$ times (since the time divided by $n$ is linear with slope~1 in a log-log plot). Figure~\ref{fig:plot-query-1}(right) shows the same data without the variant with no path compression. All algorithms have a theoretical running time of $\Oh(n)$ for this sequence of operations, which is confirmed by all measured running times divide by $n$ being about constant. For $n > 2^{16}$, the recursive path compression failed because of a stack overflow on Windows, and we only show the results for $n \leq 2^{16}$ for the recursive path compression variant for these sequences of operations.
+
+\begin{figure}[!t]
+  \plot{naive-logarithmic.pdf} \hfill
+  \plot{successor-query-one.pdf}
+
+  \caption{Running time for deleting $1,\ldots,n$ in increasing order, followed by $n$ calls to $\Succ(1)$. (left) with a variant with no path compression; (right) without the no path compression variant, where all data structures require total time $\Theta(n)$ for this input.}
+  \label{fig:plot-query-1}
+\end{figure}
+
+\begin{figure}[!t]
+  \plot{successor-query-worst-case.pdf} \hfill
+  \plot{random-deletion-worst-case-query.pdf}
+
+  \caption{(left) Running time for deleting $1,\ldots,n$ in increasing order, and $n$ times $\Succ(1)$ with path compression. Since only the first query to a successor-delete data structure with path compression will perform a path compression, the theoretical running time for these is $\Oh(n)$. (right) Running time for deleting $1,\ldots,n$ in increasing order, and after each $\Delete(i)$ performing a $\Succ(j)$ query for some~$j$ with longest path from $j$ to $i+1$ when using the successor-delete data structure with path compression.}
+  \label{fig:plot-summary}
+\end{figure}
+
+As noted after the statement of Theorem~\ref{thm:succ-delete}, the worst-case behavior of our algorithm per successor query is when the number of successor queries $s$ is about $n$. A sequence of $\Theta(n)$ operations forcing the successor-delete data structure with path compression to do $\Theta(n\log n)$ work is to delete the elements in increasing order, and after $\Delete(i)$ pick a worst-case $\Succ(j)$ query, i.e., a query with longest path from $j$ to $i+1$. The upper bound follows by Theorem~\ref{thm:succ-delete}, whereas the matching lower bound for this sequence follows by a result of Fischer~\cite[Theorem~1]{Fischer72}, who considered this sequence to prove an $\Omega(n\log n)$ lower bound for the union-find problem with unweighted linking and path compression. Whereas our successor-delete data structure has a total running time of $\Theta(n\log n)$ for this input, both the weighted quick-find and the union-find data structures will only need $\Oh(n)$ time, since all unions link a set of size~$i$ with a set of size one, i.e., both the union-find and the weighted quick-find data structures will be a star containing all the deleted elements. Figure~\ref{fig:plot-summary}(left) shows the running time for this sequence of operations. The results show that the running times of the successor-delete data structures are in the same ballpark (but asymptotic slower than) the theoretically more efficient data structures.
+
+Figure~\ref{fig:plot-summary}(right) shows results for $n$ times deleting a random integer from $\{1,\ldots,n\}$ (possibly already deleted elements), and after each deletion performing a $\Succ(j)$ query for some $j$ with longest path from $j$. The successor-delete data structures on this input benefit from that for a long time deletions are sparse in the input, and there are many small rooted trees with short leaf-to-root paths. Concerning the variant where deletions check if an element is already deleted, it appears from Figure~\ref{fig:plot-summary}(right) that for random deletions in medium sized inputs ($n$ in the range $10^4$\,--\,$10^5$) this generates a non-negligible slowdown  (``successor, 2-pass, checked'' vs. ``successor, 2-pass''). One could speculate that this is due to branch mispredictions and/or cache misses.
+
+From Figure~\ref{fig:plot-summary} it seems that combining the successor-delete data structure with the microset-macroset idea (``successor, 2-pass, microset'') makes its performance on the same level as the union-find and weighted quick-find data structures combined with microsets (``union find, microset'' and ``quick find, microset'', respectively) on the two types of sequences of operations we consider.
+
+Figures~\ref{fig:plot-all-worst-case} and \ref{fig:plot-all-random} consider the same setup as in Figure~\ref{fig:plot-summary}, except that the number of queries is varied from $\frac{1}{8}n$ to $8n$ and are performed uniformly interleaved with the deletions. 
+
+For incremental deletion sequences (Figure~\ref{fig:plot-all-worst-case}), it appears that the gap in performance between the successor-delete data structure and the theoretically more efficient data structures is maximized when there is one query per deletion. 
+The successor-delete data structure with one-pass path halving (``successor, halving'') achieves the best performance among the successor-delete data structures when the number of $\Succ$ queries is small compared to $n$, whereas the two-pass path compression variants (``successor, 2-pass'' and ``successor, 2-pass, checked'') achieve the best performance among the successor-delete data structures when the number of $\Succ$ queries is large compared to $n$.
+
+For random deletion sequences (Figure~\ref{fig:plot-all-random}), the gap between the performance of using deletions with and without checking if an element has already been deleted appears consistent independently of the number of queries.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+We have considered a simple data structure for supporting successor queries in a set of integers in the range $\{1,2\ldots,n\}$, and an implementation shows that the data structure has low constants in practice, although there exist data structures with lower asymptotic worst-case behavior. The experiments show that the running time of the proposed algorithm is in the same ballpark as weighted quick-find and union-find with path-compression and linking by weight. The benefit of the proposed algorithm is that it only needs to store a single array of integers, opposed to three arrays for the two other structures. The code for the proposed data structure operations is very short, but this is also the case for the union-find and weighted quick-find data structures, so all data structures have a low constant in their running time. An open problem is to analyze the theoretical performance of the data structure when using path halving.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  References
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{plainurl}
+\bibliography{references}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Plots
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{figure}[p]
+  \plot{successor-query-worst-case-0.125.pdf} \hfill
+  \plot{successor-query-worst-case-0.250.pdf} \\
+  \plot{successor-query-worst-case-0.500.pdf} \hfill
+  \plot{successor-query-worst-case-1.000.pdf} \\
+  \plot{successor-query-worst-case-2.000.pdf} \hfill
+  \plot{successor-query-worst-case-4.000.pdf} \\
+  \plot{successor-query-worst-case-8.000.pdf} \hfill
+  \hfill\begin{minipage}[b]{0.48\textwidth}
+    \caption{Running time for deleting $1,\ldots,n$ in increasing order from $\{1,\ldots,n\}$, with $\alpha\cdot n$ uniformly interleaved $\Succ$ queries, for $\frac{1}{8} \leq \alpha \leq 8$. The $\Succ$ queries performed are those where the successor-delete structure has to visit a longest path.}
+    \label{fig:plot-all-worst-case}
+  \end{minipage}
+\end{figure}
+
+\begin{figure}[p]
+  \plot{random-deletion-worst-case-query-0.125.pdf} \hfill
+  \plot{random-deletion-worst-case-query-0.250.pdf} \\
+  \plot{random-deletion-worst-case-query-0.500.pdf} \hfill
+  \plot{random-deletion-worst-case-query-1.000.pdf} \\
+  \plot{random-deletion-worst-case-query-2.000.pdf} \hfill
+  \plot{random-deletion-worst-case-query-4.000.pdf} \\
+  \plot{random-deletion-worst-case-query-8.000.pdf} \hfill
+  \begin{minipage}[b]{0.48\textwidth}
+    \caption{Running time for deleting $n$ random values (not necessarily distinct) from $\{1,\ldots,n\}$, with $\alpha\cdot n$ uniformly interleaved $\Succ$ queries, for $\frac{1}{8} \leq \alpha \leq 8$. The $\Succ$ queries performed are those where the successor-delete structure has to visit a longest path.}
+    \label{fig:plot-all-random}
+  \end{minipage}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
