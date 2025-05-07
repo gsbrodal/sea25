@@ -607,6 +607,15 @@ void data_worst_case(value n, double queries_per_deletion) {
     data_set_output(&alg_2pass);
 }
 
+unsigned long long random64() {
+    // Generate a random 64-bit integer
+    value x = 0;
+    for (int i = 0; i < 8; i++) {
+        x = (x << 8) | (rand() & 255);
+    }
+    return x;
+}
+
 void data_random(value n, double queries_per_deletion) {
     // Create sequence with n random Delete, interleaved with worst-case queries
     printf("Creating random input: n = %d, alpha = %.3f\n", n, queries_per_deletion);
@@ -617,7 +626,7 @@ void data_random(value n, double queries_per_deletion) {
     T_init(n);
     value queries = 0;
     for (value i = 1; i <= n; i++) {
-        value d = rand() % (n-1) + 1;
+        value d = random64() % (n - 1) + 1;
         T_delete(d);
         *(p++) = -d;
         while (queries < i * queries_per_deletion) {
@@ -756,9 +765,9 @@ int main() {
     data_allocate(MAX_OPERATIONS);
 
     // Run all tests
+    time_random();
     time_query_one();
     time_worst_case();
-    time_random();
 
     printf("Trash (ignore): %d\n", trash);
 }
